@@ -1,7 +1,7 @@
 
 
 
-		Welcome to Zellview2,
+		Welcome to zellview,
 		
 		enjoy
 		
