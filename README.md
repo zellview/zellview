@@ -1,14 +1,14 @@
 
 
 
-		Welcome to zellview,
+Welcome to zellview,
 		
-		enjoy		
-		   and		   
-		     happy coding
+enjoy		
+and		   
+happy coding
 
-		related
-			Blackbox Component Builder [BlackboxFramework](https://www.blackboxframework.org)
+related
+Blackbox Component Builder [BlackboxFramework](https://www.blackboxframework.org)
 
 [Zinn am Turm](https://www.zinnamturm.eu)
 			
