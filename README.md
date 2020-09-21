@@ -5,7 +5,10 @@ enjoy
 and
 happy coding
 
-donations welcome __[zellview.de/donate](https://www.zellview.donate)__<br>
+[comment]: donations welcome __[zellview.de/donate](https://www.zellview.donate)__<br>
+
+donations welcome [via PayPal](http-equiv=refresh content="0; URL=https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z3HWZPMEKBVVU&source=url)
+<br>
 <br>
 related<br>
 *Blackbox Component Builder* __[BlackboxFramework](https://www.blackboxframework.org)__<br>
