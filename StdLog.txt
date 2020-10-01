@@ -1,0 +1,16 @@
+invoking DevCompiler.CompileThis
+compiling "DevCPM"   9472   2236
+compiling "Config"
+  HelloWorld is new in symbol file
+  LogPar is new in symbol file
+  RunScript is new in symbol file
+  Trap is new in symbol file   4400   0
+invoking DevLinker.Link
+newbbscript.exe written  2684928  1309982
+invoking DevCompiler.CompileThis
+compiling "DevCPM"   9240   2236
+compiling "Config"
+  HelloWorld is no longer in symbol file
+  LogPar is no longer in symbol file
+  RunScript is no longer in symbol file
+  Trap is no longer in symbol file   1932   0
