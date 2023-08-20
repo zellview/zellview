@@ -4,6 +4,7 @@
 
 # (**
 #	by zellview new media
+#	
 #	www.zellview.network
 # **)
 
@@ -23,6 +24,6 @@
     apt-get update -y
     apt-get install bbcb2 -y
 
-    echo "end InstallBlackbox2"
+    echo "ending InstallBlackbox2"
 
 # END InstallBlackbox2.

@@ -2,14 +2,13 @@
 
 #	
 
-#	by zellview new media, 13. August 2023
+#	by zellview new media, 20. August 2023
 #	www.zellview.network
-#	kai47x, increment release to 3.2.04
+#	kai47x version 3.2.05
 
-	echo "starting DimiConfig"
+#	echo "starting DimiConfig"
 #	echo "This script will configure some settings for zellview-dimi"
 #	echo "keyboard, timezone, background etc"
-#	echo "press RETURN to continue or CTRL-X to abort."
 
 	echo "set keyboard, XKBLAYOUT=de"
 	sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="de"/g' /etc/default/keyboard
