@@ -1,9 +1,9 @@
-#! bin/bash 
+
 
 # SCRIPT DimiCreateDatapart;
 
-# project www.zellview.network/zellview/dimi
 # by zellview media
+# on GitHub www.zellview.network/dimi
 # version 3.2.05
 # 20. August 2023
 

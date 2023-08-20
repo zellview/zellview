@@ -1,8 +1,4 @@
-# SCRIPT DimiSetup;
-
-
-#  
-
+# SCRIPT DimiSetup; 
 
 # (** 
 #	by zellview new media, 20. August 2023

@@ -1,7 +1,7 @@
 {
     "control": [
         { "VTOY_MENU_TIMEOUT": "15" },
-        { "VTOY_DEFAULT_IMAGE": "/zv-dimi-3.2.01-pure.iso" },
+        { "VTOY_DEFAULT_IMAGE": "/zv-dimi-3.2.05-pure.iso" },
         { "VTOY_SECONDARY_BOOT_MENU": "0" }
     ],
 		
@@ -17,14 +17,14 @@
 
     "menu_alias": [
         {
-            "image": "/zv-dimi-3.2.01-pure.iso",
+            "image": "/zv-dimi-3.2.05-pure.iso",
             "alias": "zellview - dimi - 3.2"
         }
     ],
 
     "persistence": [
         {
-            "image":  "/zv-dimi-3.2.01-pure.iso",
+            "image":  "/zv-dimi-3.2.05-pure.iso",
             "backend": "/persistence/persistence.dat",
             "autosel": 1
         }
