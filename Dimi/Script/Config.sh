@@ -2,12 +2,12 @@
 
 #	by zellview new media
 #	www.zellview.network
-#	version 3.2.05
-#	20. August 2023
+#	version 3.2.06
+#	24. August 2023
 
-#	echo "starting DimiConfig"
-#	echo "This script will configure some settings for zellview-dimi"
-#	echo "keyboard, timezone, background etc"
+	echo "start DimiConfig"
+	echo "This script will configure some settings for zellview-dimi"
+	echo "keyboard, timezone, background etc"
 
 	echo "set keyboard, XKBLAYOUT=de"
 	sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="de"/g' /etc/default/keyboard
@@ -18,4 +18,4 @@
 	echo "set background to zellview3_cloudy.png"
 	ln -sf /zellview/Dimi/Rsrc/zellview3_cloudy.png /usr/share/backgrounds/linuxmint/default_background.jpg
 
-	echo "end DimiConfig" 
+	echo "DimiConfig done" 

@@ -1,17 +1,13 @@
-# MODULE InstallBlackbox2;
+# SCRIPT InstallBlackbox2;
 
 
-
-# (**
-#	by zellview new media
-#	
+#	by zellview new media	
 #	www.zellview.network
-# **)
+#	24. August 2023
+#	v 3.2.06
 
-# BEGIN
     echo
-    echo "install blackbox2 from oberon.org"
-    echo "starting InstallBlackbox2"
+    echo "start InstallBlackbox2"
 	wget http://deb.oberon.org/deb.oberon.org.gpg.key 
 
 	apt-key add deb.oberon.org.gpg.key
@@ -24,6 +20,4 @@
     apt-get update -y
     apt-get install bbcb2 -y
 
-    echo "ending InstallBlackbox2"
-
-# END InstallBlackbox2.
+    echo "InstallBlackbox2 done "

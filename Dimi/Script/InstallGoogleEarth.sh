@@ -1,13 +1,9 @@
 
-
 # SCRIPT InstallGoogleEarth
 
-# (** 
-#	by zellview media 13. August 2023
-#	www.zellview.network
-# **)
 
-# BEGIN
+#	by zellview media 24. August 2023
+#	www.zellview.network
 
     echo "start InstallGoogleEarth"
 
@@ -17,8 +13,7 @@
 
     echo -n "install package ... "
     sudo dpkg -i ~/google-earth.deb
-    echo "done"
 
-    echo "InstallGoogleEarth finnished"
+    echo "InstallGoogleEarth done"
 
-# END InstallGoogleEarth.
+

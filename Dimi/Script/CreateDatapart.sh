@@ -1,19 +1,17 @@
-
-
 # SCRIPT DimiCreateDatapart;
 
+
+
 # by zellview media
-# on GitHub www.zellview.network/dimi
-# version 3.2.05
-# 20. August 2023
+# www.zellview.network
+# version 3.2.06
+# 24. August 2023
 
 # CONST
-    Modulename="DimiCreateDatapart"
 	Partionname="zv-data"
 
 # BEGIN
-    echo
-    echo "starting $Modulename"
+    echo "starting DimiCreateDatapart"
     echo "This script will create a data partition"
     echo "at the end of the destination-device."
     echo
@@ -47,7 +45,7 @@
     echo "label partition ${destDevice}3"
     sudo e2label ${destDevice}3 ${Partionname}
         
-    echo "$Modulename finnished"
+    echo "DimiCreateDatapart finnished"
     echo
     
 # END DimiCreateDatapart.

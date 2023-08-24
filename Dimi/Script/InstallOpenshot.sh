@@ -1,19 +1,15 @@
-# SCRIPT InstallOpenshot;
-
-# CONST 
-    Modulename="InstallOpenshot"
+# SCRIPT InstallAudacity;
 
 
-# BEGIN
+#	by zellview new media	
+#	www.zellview.network
+#	24. August 2023
+#	v 3.2.06
 
-echo
-echo "start $Modulename"
+echo "start InstallAudacity"
 
-sudo add-apt-repository ppa:openshot.developers/ppa -y
-sudo apt update -y
-sudo apt install openshot-qt python3-openshot -y
+add-apt-repository ppa:ubuntuhandbook1/audacity
+apt update -y
+sudo apt install audacity
 
-echo "ending $Modulename"
-echo
-
-# END InstallOpenshot.
+echo "InstallAudacity done"
