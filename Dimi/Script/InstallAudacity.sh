@@ -10,7 +10,7 @@ echo "start InstallAudacity"
 
 add-apt-repository ppa:ubuntuhandbook1/audacity
 apt update -y
-sudo apt install audacity
+sudo apt install audacity -y
 
 echo "InstallAudacity done"
  

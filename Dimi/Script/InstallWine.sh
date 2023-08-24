@@ -16,10 +16,10 @@
 	
 #	sudo add-apt-repository ppa:ubuntu-wine/ppa
 #	sudo apt-get update
-	sudo apt-get install playonlinux
 
 	apt update -y
 	apt install --install-recommends winehq-stable -y
+	apt install playonlinux -y
 
 	echo "InstallWine done"
 

@@ -28,7 +28,7 @@
 #	persistVol="zv-persist-12G.dat"
 
 # BEGIN
-	echo "start DimiCreateStick
+	echo "start DimiCreateStick"
 	echo "zellview-dimi is an operating-system,"
 	echo "based on Linuxmint and Ubuntu."
 	echo
@@ -44,9 +44,9 @@
 	echo "$name  -  '$release'"
 	echo
 	echo "source-URL   $sourceUrl"
-	echo "feedback       zellview@posteo.de"
-	echo "base             linuxmint 21.2 victoria"
-	echo "boot              ventoy 91"
+	echo "feedback     zellview@posteo.de"
+	echo "base         linuxmint 21.2 victoria"
+	echo "boot         ventoy 91"
 	echo
 
 #    echo "persistVolume      $persistVol"
