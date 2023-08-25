@@ -125,8 +125,8 @@ echo "enjoy and happy coding"
 echo
 echo "feedback is welcome  zellview@posteo.de"
 echo
-echo "visit us at github   https://github.com/zellview"
-echo "consider to sponsor zellview ? https://sponsor.zellview.network"
+echo "visit us at github   www.github.com/zellview"
+echo "consider to sponsor  zellview ? https://sponsor.zellview.network"
 echo
 echo "keep the spirit of Pascal and the message of Niklaus Wirth"
 echo "cu"
