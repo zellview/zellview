@@ -1,9 +1,10 @@
-#! bin/bash   
+#! bin/bash      
 
 # MODULE DimiWriteIso;
 
-# by zellview media
 # 26. August 2023
+# version 3.2.06
+# by zellview media
 # www.github.com/zellview
 
 # CONST
@@ -26,7 +27,7 @@
         destDevice=/dev/$destDevice
     fi
 
-    dd if=~/zDev/dimi-iso/zv-dimi-$Version-ventoy.iso of=$destDevice bs=4M status=progress
+    dd if=../../../zDev/dimi-iso/zv-dimi-$Version-ventoy.iso of=$destDevice bs=4M status=progress
     
     echo "$Modulename done"
     echo

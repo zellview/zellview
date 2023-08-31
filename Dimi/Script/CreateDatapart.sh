@@ -5,7 +5,7 @@
 # by zellview media
 # www.zellview.network
 # version 3.2.06
-# 24. August 2023
+# 31. August 2023
 
 # CONST
 	Partionname="zv-data"
@@ -34,7 +34,7 @@
     
     #TODO
     echo "create primary partition ext4 $destDevice 10.5 GB to 100%"
-    sudo parted $destDevice mkpart primary ext4 10.5GB 100% 
+    sudo parted $destDevice mkpart primary ext4 11.5GB 100% 
     
 #    echo "delete partition ${destDevice}3"
 #    sudo parted rm ${destDevice}3
@@ -45,7 +45,7 @@
     echo "label partition ${destDevice}3"
     sudo e2label ${destDevice}3 ${Partionname}
         
-    echo "DimiCreateDatapart finnished"
+    echo "DimiCreateDatapart done"
     echo
     
 # END DimiCreateDatapart.

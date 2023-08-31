@@ -2,7 +2,7 @@
 
 # MODULE DimiReadIso;   
 
-# zellview-dimi version 3.2.06 , 26. August 2023
+# zellview-dimi version 3.2.06 , 27. August 2023
 # www.github.com/zellview
 # by zellview media
 
@@ -29,8 +29,7 @@
         read -p "Create from which device? /dev/" sourceDevice
     fi
     
-	#/zDev/dimi-iso
-    sudo dd if=/dev/$sourceDevice of=~/zv-dimi-3.2.06-ventoy.iso bs=1M count=10175 status=progress
+    sudo dd if=/dev/$sourceDevice of=~/zDev/dimi-iso/zv-dimi-3.2.06-ventoy.iso bs=1M count=10175 status=progress
     
     echo "$Modulename done"
     echo
