@@ -35,21 +35,27 @@
 
 	echo "install wine"
 	sh InstallWine.sh
+	
+	echo "install XRDP-Server"
+	sh InstallXRDP.sh
+	
+	echo "install XRDP-Client Remmina"
+	apt install remmina
 
 	echo "install kazam"
-	sudo apt install kazam -y
+	apt install kazam -y
   
 	echo "install krusader"
-	sudo apt install krusader -y
+	apt install krusader -y
 
 	echo "install retext"
-	sudo apt install retext -y
+	apt install retext -y
     
 	echo "install xfburn"
-	sudo apt install xfburn -y
+	apt install xfburn -y
     
 	echo "apt update"
-	sudo apt update -y
+	apt update -y
 	echo
 
 #	END DimiSetup.
@@ -61,7 +67,7 @@ echo "feedback welcome at zellview@posteo.de"
 echo
 echo "visit us at GitHub https://github.com/zellview"
 echo
-echo "consider to sponsor zellview ? https://sponsor.zellview.network"
+echo "consider to sponsor zellview ? https://.zellview.eu"
 echo
 echo "keep the spirit of Pascal and the message of Niklaus Wirth"
 echo "cu"
