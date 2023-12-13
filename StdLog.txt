@@ -1,71 +1,43 @@
 invoking DevCompiler.CompileSubs
 compiling "WinApi"   0   0
-compiling "WinOle"
-  new symbol file   0   0
-compiling "Kernel"
-  new symbol file   20144   4308
-compiling "Log"
-  new symbol file   1100   8
-compiling "Fonts"
-  new symbol file   152   4
-compiling "Ports"
-  new symbol file   3112   8
-compiling "Files"
-  new symbol file   160   104
-compiling "Dialog"
-  new symbol file   15296   772
-compiling "Math"
-  new symbol file   2908   16
-compiling "Strings"
-  new symbol file   13756   1076
-compiling "Stores"
-  new symbol file   13032   12
-compiling "Sequencers"
-  new symbol file   124   4
-compiling "Models"
-  new symbol file   1896   4
-compiling "Services"
-  new symbol file   2208   20
-compiling "Meta"
-  new symbol file   16208   8
-compiling "Converters"
-  new symbol file   1200   8
-compiling "Views"
-  new symbol file   14156   48
-compiling "WinDlg"
-  new symbol file   0   0
-compiling "Dates"
-  new symbol file   1996   68
-compiling "Controllers"
-  new symbol file   2068   20
-compiling "Properties"
-  new symbol file   3612   4
-compiling "Printers"
-  new symbol file   256   8
-compiling "Mechanisms"
-  new symbol file   592   4
-compiling "Containers"
-  new symbol file   14228   0
-compiling "Printing"
-  new symbol file   3344   92
-compiling "Documents"
-  new symbol file   14344   16
-compiling "Windows"
-  new symbol file   8136   8
+compiling "WinOle"   0   0
+compiling "Kernel"   20144   4308
+compiling "Log"   1100   8
+compiling "Fonts"   152   4
+compiling "Ports"   3112   8
+compiling "Files"   160   104
+compiling "Dialog"   15296   772
+compiling "Math"   2908   16
+compiling "Strings"   13756   1076
+compiling "Stores"   13032   12
+compiling "Sequencers"   124   4
+compiling "Models"   1896   4
+compiling "Services"   2208   20
+compiling "Meta"   16208   8
+compiling "Converters"   1200   8
+compiling "Views"   14156   48
+compiling "WinDlg"   0   0
+compiling "Dates"   1996   68
+compiling "Controllers"   2068   20
+compiling "Properties"   3612   4
+compiling "Printers"   256   8
+compiling "Mechanisms"   592   4
+compiling "Containers"   14228   0
+compiling "Printing"   3344   92
+compiling "Documents"   14344   16
+compiling "Windows"   8136   8
 compiling "HostFiles"   16860   1092
 compiling "HostRegistry"   3876   8
 compiling "HostFonts"   7072   304
 compiling "HostPorts"   13944   204
-compiling "OleData"
-  new symbol file   11272   12
+compiling "OleData"   11272   12
 compiling "HostMechanisms"   9664   48
 compiling "HostWindows"   21872   1696
 compiling "HostPrinters"   2644   412
 compiling "StdDialog"   4420   4
 compiling "StdApi"   4196   4
 compiling "StdCmds"   9896   560
-compiling "WinCtl"
-  new symbol file   0   0
+compiling "WinCtl"   0   0
 compiling "StdCFrames"   276   20
 compiling "HostCFrames"   41392   124
 compiling "HostDialog"   16172   7060
@@ -76,77 +48,42 @@ compiling "TextSetters"   26980   12244
 compiling "TextViews"   18856   12
 compiling "TextControllers"   17704   8
 compiling "StdLog"   3228   32
-compiling "ComAggregate"
-  new symbol file   2956   4
-compiling "ComConnect"
-  new symbol file   5480   12
-compiling "ComTools"
-  new symbol file   1320   0
-compiling "ComEnum"
-  new symbol file   4180   0
-compiling "ComEnumRect"
-  new symbol file   860   0
-compiling "ComKoala"
-  new symbol file   576   8
-compiling "ComKoalaDll"
-  new symbol file   696   8
+compiling "ComAggregate"   2956   4
+compiling "ComConnect"   5480   12
+compiling "ComTools"   1320   0
+compiling "ComEnum"   4180   0
+compiling "ComEnumRect"   860   0
+compiling "ComKoala"   576   8
+compiling "ComKoalaDll"   696   8
 compiling "ComKoalaExe"   1108   16
-compiling "ComKoalaTst"
-  new symbol file   544   48
-compiling "ComObject"
-  new symbol file   5864   8
-compiling "ComPhoneBook"
-  new symbol file   1216   12
-compiling "WinOleAut"
-  new symbol file   0   0
-compiling "ComPhoneBookActiveX"
-  new symbol file   2208   12
-compiling "ComPhoneBookClient"
-  new symbol file   400   604
-compiling "CommStreams"
-  new symbol file   628   0
-compiling "CommObxStreamsClient"
-  new symbol file   848   4
-compiling "CommObxStreamsServer"
-  new symbol file   772   8
-compiling "WinNet"
-  new symbol file   0   0
-compiling "CommTCP"
-  new symbol file   4832   4
-compiling "CommV24"
-  new symbol file   1736   0
-compiling "CtlT"
-  new symbol file   12500   12
-compiling "CtlC"
-  new symbol file   27456   20
-compiling "CtlADODB"
-  new symbol file   16452   0
-compiling "CtlDAO36"
-  new symbol file   22488   0
-compiling "CtlOffice"
-  new symbol file   52768   0
-compiling "CtlVBIDE"
-  new symbol file   10892   0
-compiling "CtlAccess9"
-  new symbol file   139896   0
-compiling "CtlExcel9"
-  new symbol file   288312   0
-compiling "CtlGraph9"
-  new symbol file   33064   0
-compiling "CtlStdType"
-  new symbol file   964   0
-compiling "CtlMSForms"
-  new symbol file   61168   0
-compiling "CtlOfficeBinder"
-  new symbol file   2948   0
-compiling "CtlOutlook9"
-  new symbol file   68968   0
-compiling "CtlPowerPoint9"
-  new symbol file   89240   0
-compiling "CtlWord9"
-  new symbol file   175912   0
-compiling "Controls"
-  new symbol file   41104   28
+compiling "ComKoalaTst"   544   48
+compiling "ComObject"   5864   8
+compiling "ComPhoneBook"   1216   12
+compiling "WinOleAut"   0   0
+compiling "ComPhoneBookActiveX"   2208   12
+compiling "ComPhoneBookClient"   400   604
+compiling "CommStreams"   628   0
+compiling "CommObxStreamsClient"   848   4
+compiling "CommObxStreamsServer"   772   8
+compiling "WinNet"   0   0
+compiling "CommTCP"   4832   4
+compiling "CommV24"   1736   0
+compiling "CtlT"   12500   12
+compiling "CtlC"   27456   20
+compiling "CtlADODB"   16452   0
+compiling "CtlDAO36"   22488   0
+compiling "CtlOffice"   52768   0
+compiling "CtlVBIDE"   10892   0
+compiling "CtlAccess9"   139896   0
+compiling "CtlExcel9"   288312   0
+compiling "CtlGraph9"   33064   0
+compiling "CtlStdType"   964   0
+compiling "CtlMSForms"   61168   0
+compiling "CtlOfficeBinder"   2948   0
+compiling "CtlOutlook9"   68968   0
+compiling "CtlPowerPoint9"   89240   0
+compiling "CtlWord9"   175912   0
+compiling "Controls"   41104   28
 compiling "StdFolds"   9440   148
 compiling "DevAlienTool"   2144   0
 compiling "DevMarkers"   4668   20
@@ -161,7 +98,9 @@ compiling "DevDecoder386"   28568   0
 compiling "DevBrowser"   17872   65980
 compiling "StdInterpreter"   3124   0
 compiling "HostClipboard"   1060   28
-compiling "HostCmds"   4744   4
+compiling "HostCmds"
+  Init is new in symbol file
+  txtConv is new in symbol file   5332   8
 compiling "HostMenus"   16964   2280
 compiling "DevCmds"   4080   0
 compiling "DevCommanders"   4244   20
@@ -178,249 +117,141 @@ compiling "DevCPL486"   13244   192
 compiling "DevCPC486"   36972   140
 compiling "DevCPV486"   28700   36
 compiling "DevCompiler"   8444   1108
-compiling "DevDebugCmds"
-  new symbol file   2612   0
+compiling "DevDebugCmds"   2612   0
 compiling "DevDependencies"   24268   0
 compiling "DevInspector"   7628   2716
 compiling "DevLinkChk"   6260   48
 compiling "DevLinker"   23536   916
-compiling "FormModels"
-  new symbol file   4464   8
-compiling "FormViews"
-  new symbol file   3448   12
+compiling "FormModels"   4464   8
+compiling "FormViews"   3448   12
 compiling "DevMsgSpy"   4820   80
 compiling "HostPackedFiles"   6432   24
 compiling "DevPacker"   7632   0
-compiling "WinMM"
-  new symbol file   0   0
+compiling "WinMM"   0   0
 compiling "DevProfiler"   4976   6188
 compiling "DevRBrowser"   7132   0
 compiling "TextCmds"   11940   1064
-compiling "DevRTDebug"
-  new symbol file   38584   4072
+compiling "DevRTDebug"   38584   4072
 compiling "DevSearch"   5632   4
 compiling "DevSubTool"   3740   40
-compiling "FormControllers"
-  new symbol file   8312   8
-compiling "FormCmds"
-  new symbol file   4696   1036
-compiling "FormGen"
-  new symbol file   4032   544
+compiling "FormControllers"   8312   8
+compiling "FormCmds"   4696   1036
+compiling "FormGen"   4032   544
 compiling "HostBitmaps"   5352   0
+compiling "HostCmds"
+  Init is no longer in symbol file
+  txtConv is no longer in symbol file   5108   8
 compiling "HostConsole"   1944   28
-compiling "Files64"
-  new symbol file   172   104
+compiling "Files64"   172   104
 compiling "HostFiles64"   15916   564
-compiling "WinCmc"
-  new symbol file   0   0
+compiling "WinCmc"   0   0
 compiling "HostMail"   1056   12
 compiling "HostPictures"   9976   0
 compiling "StdTabViews"   10784   1072
 compiling "HostTabFrames"   6244   8
 compiling "HostTextConv"   28672   4
-compiling "ObxActions"
-  new symbol file   644   8
-compiling "ObxAddress0"
-  new symbol file   4   216
-compiling "ObxAddress1"
-  new symbol file   264   216
-compiling "ObxAddress2"
-  new symbol file   488   216
-compiling "ObxAscii"
-  new symbol file   1408   4
-compiling "ObxBitmap"
-  new symbol file   488   0
-compiling "ObxBlackBox"
-  new symbol file   7124   12
-compiling "ObxButtons"
-  new symbol file   1860   0
-compiling "ObxCalc"
-  new symbol file   2776   48
-compiling "ObxCaps"
-  new symbol file   328   0
-compiling "ObxContIter"
-  new symbol file   160   0
-compiling "ObxControls"
-  new symbol file   956   64
-compiling "ObxControlShifter"
-  new symbol file   112   0
-compiling "ObxConv"
-  new symbol file   460   0
-compiling "Coroutines"
-  new symbol file   1488   24
-compiling "ObxCoroutines"
-  new symbol file   1512   0
-compiling "ObxCount0"
-  new symbol file   300   0
-compiling "ObxCount1"
-  new symbol file   352   0
-compiling "ObxCtrls"
-  new symbol file   1304   4
-compiling "ObxCubes"
-  new symbol file   5500   1060
-compiling "ObxDb"
-  new symbol file   916   4
-compiling "ObxDialog"
-  new symbol file   1456   616
-compiling "OleStorage"
-  new symbol file   4484   0
-compiling "OleServer"
-  new symbol file   19512   12
-compiling "WinOleCtl"
-  new symbol file   0   0
-compiling "WinOleDlg"
-  new symbol file   0   0
-compiling "OleClient"
-  new symbol file   21284   20
-compiling "OleViews"
-  new symbol file   820   0
-compiling "ObxExcel"
-  new symbol file   2428   0
-compiling "Integers"
-  new symbol file   15560   16
-compiling "ObxFact"
-  new symbol file   908   0
-compiling "ObxRandom"
-  new symbol file   172   4
-compiling "In"
-  new symbol file   728   592
-compiling "Out"
-  new symbol file   580   8
-compiling "XYplane"
-  new symbol file   1944   24
-compiling "ObxFern"
-  new symbol file   1000   256
-compiling "ObxFileTree"
-  new symbol file   1600   1040
-compiling "ObxFldCtrls"
-  new symbol file   2576   8
-compiling "ObxGraphs"
-  new symbol file   1832   0
-compiling "ObxHello0"
-  new symbol file   32   0
-compiling "ObxHello1"
-  new symbol file   116   0
-compiling "ObxLabelLister"
-  new symbol file   148   0
-compiling "ObxLines"
-  new symbol file   2040   0
-compiling "ObxLinks"
-  new symbol file   1736   0
-compiling "ObxPhoneDB"
-  new symbol file   564   640
-compiling "ObxLookup0"
-  new symbol file   400   0
-compiling "ObxLookup1"
-  new symbol file   456   0
-compiling "ObxMMerge"
-  new symbol file   1352   0
-compiling "ObxOmosi"
-  new symbol file   4548   0
-compiling "ObxOpen0"
-  new symbol file   240   0
-compiling "ObxOpen1"
-  new symbol file   268   0
+compiling "ObxActions"   644   8
+compiling "ObxAddress0"   4   216
+compiling "ObxAddress1"   264   216
+compiling "ObxAddress2"   488   216
+compiling "ObxAscii"   1408   4
+compiling "ObxBitmap"   488   0
+compiling "ObxBlackBox"   7124   12
+compiling "ObxButtons"   1860   0
+compiling "ObxCalc"   2776   48
+compiling "ObxCaps"   328   0
+compiling "ObxContIter"   160   0
+compiling "ObxControls"   956   64
+compiling "ObxControlShifter"   112   0
+compiling "ObxConv"   460   0
+compiling "Coroutines"   1488   24
+compiling "ObxCoroutines"   1512   0
+compiling "ObxCount0"   300   0
+compiling "ObxCount1"   352   0
+compiling "ObxCtrls"   1304   4
+compiling "ObxCubes"   5500   1060
+compiling "ObxDb"   916   4
+compiling "ObxDialog"   1456   616
+compiling "OleStorage"   4484   0
+compiling "OleServer"   19512   12
+compiling "WinOleCtl"   0   0
+compiling "WinOleDlg"   0   0
+compiling "OleClient"   21284   20
+compiling "OleViews"   820   0
+compiling "ObxExcel"   2428   0
+compiling "Integers"   15560   16
+compiling "ObxFact"   908   0
+compiling "ObxRandom"   172   4
+compiling "In"   728   592
+compiling "Out"   580   8
+compiling "XYplane"   1944   24
+compiling "ObxFern"   1000   256
+compiling "ObxFileTree"   1600   1040
+compiling "ObxFldCtrls"   2576   8
+compiling "ObxGraphs"   1832   0
+compiling "ObxHello0"   32   0
+compiling "ObxHello1"   116   0
+compiling "ObxLabelLister"   148   0
+compiling "ObxLines"   2040   0
+compiling "ObxLinks"   1736   0
+compiling "ObxPhoneDB"   564   640
+compiling "ObxLookup0"   400   0
+compiling "ObxLookup1"   456   0
+compiling "ObxMMerge"   1352   0
+compiling "ObxOmosi"   4548   0
+compiling "ObxOpen0"   240   0
+compiling "ObxOpen1"   268   0
 compiling "StdStamps"   7740   176
-compiling "ObxOrders"
-  new symbol file   4512   2264
-compiling "ObxParCmd"
-  new symbol file   340   0
-compiling "ObxPatterns"
-  new symbol file   472   0
-compiling "ObxPDBRep0"
-  new symbol file   220   0
-compiling "ObxPDBRep1"
-  new symbol file   296   0
-compiling "ObxPDBRep2"
-  new symbol file   304   0
-compiling "ObxPDBRep3"
-  new symbol file   456   0
-compiling "ObxPDBRep4"
-  new symbol file   500   0
-compiling "ObxPhoneUI"
-  new symbol file   296   132
-compiling "ObxPhoneUI1"
-  new symbol file   116   128
-compiling "ObxPi"
-  new symbol file   444   0
-compiling "ObxRatCalc"
-  new symbol file   4620   24
-compiling "ObxSample"
-  new symbol file   72   0
-compiling "ObxScroll"
-  new symbol file   1868   0
-compiling "ObxStores"
-  new symbol file   1004   0
-compiling "ObxTabs"
-  new symbol file   644   512
-compiling "ObxTabViews"
-  new symbol file   676   8
-compiling "ObxTickers"
-  new symbol file   1760   12
-compiling "ObxTrap"
-  new symbol file   104   4
-compiling "ObxTwins"
-  new symbol file   2308   0
-compiling "ObxUnitConv"
-  new symbol file   496   72
-compiling "ObxViews0"
-  new symbol file   76   0
-compiling "ObxViews1"
-  new symbol file   144   0
-compiling "ObxViews10"
-  new symbol file   312   0
-compiling "ObxViews11"
-  new symbol file   556   0
-compiling "ObxViews12"
-  new symbol file   828   0
-compiling "ObxViews13"
-  new symbol file   956   0
-compiling "ObxViews14"
-  new symbol file   1328   8
-compiling "ObxViews2"
-  new symbol file   252   0
-compiling "ObxViews3"
-  new symbol file   284   0
-compiling "ObxViews4"
-  new symbol file   372   0
-compiling "ObxViews5"
-  new symbol file   836   0
-compiling "ObxViews6"
-  new symbol file   1028   0
-compiling "ObxWordEdit"
-  new symbol file   6288   8
-compiling "ObxWrappers"
-  new symbol file   724   0
-compiling "SqlDrivers"
-  new symbol file   744   0
-compiling "SqlDB"
-  new symbol file   12724   52
-compiling "SqlControls"
-  new symbol file   15188   8
-compiling "SqlBrowser"
-  new symbol file   752   2308
-compiling "SqlObxDB"
-  new symbol file   1420   152
-compiling "SqlObxExt"
-  new symbol file   416   152
-compiling "SqlObxNets"
-  new symbol file   1228   0
-compiling "SqlObxViews"
-  new symbol file   1992   0
-compiling "SqlObxGen"
-  new symbol file   1260   92
-compiling "SqlObxInit"
-  new symbol file   792   0
-compiling "SqlObxTab"
-  new symbol file   864   128
-compiling "SqlObxUI"
-  new symbol file   520   0
-compiling "WinSql"
-  new symbol file   0   0
-compiling "SqlOdbc"
-  new symbol file   9048   24
-compiling "SqlOdbc3"
-  new symbol file   9472   24
+compiling "ObxOrders"   4512   2264
+compiling "ObxParCmd"   340   0
+compiling "ObxPatterns"   472   0
+compiling "ObxPDBRep0"   220   0
+compiling "ObxPDBRep1"   296   0
+compiling "ObxPDBRep2"   304   0
+compiling "ObxPDBRep3"   456   0
+compiling "ObxPDBRep4"   500   0
+compiling "ObxPhoneUI"   296   132
+compiling "ObxPhoneUI1"   116   128
+compiling "ObxPi"   444   0
+compiling "ObxRatCalc"   4620   24
+compiling "ObxSample"   72   0
+compiling "ObxScroll"   1868   0
+compiling "ObxStores"   1004   0
+compiling "ObxTabs"   644   512
+compiling "ObxTabViews"   676   8
+compiling "ObxTickers"   1760   12
+compiling "ObxTrap"   104   4
+compiling "ObxTwins"   2308   0
+compiling "ObxUnitConv"   496   72
+compiling "ObxViews0"   76   0
+compiling "ObxViews1"   144   0
+compiling "ObxViews10"   312   0
+compiling "ObxViews11"   556   0
+compiling "ObxViews12"   828   0
+compiling "ObxViews13"   956   0
+compiling "ObxViews14"   1328   8
+compiling "ObxViews2"   252   0
+compiling "ObxViews3"   284   0
+compiling "ObxViews4"   372   0
+compiling "ObxViews5"   836   0
+compiling "ObxViews6"   1028   0
+compiling "ObxWordEdit"   6288   8
+compiling "ObxWrappers"   724   0
+compiling "SqlDrivers"   744   0
+compiling "SqlDB"   12724   52
+compiling "SqlControls"   15188   8
+compiling "SqlBrowser"   752   2308
+compiling "SqlObxDB"   1420   152
+compiling "SqlObxExt"   416   152
+compiling "SqlObxNets"   1228   0
+compiling "SqlObxViews"   1992   0
+compiling "SqlObxGen"   1260   92
+compiling "SqlObxInit"   792   0
+compiling "SqlObxTab"   864   128
+compiling "SqlObxUI"   520   0
+compiling "WinSql"   0   0
+compiling "SqlOdbc"   9048   24
+compiling "SqlOdbc3"   9472   24
 compiling "StdClocks"   1704   20
 compiling "StdCoder"   11348   17348
 compiling "StdDebug"   12012   4
@@ -431,32 +262,19 @@ compiling "StdMenuTool"   5272   12
 compiling "StdScrollers"   9788   44
 compiling "StdTables"   20008   572
 compiling "StdViewSizer"   1636   580
-compiling "Config"
-  new symbol file   1932   0
-compiling "Console"
-  new symbol file   172   0
+compiling "Config"   1932   0
+compiling "Console"   172   0
 compiling "Init"   200   0
-compiling "SMath"
-  new symbol file   2884   8
-compiling "Stores64"
-  new symbol file   3888   0
-compiling "WinGL"
-  new symbol file   0   0
-compiling "WinGLAux"
-  new symbol file   0   0
-compiling "WinGLUtil"
-  new symbol file   0   0
-compiling "WinRpc"
-  new symbol file   0   0
-compiling "XhtmlEntitySets"
-  new symbol file   312   0
-compiling "XhtmlWriters"
-  new symbol file   4   0
-compiling "XhtmlStdFileWriters"
-  new symbol file   2928   0
-compiling "XhtmlTextTableMarkers"
-  new symbol file   860   0
-compiling "XhtmlExporter"
-  new symbol file   7656   0
+compiling "SMath"   2884   8
+compiling "Stores64"   3888   0
+compiling "WinGL"   0   0
+compiling "WinGLAux"   0   0
+compiling "WinGLUtil"   0   0
+compiling "WinRpc"   0   0
+compiling "XhtmlEntitySets"   312   0
+compiling "XhtmlWriters"   4   0
+compiling "XhtmlStdFileWriters"   2928   0
+compiling "XhtmlTextTableMarkers"   860   0
+compiling "XhtmlExporter"   7656   0
 invoking DevLinker.Link
 zellview.exe written  155648  42218
