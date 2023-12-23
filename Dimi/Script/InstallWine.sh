@@ -1,9 +1,10 @@
-# SCRIPT InstallWine;
 
 
-#	by zellview new.media
-#	kk, 24.August 2023
-#	www.zellview.network
+# SCRIPT RemoveGit;
+
+#	by zellview media
+#	www.zellview.net
+#	kk, 22.August 2023
 		
 	echo "starting InstallWine"
 	

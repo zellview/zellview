@@ -1,20 +1,19 @@
+
+
 #! bin/bash      
 
-# MODULE DimiWriteIso;
+# SCRIPT DimiWriteIso;
 
-# 26. August 2023
-# version 3.2.06
 # by zellview media
 # www.github.com/zellview
+# kk, 22.Dezember 2023
 
-# CONST
     Modulename="DimiWriteIso"
-    Version="3.2.06"
+    DimiVersion="3.2.07"
+	Version=1
 
-# VAR
     destDevice=$1
 
-# BEGIN
     echo "start $Modulename"
     
     if [ -z "$destDevice" ]; then
@@ -22,14 +21,11 @@
         echo
         lsblk
         echo
-        echo "ATTENTION: All data on stick will be erased"
+        echo "ATTENTION: All data on the device will be erased"
         read -p "Write through which device? /dev/" destDevice
         destDevice=/dev/$destDevice
     fi
 
-    dd if=../../../zDev/dimi-iso/zv-dimi-$Version-ventoy.iso of=$destDevice bs=4M status=progress
+    dd if=../Rsrc/iso/zv-dimi-$DimiVersion-ventoy.iso of=$destDevice bs=4M status=progress
     
-    echo "$Modulename done"
-    echo
-    
-# END DimiWriteIso.
+    echo "Done $Modulename"

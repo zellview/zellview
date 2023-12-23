@@ -3,7 +3,7 @@
 
 #	by zellview new media
 #	www.zellview.network
-#	version 3.2.06
+#	Dimiversion 3.2.07
 #	24. August 2023
 
 	echo "start DimiInstallAnydesk"

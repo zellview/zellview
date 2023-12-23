@@ -1,9 +1,9 @@
 # SCRIPT DimiSetupExt;
 
 #	by zellview new media
-#	www.zellview.net
-#	24. August 2023
-#	version 3.2.06
+#	www.zellview.media
+#	dimiversion 3.2.06
+#	version  1
 
 # BEGIN
     echo "start DimiSetupExt"

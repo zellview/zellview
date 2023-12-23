@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Total Commander
+Exec=env WINEPREFIX="/home/piet/.wine" wine C:\\\\users\\\\Public\\\\Desktop\\\\Total\\ Commander.lnk
+Type=Application
+StartupNotify=true
+Comment=C:\Program Files\totalcmd\totalcmd.exe
+Icon=B838_totalcmd.0
+StartupWMClass=totalcmd.exe

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=BlackBox Component Builder 1.7.2
+Exec=env WINEPREFIX="/home/piet/.wine" wine C:\\\\Program\\ Files\\ \\(x86\\)\\\\BlackBox\\ Component\\ Builder\\ 1.7.2\\\\BlackBox.exe 
+Type=Application
+StartupNotify=true
+Path=/home/piet/.wine/dosdevices/c:/Program Files (x86)/BlackBox Component Builder 1.7.2
+Icon=9F1C_BlackBox.0
+StartupWMClass=blackbox.exe

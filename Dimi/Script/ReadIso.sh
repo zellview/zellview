@@ -6,7 +6,6 @@
 # www.github.com/zellview
 # by zellview media
 
-# CONST
     Modulename="DimiReadIso"
 
 # VAR
