@@ -1,23 +1,17 @@
+# SCRIPT DimiWriteIso
+# 
 
-
-#! bin/bash      
-
-# SCRIPT DimiWriteIso;
-
+# kk, 25.Dezember 2023
 # by zellview media
-# www.github.com/zellview
-# kk, 22.Dezember 2023
+# www.zellview.net
 
-    Modulename="DimiWriteIso"
-    DimiVersion="3.2.07"
-	Version=1
+	version="3.2.08"
 
+    echo "start DimiWriteIso version "$version
     destDevice=$1
-
-    echo "start $Modulename"
     
     if [ -z "$destDevice" ]; then
-        echo "This script will write zv-dimi-$Version iso-image to USB-stick."
+        echo "This script will write zv-dimi-$version iso-image to USB-stick."
         echo
         lsblk
         echo
@@ -26,6 +20,6 @@
         destDevice=/dev/$destDevice
     fi
 
-    dd if=../Rsrc/iso/zv-dimi-$DimiVersion-ventoy.iso of=$destDevice bs=4M status=progress
+    dd if=~/zDev/dimi-iso/zv-dimi-$version-ventoy.iso of=$destDevice bs=4M status=progress
     
-    echo "Done $Modulename"
+    echo "Done DimiWriteIso"

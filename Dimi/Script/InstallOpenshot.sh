@@ -1,15 +1,15 @@
-# SCRIPT InstallAudacity;
+# SCRIPT DimiInstallOpenshot
+# 
 
+#	kk 25. Dezember 2023
+#	by zellview media
+#	www.zellview.net
+#	3.2.08
 
-#	by zellview new media	
-#	www.zellview.network
-#	24. August 2023
-#	v 3.2.06
+echo "start DimiInstallOpenshot version "$version
 
-echo "start InstallAudacity"
-
-add-apt-repository ppa:ubuntuhandbook1/audacity
+add-apt-repository ppa:ubuntuhandbook1/audacity -y
 apt update -y
-sudo apt install audacity
+sudo apt install audacity -y
 
-echo "InstallAudacity done"
+echo "Done DimiInstallOpenshot"

@@ -1,26 +1,26 @@
+# SCRIPT DimiInstallWine
+# 
 
+# kk, 25.Dezember 2023
+# by zellview media
+# www.zellview.net
 
-# SCRIPT RemoveGit;
-
-#	by zellview media
-#	www.zellview.net
-#	kk, 22.August 2023
+	version="3.2.08"
 		
-	echo "starting InstallWine"
+	echo "starting DimiInstallWine version "$version
 	
-	dpkg--add-architecture i386 
+	dpkg--add-architecture i386 -y
 
 	mkdir -pm755 /etc/apt/keyrings
 	
 	wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
 	wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources
 	
-#	sudo add-apt-repository ppa:ubuntu-wine/ppa
-#	sudo apt-get update
+	sudo add-apt-repository ppa:ubuntu-wine/ppa
 
 	apt update -y
 	apt install --install-recommends winehq-stable -y
 	apt install playonlinux -y
 
-	echo "InstallWine done"
-
+	echo "Done DimiInstallWine"
+	

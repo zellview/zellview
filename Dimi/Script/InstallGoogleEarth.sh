@@ -1,19 +1,20 @@
+# SCRIPT DimiInstallGoogleEarth
+# 
 
-# SCRIPT InstallGoogleEarth
+# kk 25. Dezember 2023
+# by zellview media 
+# www.zellview.net
 
+	version="3.2.08"
 
-#	by zellview media 24. August 2023
-#	www.zellview.network
+    echo "start DimiInstallGoogleEarth version "$version
 
-    echo "start InstallGoogleEarth"
-
-    echo -n "get debian install package ... "
+    echo -n "get debian package ... "
     wget -O ~/google-earth.deb https://dl.google.com/dl/earth/client/current/google-earth-pro-stable_current_amd64.deb
-    echo "done"
+    echo "Done"
 
     echo -n "install package ... "
-    sudo dpkg -i ~/google-earth.deb
+    dpkg -iy
+	rm ~/google-earth.deb 
 
-    echo "InstallGoogleEarth done"
-
-
+    echo "Done DimiInstallGoogleEarth"

@@ -1,33 +1,33 @@
 # SCRIPT DimiCreateStick;
+# 
 
+#	kk, 25. Dezember 2023
+#	by zellview media
+#	www.zellview.net
 
-#	by zellview new media
-#	www.zellview.network
-#	24. August 2023
-#	version 3.2.06
+	version="3.2.08"
+	
+	echo "start DimiCreateStick version "$version	
 
-# VAR
-	sourceUrl="https://download.zellview.network"    # resource locator
+	sourceUrl="https://download.zellview.net"    # resource locator
 	destDevice=$1	# destination device
 
-	version="3.2.06"
 	name="zellview dimi"
 	label="zv-dimi"
-	release="Victoria"
+	release="xmas 2023"
 
 	mountPt="mountPoint"
 	persistPt="persistence"
 
-	persistVol="zv-persist-6G-empty.dat"
 	
 	reservedSpace=48500     # use for 64GB sticks
 #	reservedSpace=21500     # use for 32GB sticks
     
 #	persistVol="zv-persist-mini.dat"
 #	persistVol="zv-persist-4G.dat"
+	persistVol="zv-persist-6G-empty.dat"
 #	persistVol="zv-persist-12G.dat"
 
-# BEGIN
 	echo "start DimiCreateStick"
 	echo "zellview-dimi is an operating-system,"
 	echo "based on Linuxmint and Ubuntu."
@@ -114,9 +114,7 @@
 	sudo umount $mountPt
 	echo "remove $mountPt"
 	sudo rm $mountPt -rf
-	echo "DimiCreateStick done"
-
-# END CreateStick.
+	echo "Done DimiCreateStick"
 
 echo "$name installed succesfully on device $destDevice."
 echo "Shutdown your computer and boot from this device"
@@ -126,7 +124,7 @@ echo
 echo "feedback is welcome  zellview@posteo.de"
 echo
 echo "visit us at github   www.github.com/zellview"
-echo "consider to sponsor  zellview ? https://sponsor.zellview.network"
+echo "consider to sponsor  zellview ? https://zellview.eu"
 echo
 echo "keep the spirit of Pascal and the message of Niklaus Wirth"
 echo "cu"

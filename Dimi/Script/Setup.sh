@@ -1,73 +1,71 @@
-# SCRIPT DimiSetup; 
+# SCRIPT DimiSetup
+# 
+ 
+# kk 25. Dezember 2023
+# by zellview media
+# www.zellview.net
 
-#	by zellview new media
-#	www.zellview.network
-#	version 3.2.06, 20. August 2023
+	version="3.2.08"
 
-# BEGIN
-	echo "start DimiSetup"
-	echo "by zellview new media"
-	echo "www.zellview.network"
+	echo "start DimiSetup version "$version
+	echo "by zellview media www.zellview.net"
 	echo
 	echo "This script will install software-set for zellview-dimi."
-	echo 
 	echo "eg blackbox2 git kazam kate krusader retext wine xfburn etc"
 	echo
-	echo "feedback is welcome   zellview@posteo.de"
+	echo "feedback and PayPal is welcome at zellview@posteo.de"
 	echo "visit us at GitHub www.github.com/zellview"
-	echo
-	echo "consider to sponsor zellview ? https://sponsor.zellview.network"
 	echo
 	echo "Press RETURN to continue or CTRL+C to abort."
 	read tmp
 
-	echo "apt update"
-	apt update -y
+	echo "apt-get update"
+	apt-get update -y
 
 	echo "install git"
-	apt install git -y
+	apt-get install git -y
 
 	echo "install blackbox2"
 	sh InstallBlackbox2.sh
 
 	echo "install kate"
-	apt install kate -y
+	apt-get install kate -y
 
 	echo "install wine"
 	sh InstallWine.sh
+#	apt-get install wine-installer
 	
-	echo "install XRDP-Server"
-	sh InstallXRDP.sh
+#	echo "install XRDP-Server"
+#	sh InstallXRDP.sh
 	
-	echo "install XRDP-Client Remmina"
-	apt install remmina
+#	echo "install XRDP-Client Remmina"
+#	apt-get install remmina -y
+	
+	echo "install anydesk"
+	sh InstallAnydesk.sh
 
 	echo "install kazam"
-	apt install kazam -y
+	apt-get install kazam -y
   
 	echo "install krusader"
-	apt install krusader -y
+	apt-get install krusader -y
 
 	echo "install retext"
-	apt install retext -y
+	apt-get install retext -y
     
 	echo "install xfburn"
-	apt install xfburn -y
+	apt-get install xfburn -y
     
 	echo "apt update"
 	apt update -y
 	echo
 
-#	END DimiSetup.
-
-echo "install succesfully finnished"
+echo "Done DimiSetup"
 echo "enjoy and happy coding"
-echo
-echo "feedback welcome at zellview@posteo.de"
-echo
-echo "visit us at GitHub https://github.com/zellview"
-echo
-echo "consider to sponsor zellview ? https://.zellview.eu"
+echo "sponsoring via PayPal or"
+echo "feedback is welcome at"
+echo "zellview@posteo.de"
+echo "visit us at GitHub www.github.com/zellview"
 echo
 echo "keep the spirit of Pascal and the message of Niklaus Wirth"
 echo "cu"

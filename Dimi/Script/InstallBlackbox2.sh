@@ -1,18 +1,18 @@
-# SCRIPT InstallBlackbox2;
+# SCRIPT DimiInstallBlackbox2
+# 
 
+# kk 25 Dezember 2023
+# by zellview media
+# www.zellview.net
 
-#	by zellview new media	
-#	www.zellview.network
-#	24. August 2023
-#	v 3.2.06
+	version="3.2.08"
 
-    echo
-    echo "start InstallBlackbox2"
+    echo "start DimiInstallBlackbox2 version "$version
 	wget http://deb.oberon.org/deb.oberon.org.gpg.key 
 
 	apt-key add deb.oberon.org.gpg.key
 	echo "add i386 architecture"
-    dpkg --add-architecture i386
+    dpkg --add-architecture i386 -y
 
     echo "add source to apt/sources"
     echo "deb http://deb.oberon.org/linux testing main" | sudo tee -a /etc/apt/sources.list
@@ -20,4 +20,4 @@
     apt-get update -y
     apt-get install bbcb2 -y
 
-    echo "InstallBlackbox2 done "
+    echo "Done DimiInstallBlackbox2"

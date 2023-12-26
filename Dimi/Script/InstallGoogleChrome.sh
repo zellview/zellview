@@ -1,14 +1,13 @@
-# SCRIPT InstallGoogleChrome;
+# SCRIPT InstallGoogleChrome
+# 
 
+# kk, 25. Dezember 2023
+# by zellview media
+# www.zellview.net
 
-# by zellview new media
-# version 3.2.06
-# 24. August 2023
+	version="3.2.08"
 
-	echo
-	echo "install google-chrome"
-	echo "start InstallGoogleChrome"
-	echo
+	echo "start DimiInstallGoogleChrome version "$version
 
 	cd ../Rsrc/deb
 
@@ -18,10 +17,10 @@
 
 	echo -n "install package ... "
 #	sudo dpkg -i ../Rsrc/deb/google-chrome-stable_current_amd64.deb
-		sudo apt install ./google-chrome-stable_current_amd64.deb -y
-		echo "done"
+	sudo apt install ./google-chrome-stable_current_amd64.deb -y
+	echo "done"
 
 	cd ../../Script
 
-	echo "InstallGoogleChrome done"
+	echo "Done DimiInstallGoogleChrome"
 	

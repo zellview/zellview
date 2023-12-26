@@ -1,14 +1,15 @@
-# SCRIPT DimiSetupExt;
+# SCRIPT DimiSetupExt
+# 
 
-#	by zellview new media
-#	www.zellview.media
-#	dimiversion 3.2.06
-#	version  1
+# kk 25. Dezember 2023
+# by zellview media
+# www.zellview.net
 
-# BEGIN
-    echo "start DimiSetupExt"
-    echo "by zellview new media"
-    echo "www.zellview.network"
+	version="3.2.08"
+
+    echo "start DimiSetupExt version "$version
+    echo "by zellview media"
+    echo "www.zellview.net"
     echo
     echo "This script will install extended software-set for zellview-dimi."
     echo 
@@ -17,25 +18,25 @@
     echo "feedback is welcome   zellview@posteo.de"
     echo "visit us at GitHub https://github.com/zellview"
     echo
-    echo "consider to sponsor zellview ? https://sponsor.zellview.network"
+    echo "consider to sponsor zellview ? https://zellview.eu"
     echo
     echo "Press RETURN to continue or CTRL+C to abort."
     read tmp
 
-    echo "apt update"
-    apt update -y
+    echo "apt-get update"
+    apt-get update -y
 
 	echo "install openshot"
-	sudo sh InstallOpenshot.sh
+	sh InstallOpenshot.sh
 
 	echo "install audacity"
-	sudo sh InstallAudacity.sh
+	sh InstallAudacity.sh
 
 	echo "install google-earth"
-	sudo sh InstallGoogleEarth.sh
-
-#	echo "install anydesk"
-#	sudo sh .install-anydesk.sh
+	sh InstallGoogleEarth.sh
+	
+	echo "install cubic"
+	sh InstallCubic	
 
 #    echo "install snap"
 #    sudo apt install snapd
@@ -49,8 +50,6 @@
 	sudo apt update -y
 	echo
 
-# END DimiSetupExt.
-
 echo "install succesfully finnished"
 echo "enjoy and happy coding"
 echo
@@ -58,7 +57,7 @@ echo "feedback welcome at zellview@posteo.de"
 echo
 echo "visit us at GitHub https://github.com/zellview"
 echo
-echo "consider to sponsor zellview ? https://sponsor.zellview.network"
+echo "consider to sponsor zellview ? https://zellview.eu"
 echo
 echo "keep the spirit of Pascal and the message of Niklaus Wirth"
 echo "cu"

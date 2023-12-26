@@ -1,11 +1,12 @@
-#	SCRIPT DimiConfig;  
+# SCRIPT DimiConfig
+# 
+# kk 25. Dezember 2023
+# by zellview media
+# www.zellview.net
 
-#	by zellview new media
-#	www.zellview.network
-#	version 3.2.06
-#	24. August 2023
+	version="3.2.08"
 
-	echo "start DimiConfig"
+	echo "start DimiConfig version "$version
 	echo "This script will configure some settings for zellview-dimi"
 	echo "keyboard, timezone, background etc"
 
@@ -16,6 +17,6 @@
 	ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 
 	echo "set background to zellview3_cloudy.png"
-	ln -sf /zellview/Dimi/Rsrc/zellview3_cloudy.png /usr/share/backgrounds/linuxmint/default_background.jpg
+	ln -sf ../Rsrc/zellview3_cloudy.png /usr/share/backgrounds/linuxmint/default_background.jpg
 
-	echo "DimiConfig done" 
+	echo "Done DimiConfig"
