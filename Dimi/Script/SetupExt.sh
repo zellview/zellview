@@ -7,7 +7,7 @@
 
 	version="3.2.08"
 
-    echo "start DimiSetupExt version "$version
+    echo "start DimiSetupExt version v "$version
     echo "by zellview media"
     echo "www.zellview.net"
     echo
@@ -29,14 +29,14 @@
 	echo "install openshot"
 	sh InstallOpenshot.sh
 
-	echo "install audacity"
-	sh InstallAudacity.sh
-
 	echo "install google-earth"
 	sh InstallGoogleEarth.sh
 	
 	echo "install cubic"
-	sh InstallCubic	
+	sh InstallCubic.sh	
+
+	echo "install audacity"
+	sh InstallAudacity.sh
 
 #    echo "install snap"
 #    sudo apt install snapd

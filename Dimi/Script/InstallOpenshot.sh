@@ -1,15 +1,14 @@
 # SCRIPT DimiInstallOpenshot
 # 
 
-#	kk 25. Dezember 2023
-#	by zellview media
-#	www.zellview.net
-#	3.2.08
+#	seq 12 on 2023-12-26
+#	by zellview media, www.zellview.net
+#	version 3.2.08
 
 echo "start DimiInstallOpenshot version "$version
 
-add-apt-repository ppa:ubuntuhandbook1/audacity -y
-apt update -y
-sudo apt install audacity -y
+add-apt-repository ppa:openshot.developers/ppa -y
+apt-get update -y
+apt-get install openshot-qt python3-openshot -y
 
 echo "Done DimiInstallOpenshot"

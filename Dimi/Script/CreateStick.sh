@@ -1,7 +1,7 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	kk, 25. Dezember 2023
+#	seq 17 on 2023-12-26
 #	by zellview media
 #	www.zellview.net
 
@@ -9,16 +9,16 @@
 	
 	echo "start DimiCreateStick version "$version	
 
-	sourceUrl="https://download.zellview.net"    # resource locator
 	destDevice=$1	# destination device
+	
+	sourceUrl=""
 
-	name="zellview dimi"
-	label="zv-dimi"
+	name="zellview abba"
+	label="zv-abba"
 	release="xmas 2023"
 
 	mountPt="mountPoint"
 	persistPt="persistence"
-
 	
 	reservedSpace=48500     # use for 64GB sticks
 #	reservedSpace=21500     # use for 32GB sticks
@@ -74,18 +74,18 @@
 
 	echo "cleanup mountpoint"
 	echo "unmount $mountPt"
-	sudo umount $mountPt
+	umount $mountPt
 	echo "remove $mountPt"
-	sudo rm $mountPt -rf
+	rm $mountPt -rf
 	echo
 
 	echo "Ventoy2Disc to $destDevice, label $label"
-	sudo sh Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $label $destDevice
+	sh Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $label $destDevice
 
 	echo "make dir $mountPt"
 	mkdir $mountPt
 	echo "mount ${destDevice}1 on $mountPt"
-	sudo mount ${destDevice}1 $mountPt
+	mount ${destDevice}1 $mountPt
 	echo
 
 	echo -n "copy Rsrc/tmpl/ventoy to $mountPoint ... "
@@ -93,7 +93,7 @@
 	echo "done"
 
 	echo -n "copy iso-image to $mountPt ... "
-	cp ../../zDev/dimi-iso/$label-$version-pure.iso $mountPt
+	cp ~/zDev/dimi-iso/$label-$version-pure.iso $mountPt
 	echo "done"
 
 	echo "make dir $mountPt/$persistPt"
@@ -111,20 +111,21 @@
 
 	echo "cleanup mountpoint"
 	echo "unmount $mountPt"
-	sudo umount $mountPt
+	umount $mountPt
 	echo "remove $mountPt"
-	sudo rm $mountPt -rf
+	rm $mountPt -rf
 	echo "Done DimiCreateStick"
 
-echo "$name installed succesfully on device $destDevice."
+echo "$label-$version-pure.iso installed succesfully on device $destDevice."
 echo "Shutdown your computer and boot from this device"
 echo
 echo "enjoy and happy coding"
 echo
-echo "feedback is welcome  zellview@posteo.de"
+echo "sponsoring via PayPal and"
+echo "feedback is welcome  at"
+echo "zellview@posteo.de""
 echo
-echo "visit us at github   www.github.com/zellview"
-echo "consider to sponsor  zellview ? https://zellview.eu"
+echo "join us at github   www.github.com/zellview"
 echo
 echo "keep the spirit of Pascal and the message of Niklaus Wirth"
 echo "cu"

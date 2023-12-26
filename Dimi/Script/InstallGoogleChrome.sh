@@ -1,7 +1,7 @@
 # SCRIPT InstallGoogleChrome
 # 
 
-# kk, 25. Dezember 2023
+# seq 16 on 2023-12-26
 # by zellview media
 # www.zellview.net
 
@@ -9,18 +9,20 @@
 
 	echo "start DimiInstallGoogleChrome version "$version
 
-	cd ../Rsrc/deb
+#	cd ../Rsrc/deb
 
-	echo -n "get debian install package ... "
-	wget -nc -O google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-	echo "done"
+#	echo -n "get debian install package ... "
+
+#	wget --no-clobber -O google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#	echo "done"
+
+	apt-get update
 
 	echo -n "install package ... "
-#	sudo dpkg -i ../Rsrc/deb/google-chrome-stable_current_amd64.deb
-	sudo apt install ./google-chrome-stable_current_amd64.deb -y
+	apt-get install google-chrome-stable_current_amd64.deb -y
 	echo "done"
 
-	cd ../../Script
+#	cd ../../Script
 
 	echo "Done DimiInstallGoogleChrome"
 	

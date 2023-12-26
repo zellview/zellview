@@ -1,16 +1,14 @@
 # SCRIPT DimiInstallAudacity
 # 
 
-# kk 25. Dezember 2023
-# by zellview media
-# www.zellview.net
+# seq 20 on 2023-12-26
+# by zellview media, www.zellview.net
 
 version="3.2.08"
-seqno=17
 
 echo "start DimiInstallAudacity version "$version
 
-add-apt-repository ppa:ubuntuhandbook1/audacity
+add-apt-repository ppa:ubuntuhandbook1/audacity -y
 apt update -y
 apt-get install audacity -y
 
