@@ -1,11 +1,11 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	seq 17 on 2023-12-26
+#	seq 17 on 2023-12-30
 #	by zellview media
 #	www.zellview.net
 
-	version="3.2.08"
+	version="3.2.09"
 	
 	echo "start DimiCreateStick version "$version	
 
@@ -15,12 +15,12 @@
 
 	name="zellview abba"
 	label="zv-abba"
-	release="xmas 2023"
+	release="New Year 2024 rc1"
 
 	mountPt="mountPoint"
 	persistPt="persistence"
 	
-	reservedSpace=48500     # use for 64GB sticks
+	reservedSpace=42000    # use for 64GB sticks
 #	reservedSpace=21500     # use for 32GB sticks
     
 #	persistVol="zv-persist-mini.dat"
@@ -28,7 +28,6 @@
 	persistVol="zv-persist-6G-empty.dat"
 #	persistVol="zv-persist-12G.dat"
 
-	echo "start DimiCreateStick"
 	echo "zellview-dimi is an operating-system,"
 	echo "based on Linuxmint and Ubuntu."
 	echo
@@ -36,7 +35,7 @@
 	echo
 	lsblk
 	echo
-	read -p "Install zellview-dimi on which device? /dev/" destDevice
+	read -p "Install zellview-abba on which device? /dev/" destDevice
 	destDevice=/dev/$destDevice
 
 	echo
@@ -93,7 +92,7 @@
 	echo "done"
 
 	echo -n "copy iso-image to $mountPt ... "
-	cp ~/zDev/dimi-iso/$label-$version-pure.iso $mountPt
+	cp /root/zCommit/dimi-image/$label-$version-fresh.iso $mountPt
 	echo "done"
 
 	echo "make dir $mountPt/$persistPt"
@@ -121,13 +120,15 @@ echo "Shutdown your computer and boot from this device"
 echo
 echo "enjoy and happy coding"
 echo
-echo "sponsoring via PayPal and"
-echo "feedback is welcome  at"
-echo "zellview@posteo.de""
+echo "sponsoring and feedback via PayPal"
+echo "is welcome and appreciated here"
+echo "zellview@posteo.de"
 echo
-echo "join us at github   www.github.com/zellview"
+echo "feel free to join us at github"
+echo "www.github.com/zellview"
 echo
 echo "keep the spirit of Pascal and the message of Niklaus Wirth"
 echo "cu"
 echo
 echo "the zellview-team"
+echo
