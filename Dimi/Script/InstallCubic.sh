@@ -1,18 +1,22 @@
-# SCRIPT DimiInstallCubic;
+# SCRIPT DimiInstallCubic
 # 
 
-#	seq 22 on 2023-12-26
+#	seq 26 on 2024-01-03
 #	by zellview media
-#	www.zellview.media
+#	www.zellview.net
 
-	version="3.2.08"
+	version="3.2.10"
 
-	echo "starting DimiInstallCubic v "$version
+	echo "starting DimiInstallCubic "$version
 
-	apt-add-repository ppa:cubic-wizard/release -y
-	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6494C6D6997C215E -y
+	sudo apt-add-repository universe -y
+	sudo apt-add-repository ppa:cubic-wizard/release -y
+	sudo apt update -y
+	sudo apt-get install --no-install-recommends cubic -y
 
-	apt update -y
-	apt install cubic -y
+#	apt-add-repository ppa:cubic-wizard/release -y
+#	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6494C6D6997C215E -y
 
 	echo "Done DimiInstallCubic"
+	
+# END DimiInstallCubic.
