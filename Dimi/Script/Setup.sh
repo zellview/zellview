@@ -1,11 +1,11 @@
 # SCRIPT DimiSetup
 # 
  
-# kk 25. Dezember 2023
+# 3. Januar 2024
 # by zellview media
 # www.zellview.net
 
-	version="3.2.08"
+	version="3.2.10"
 
 	echo "start DimiSetup version "$version
 	echo "by zellview media www.zellview.net"
@@ -13,8 +13,11 @@
 	echo "This script will install software-set for zellview-dimi."
 	echo "eg blackbox2 git kazam kate krusader retext wine xfburn etc"
 	echo
-	echo "feedback and PayPal is welcome at zellview@posteo.de"
-	echo "visit us at GitHub www.github.com/zellview"
+	echo "feedback and sponsoring via"
+	echo "PayPal is appreciated here"
+	echo "zellview@posteo.de"
+	
+	echo "join us at GitHub www.github.com/zellview"
 	echo
 	echo "Press RETURN to continue or CTRL+C to abort."
 	read tmp
@@ -62,10 +65,12 @@
 
 echo "Done DimiSetup"
 echo "enjoy and happy coding"
-echo "sponsoring via PayPal or"
-echo "feedback is welcome at"
+echo
+echo "sponsoring via PayPal and"
+echo "feedback is appreciated here"
 echo "zellview@posteo.de"
-echo "visit us at GitHub www.github.com/zellview"
+
+echo "join us at GitHub www.github.com/zellview"
 echo
 echo "keep the spirit of Pascal and the message of Niklaus Wirth"
 echo "cu"

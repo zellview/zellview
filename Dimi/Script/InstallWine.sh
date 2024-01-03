@@ -1,15 +1,15 @@
 # SCRIPT DimiInstallWine
 # 
 
-# kk, 25.Dezember 2023
+# seq 18 on 03. Janaur 2024
 # by zellview media
 # www.zellview.net
 
-	version="3.2.08"
+	version="3.2.10"
 		
-	echo "starting DimiInstallWine version "$version
+	echo "starting DimiInstallWine "$version
 	
-	dpkg--add-architecture i386 -y
+	dpkg --add-architecture i386
 
 	mkdir -pm755 /etc/apt/keyrings
 	
