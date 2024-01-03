@@ -7,7 +7,7 @@
 
 	version="3.2.10"
 
-	echo "start DimiSetup version "$version
+	echo "start DimiSetup "$version
 	echo "by zellview media www.zellview.net"
 	echo
 	echo "This script will install software-set for zellview-dimi."
@@ -16,7 +16,7 @@
 	echo "feedback and sponsoring via"
 	echo "PayPal is appreciated here"
 	echo "zellview@posteo.de"
-	
+	echo
 	echo "join us at GitHub www.github.com/zellview"
 	echo
 	echo "Press RETURN to continue or CTRL+C to abort."
@@ -67,9 +67,10 @@ echo "Done DimiSetup"
 echo "enjoy and happy coding"
 echo
 echo "sponsoring via PayPal and"
-echo "feedback is appreciated here"
+echo "feedback is appreciated"
+echo "here"
 echo "zellview@posteo.de"
-
+echo
 echo "join us at GitHub www.github.com/zellview"
 echo
 echo "keep the spirit of Pascal and the message of Niklaus Wirth"
