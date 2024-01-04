@@ -1,15 +1,21 @@
 # SCRIPT DimiCreateImage
 # 
 
-# seq 5 on 3. Januar 2024
+# seq 7 on 2024-01-04
 # by zellview media
 # www.zellview.net
 
 cd ../..
 
 mkdir ../dimi-image
-cp Dimi/Rsrc/iso-conf/cubic.conf ../dimi-image
+cd ../dimi-image
 
-cubic ../dimi-image
+cp ../zellview/Dimi/Rsrc/iso-conf/cubic.conf .
+
+wget https://download.zellview.net/linuxmint-21.2-cinnamon-64bit.iso
+
+cd ..
+
+cubic dimi-image
 
 # END DimiCreateImage.

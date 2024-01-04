@@ -1,7 +1,7 @@
 {
     "control": [
         { "VTOY_MENU_TIMEOUT": "12" },
-        { "VTOY_DEFAULT_IMAGE": "/zv-abba-3.2.10-fresh.iso" },
+        { "VTOY_DEFAULT_IMAGE": "/zv-abba-3.2.11-fresh.iso" },
         { "VTOY_SECONDARY_BOOT_MENU": "0" }
     ],
 		
@@ -17,14 +17,14 @@
 
     "menu_alias": [
         {
-            "image": "/zv-abba-3.2.10-fresh.iso",
+            "image": "/zv-abba-3.2.11-fresh.iso",
             "alias": "zellview - abba - 3.2"
         }
     ],
 
     "persistence": [
         {
-            "image":  "/zv-abba-3.2.10-fresh.iso",
+            "image":  "/zv-abba-3.2.11-fresh.iso",
             "backend": "/persistence/persistence.dat",
             "autosel": 1
         }
