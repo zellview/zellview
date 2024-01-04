@@ -1,26 +1,27 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	seq 17 on 2023-12-30
+#	seq 28 on 2024-01-04
 #	by zellview media
 #	www.zellview.net
 
-	version="3.2.09"
+	version="3.2.11"
 	
-	echo "start DimiCreateStick version "$version	
+	echo "start DimiCreateStick "$version
 
 	destDevice=$1	# destination device
 	
-	sourceUrl=""
+	source="www.zellview.net"
+	file="zellview.net/zellview/Dimi/Mod/CreateStick"
 
 	name="zellview abba"
 	label="zv-abba"
-	release="New Year 2024 rc1"
+	release="New Year 2024 rc3"
 
 	mountPt="mountPoint"
 	persistPt="persistence"
 	
-	reservedSpace=42000    # use for 64GB sticks
+	reservedSpace=32000    # use for 64GB sticks
 #	reservedSpace=21500     # use for 32GB sticks
     
 #	persistVol="zv-persist-mini.dat"
@@ -28,7 +29,7 @@
 	persistVol="zv-persist-6G-empty.dat"
 #	persistVol="zv-persist-12G.dat"
 
-	echo "zellview-dimi is an operating-system,"
+	echo "zellview-dimi is platform and operating-system"
 	echo "based on Linuxmint and Ubuntu."
 	echo
 	echo "Evaluate the appropriate device to install."
@@ -40,9 +41,9 @@
 
 	echo
 	echo "************************************************************ "
-	echo "$name  -  '$release'"
+	echo "$name  -  $label - $release"
 	echo
-	echo "source-URL   $sourceUrl"
+	echo "source		   $source"
 	echo "feedback     zellview@posteo.de"
 	echo "base         linuxmint 21.2 victoria"
 	echo "boot         ventoy 91"
@@ -50,26 +51,19 @@
 
 #    echo "persistVolume      $persistVol"
 #    echo "persistVolumeSize  $persistSize MB"
-
 #    echo "workImage         $workImage"
 #    echo "workImagesize     $workImagesize MB"
-#    echo
 #    echo "sourceImagename   $sourceImagename"
-#    echo
 #    echo "mointpoint        $mountPt"
 #    echo "persistPoint      $persistPt"
-#    echo
 
-	echo "This script will install zellview-dimi on destination-device"
-	echo "************"
-	echo $destDevice
-	echo "************"
-	echo
+	echo "This script will install zellview-abba on destination-device"
+	echo ">>> $destDevice <<<"
 	echo "Press RETURN to continue or CTRL+C to abort."
 	read tmp
 
-	# Dimi/Script -> Dimi
-	cd ..
+	# Dimi/Script -> zellview
+	cd ../..
 
 	echo "cleanup mountpoint"
 	echo "unmount $mountPt"
@@ -79,7 +73,7 @@
 	echo
 
 	echo "Ventoy2Disc to $destDevice, label $label"
-	sh Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $label $destDevice
+	sh Dimi/Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $label $destDevice
 
 	echo "make dir $mountPt"
 	mkdir $mountPt
@@ -88,11 +82,11 @@
 	echo
 
 	echo -n "copy Rsrc/tmpl/ventoy to $mountPoint ... "
-	cp Rsrc/tmpl/ventoy $mountPt -r
+	cp Dimi/Rsrc/tmpl/ventoy $mountPt -rv
 	echo "done"
 
 	echo -n "copy iso-image to $mountPt ... "
-	cp /root/zCommit/dimi-image/$label-$version-fresh.iso $mountPt
+	cp ../dimi-image/$label-$version-fresh.iso $mountPt
 	echo "done"
 
 	echo "make dir $mountPt/$persistPt"
@@ -106,7 +100,7 @@
 #   cp Rsrc/$persistVolMini.zip $mountPt/$persistPt 
 
 	echo "unzip $persistVol.zip to $persistPt"
-	unzip Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
+	unzip Dimi/Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
 
 	echo "cleanup mountpoint"
 	echo "unmount $mountPt"
@@ -115,14 +109,14 @@
 	rm $mountPt -rf
 	echo "Done DimiCreateStick"
 
-echo "$label-$version-pure.iso installed succesfully on device $destDevice."
+echo "$label-$version-fresh.iso installed succesfully on device $destDevice."
 echo "Shutdown your computer and boot from this device"
 echo
 echo "enjoy and happy coding"
 echo
-echo "sponsoring and feedback via PayPal"
-echo "is welcome and appreciated here"
-echo "zellview@posteo.de"
+echo "sponsoring via PayPal and feedback and hello"
+echo "is appreciated here zellview@posteo.de"
+echo "or here www.zellview.eu"
 echo
 echo "feel free to join us at github"
 echo "www.github.com/zellview"
