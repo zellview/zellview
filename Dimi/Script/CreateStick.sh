@@ -14,8 +14,9 @@
 	source="www.zellview.net"
 	file="zellview.net/zellview/Dimi/Mod/CreateStick"
 
-	name="zellview dimi"
-	label="zvdimi"
+	name="zellview abba"
+	labelventoy="zvabba"
+	labelfresh="zv dimi"
 	release="New Year 2024 rc4"
 
 	mountPt="mountPoint"
@@ -73,7 +74,7 @@
 	echo
 
 	echo "Ventoy2Disc to $destDevice, label $label"
-	sh Dimi/Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $label $destDevice
+	sh Dimi/Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $labelventoy $destDevice
 
 	echo "make dir $mountPt"
 	mkdir $mountPt
@@ -86,7 +87,7 @@
 	echo "done"
 
 	echo -n "copy iso-image to $mountPt ... "
-	cp ../dimi-image/$label-$version-fresh.iso $mountPt
+	cp ../dimi-image/$labelfresh-$version-fresh.iso $mountPt
 	echo "done"
 
 	echo "make dir $mountPt/$persistPt"
