@@ -1,12 +1,12 @@
 # SCRIPT DimiCreateDatapartition;
 # 
 
-# kk, 25. Dezember 2023
+# on 2024-01-05 seq 24
 # by zellview media
 # www.zellview.net
 
-	version="3.2.08"
-	partionname="zv-data"
+	version="3.2.13"
+	partionname="zvpool"
 
     echo "starting DimiCreateDatapartition"
     echo "This script will create a data partition"
@@ -19,10 +19,7 @@
     read -p "Create partition on which device? /dev/" destDevice
     destDevice=/dev/$destDevice
 
-    echo "Create partition on device"
-    echo "************"
-    echo $destDevice
-    echo "************"
+    echo "Create partition on device >>> $destDevice <<< ?"
     echo
     echo "Press RETURN to continue or CTRL+C to abort."
     read tmp
@@ -30,16 +27,18 @@
     # create datapartition at the end of disk
     
     #TODO
-    echo "create primary partition ext4 $destDevice 10.5 GB to 100%"
-    sudo parted $destDevice mkpart primary ext4 11.5GB 100% 
+    echo "create primary partition ext4 $destDevice 12.6GB to 100%"
+    parted $destDevice mkpart primary ext4 12.6GB 100% 
     
 #    echo "delete partition ${destDevice}3"
 #    sudo parted rm ${destDevice}3
 
     echo "make filesystem ext4 on ${destDevice}3"
-    sudo mkfs.ext4 ${destDevice}3 
+    mkfs.ext4 ${destDevice}3 
 
-    echo "label partition ${destDevice}3"
-    sudo e2label ${destDevice}3 ${Partionname}
+    echo "label partition ${destDevice}3 to ${partitionname}"
+    e2label ${destDevice}3 ${partionname}
         
 	echo "Done DimiCreateDatapartition"
+	
+# END DimiCreateDatapartition.
