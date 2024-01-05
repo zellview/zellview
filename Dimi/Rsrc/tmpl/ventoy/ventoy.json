@@ -1,7 +1,7 @@
 {
     "control": [
         { "VTOY_MENU_TIMEOUT": "22" },
-        { "VTOY_DEFAULT_IMAGE": "/zvdimi-3.2.11-fresh.iso" },
+        { "VTOY_DEFAULT_IMAGE": "/zvdimi-3.2.13-fresh.iso" },
         { "VTOY_SECONDARY_BOOT_MENU": "0" }
     ],
 		
@@ -17,14 +17,14 @@
 
     "menu_alias": [
         {
-            "image": "/zvdimi-3.2.11-fresh.iso",
+            "image": "/zvdimi-3.2.13-fresh.iso",
             "alias": "zellview - abba - 3.2"
         }
     ],
 
     "persistence": [
         {
-            "image":  "/zvdimi-3.2.11-fresh.iso",
+            "image":  "/zvdimi-3.2.13-fresh.iso",
             "backend": "/persistence/persistence.dat",
             "autosel": 1
         }

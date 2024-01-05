@@ -1,11 +1,11 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	seq 28 on 2024-01-04
+#	seq 44 on 2024-01-05
 #	by zellview media
 #	www.zellview.net
 
-	version="3.2.11"
+	version="3.2.13"
 	
 	echo "start DimiCreateStick "$version
 
@@ -14,14 +14,14 @@
 	source="www.zellview.net"
 	file="zellview.net/zellview/Dimi/Mod/CreateStick"
 
-	name="zellview abba"
-	label="zv-abba"
-	release="New Year 2024 rc3"
+	name="zellview dimi"
+	label="zvdimi"
+	release="New Year 2024 rc4"
 
 	mountPt="mountPoint"
 	persistPt="persistence"
 	
-	reservedSpace=32000    # use for 64GB sticks
+	reservedSpace=48000    # use for 64GB sticks with 8GB persist-iamge
 #	reservedSpace=21500     # use for 32GB sticks
     
 #	persistVol="zv-persist-mini.dat"
@@ -82,7 +82,7 @@
 	echo
 
 	echo -n "copy Rsrc/tmpl/ventoy to $mountPoint ... "
-	cp Dimi/Rsrc/tmpl/ventoy $mountPt -rv
+	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
 	echo "done"
 
 	echo -n "copy iso-image to $mountPt ... "
@@ -94,7 +94,7 @@
 	echo
 
 #   echo "create $persistVol ($persistSize MB) volume in $persistPoint"
-#   sudo Tools/ventoy/CreatePersistentImg.sh -s $persistSize -o $mountPoint/$persistPoint/$persistVol
+#   Tools/ventoy/CreatePersistentImg.sh -s $persistSize -o $mountPoint/$persistPoint/$persistVol
 
 #   echo "copy $persistVolEmpty.zip to "
 #   cp Rsrc/$persistVolMini.zip $mountPt/$persistPt 

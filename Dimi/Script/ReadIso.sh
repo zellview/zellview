@@ -1,13 +1,13 @@
 # SCRIPT DimiReadIso
 # 
 
-# kk, 25. Dezember 2023
+# on 2024-01-05 seq 06
 # by zellview media
 # www.zellview.net
 
-	version="3.2.08"
+	version="3.2.13"
 
-	echo "start DimiReadIso version "$version
+	echo "start DimiReadIso "$version
 
 	sourceDevice=$1
 
@@ -24,6 +24,10 @@
 		read -p "Create from which device? /dev/" sourceDevice
 	fi
 
-	sudo dd if=/dev/$sourceDevice of=~/zDev/dimi-iso/zv-dimi-$version-ventoy.iso bs=4M count=10175 status=progress
+	cd ../..  # -> zellview/
+#	dd if=/dev/$sourceDevice of=../dimi-image/zvabba-$version-ventoy.iso bs=4M count=10175 status=progress
+	dd if=/dev/$sourceDevice of=../dimi-image/zvabba-$version-ventoy.iso bs=4M count=12000 status=progress
      
      echo "Done DimiReadIso"
+
+# END DimiReadso

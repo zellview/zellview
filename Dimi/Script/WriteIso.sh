@@ -1,13 +1,13 @@
 # SCRIPT DimiWriteIso
 # 
 
-# kk, 25.Dezember 2023
+# on 2024-01.05 seq 18
 # by zellview media
 # www.zellview.net
 
-	version="3.2.08"
+	version="3.2.12"
 
-    echo "start DimiWriteIso version "$version
+    echo "start DimiWriteIso "$version
     destDevice=$1
     
     if [ -z "$destDevice" ]; then
@@ -20,6 +20,7 @@
         destDevice=/dev/$destDevice
     fi
 
-    dd if=~/zDev/dimi-iso/zv-dimi-$version-ventoy.iso of=$destDevice bs=4M status=progress
+	cd ../.. # ->zellview
+    dd if=../dimi-iamge/zv-dimi-$version-ventoy.iso of=$destDevice bs=4M status=progress
     
     echo "Done DimiWriteIso"
