@@ -1,17 +1,17 @@
 # SCRIPT DimiWriteIso
 # 
 
-# on 2024-01.05 seq 18
+# on 2024-01-05 seq 22
 # by zellview media
 # www.zellview.net
 
-	version="3.2.12"
+	version="3.2.13"
 
     echo "start DimiWriteIso "$version
     destDevice=$1
     
     if [ -z "$destDevice" ]; then
-        echo "This script will write zv-dimi-$version iso-image to USB-stick."
+        echo "This script will write zvabba-$version-ventoy.iso to device"
         echo
         lsblk
         echo
@@ -21,6 +21,8 @@
     fi
 
 	cd ../.. # ->zellview
-    dd if=../dimi-iamge/zv-dimi-$version-ventoy.iso of=$destDevice bs=4M status=progress
+    dd if=../dimi-image/zvabba-$version-ventoy.iso of=$destDevice bs=4M status=progress
     
     echo "Done DimiWriteIso"
+
+# END DimiWriteIso.
