@@ -1,7 +1,7 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	seq 44 on 2024-01-05
+#	on 2024-01-06 seq 52
 #	by zellview media
 #	www.zellview.net
 
@@ -12,11 +12,10 @@
 	destDevice=$1	# destination device
 	
 	source="www.zellview.net"
-	file="zellview.net/zellview/Dimi/Mod/CreateStick"
 
 	name="zellview abba"
-	labelventoy="zvabba"
-	labelfresh="zv dimi"
+	labelventoy="zv-abba"
+	labelfresh="zv-dimi"
 	release="New Year 2024 rc4"
 
 	mountPt="mountPoint"
@@ -110,7 +109,7 @@
 	rm $mountPt -rf
 	echo "Done DimiCreateStick"
 
-echo "$label-$version-fresh.iso installed succesfully on device $destDevice."
+echo "$labelventoy-$version-fresh.iso installed on device $destDevice."
 echo "Shutdown your computer and boot from this device"
 echo
 echo "enjoy and happy coding"
