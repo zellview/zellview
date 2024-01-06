@@ -1,7 +1,7 @@
 # SCRIPT DimiWriteIso
 # 
 
-# on 2024-01-05 seq 22
+# on 2024-01-06 seq 25
 # by zellview media
 # www.zellview.net
 
