@@ -2,7 +2,7 @@
 # 
 
 # by zellview new media
-# on 2024-01-06 seq 4
+# on 2024-01-09 seq 7
 # www.zellview.net
 
 	user=$1

@@ -2,7 +2,7 @@
 # 
 
 # file zellview/Dimi/Mod/ReadIso_sh
-# on 2024-01-06 seq 31
+# on 2024-01-09 seq 37
 # by zellview media
 # www.zellview.net
 
@@ -28,8 +28,8 @@
 
 	cd ../..  # -> zellview/
 	
-#	dd if=/dev/$sourceDevice of=../dimi-image/zvabba-$version-ventoy.iso bs=4M count=10175 status=progress
-	dd if=/dev/$sourceDevice of=../dimi-image/zvabba-$version-ventoy.iso bs=4096 count=3150001 status=progress
+#	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4M count=10175 status=progress
+	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4096 count=3150001 status=progress
      
 	echo "Done DimiReadIso"
 

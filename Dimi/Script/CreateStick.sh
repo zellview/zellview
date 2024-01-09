@@ -1,7 +1,7 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	on 2024-01-07 seq 59
+#	on 2024-01-09 seq 61
 #	by zellview media
 #	www.zellview.net
 
@@ -78,10 +78,10 @@
 	echo "make dir $mountPt"
 	mkdir $mountPt
 	echo "mount ${destDevice}1 on $mountPt"
-	mount ${destDevice}1 $mountPt
+	sudo mount ${destDevice}1 ${mountPt}
 	echo
 
-	echo -n "copy Rsrc/tmpl/ventoy to $mountPoint ... "
+	echo -n "copy Rsrc/tmpl/ventoy to $mountPt ... "
 	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
 	echo "done"
 
