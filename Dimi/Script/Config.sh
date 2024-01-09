@@ -1,10 +1,10 @@
 # SCRIPT DimiConfig 
 # 
-# on 2024-01-09 seq 66
+# on 2024-01-09 seq 68
 # by zellview media
 # www.zellview.net
 
-	version="3.2.15"
+	version="3.2.16"
 
 	echo "start DimiConfig "$version
 	echo "This script will configure some settings for zellview-dimi"

@@ -1,11 +1,11 @@
 # SCRIPT DimiSetupExt
 # 
 
-# kk 25. Dezember 2023
+# on 2024-01.09 seq 64
 # by zellview media
 # www.zellview.net
 
-	version="3.2.08"
+	version="3.2.16"
 
     echo "start DimiSetupExt version v "$version
     echo "by zellview media"
@@ -50,10 +50,10 @@
 	sudo apt update -y
 	echo
 
-echo "install succesfully finnished"
+echo "Done DimiSetupExt"
 echo "enjoy and happy coding"
 echo
-echo "feedback welcome at zellview@posteo.de"
+echo "feedback is welcome zellview@posteo.de"
 echo
 echo "visit us at GitHub https://github.com/zellview"
 echo

@@ -1,11 +1,11 @@
 # SCRIPT DimiSaveCubicConv
 # 
 
-# seq 40 on 3. Januar 2024
+# on 2024-01-09 seq 42
 # by zellview media
 # www.zellview.net
 
-	version="3.2.10"
+	version="3.2.16"
 
 	echo "starting DimiSaveCubicConv "$version
 

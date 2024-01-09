@@ -1,11 +1,11 @@
 # SCRIPT DimiInstallBlackbox2
 # 
 
-# 3. Januar 2024
+# on 2024-01-09 seq 16
 # by zellview media
 # www.zellview.net
 
-	version="3.2.10"
+	version="3.2.16"
 
     echo "start DimiInstallBlackbox2 "$version
 	wget http://deb.oberon.org/deb.oberon.org.gpg.key 

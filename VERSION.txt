@@ -1,1 +1,1 @@
-zellview version 3.2.15 build 001 on 2024-01-07 abba dimi linuxmint 21.2 victoria
+zellview version 3.2.16 build 001 on 2024-01-09 abba dimi linuxmint 21.2 victoria

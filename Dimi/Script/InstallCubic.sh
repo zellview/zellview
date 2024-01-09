@@ -1,11 +1,11 @@
 # SCRIPT DimiInstallCubic
 # 
 
-#	seq 26 on 2024-01-03
+#	on 2024-01-09 seq 32
 #	by zellview media
 #	www.zellview.net
 
-	version="3.2.10"
+	version="3.2.16"
 
 	echo "starting DimiInstallCubic "$version
 

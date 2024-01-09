@@ -1,12 +1,12 @@
 # SCRIPT DimiCreateDatapartition;
 # 
 
-# on 2024-01-05 seq 26
+# on 2024-01-09 seq 29
 # by zellview media
 # www.zellview.net
 
-	version="3.2.13"
-	partionname="zvpool"
+	version="3.2.16"
+	partionname="zv-pool"
 
     echo "starting DimiCreateDatapartition"
     echo "This script will create a data partition"
@@ -27,8 +27,8 @@
     # create datapartition at the end of disk
     
     #TODO
-    echo "create primary partition ext4 $destDevice 12.6GB to 100%"
-    parted $destDevice mkpart primary ext4 12.6GB 100% 
+    echo "create primary partition ext4 $destDevice 11.2GB to 100%"
+    parted $destDevice mkpart primary ext4 11.2GB 100% 
     
 #    echo "delete partition ${destDevice}3"
 #    parted rm ${destDevice}3

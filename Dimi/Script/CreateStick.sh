@@ -1,11 +1,11 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	on 2024-01-09 seq 61
+#	on 2024-01-09 seq 67
 #	by zellview media
 #	www.zellview.net
 
-	version="3.2.15"
+	version="3.2.16"
 	
 	echo "start DimiCreateStick "$version
 
@@ -16,7 +16,7 @@
 	name="zellview abba"
 	labelventoy="zv-abba"
 	labelfresh="zv-dimi"
-	release="holy kings"
+	release="Alisa"
 
 	mountPt="mountPoint"
 	persistPt="persistence"

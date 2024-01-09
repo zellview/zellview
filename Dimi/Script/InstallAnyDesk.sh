@@ -1,11 +1,11 @@
 # SCRIPT DimiInstallAnydesk
 # 
 
-# seq 09 on 2024-01 04
+# on 2024-01-09 seq 11
 # by zellview media
 # www.zellview.net
 
-	version="3.2.11"
+	version="3.2.16"
 
 	echo "start DimiInstallAnydesk "$version
 

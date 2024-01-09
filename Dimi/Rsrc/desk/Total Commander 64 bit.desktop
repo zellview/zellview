@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Total Commander 64 bit
-Exec=env WINEPREFIX="/home/piet/.wine" wine C:\\\\users\\\\Public\\\\Desktop\\\\Total\\ Commander\\ 64\\ bit.lnk
-Type=Application
-StartupNotify=true
-Comment=C:\Program Files\totalcmd\totalcmd64.exe
-Icon=0749_totalcmd64.0
-StartupWMClass=totalcmd64.exe

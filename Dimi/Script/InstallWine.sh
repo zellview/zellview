@@ -1,11 +1,11 @@
 # SCRIPT DimiInstallWine
 # 
 
-# seq 18 on 03. Janaur 2024
+# on 2024-01-09 seq 19
 # by zellview media
 # www.zellview.net
 
-	version="3.2.10"
+	version="3.2.16"
 		
 	echo "starting DimiInstallWine "$version
 	
