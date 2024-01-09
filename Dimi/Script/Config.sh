@@ -1,6 +1,6 @@
-# SCRIPT DimiConfig
+# SCRIPT DimiConfig 
 # 
-# on 2024-01-05 seq 63
+# on 2024-01-05 seq 65
 # by zellview media
 # www.zellview.net
 

@@ -1,11 +1,11 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	on 2024-01-06 seq 52
+#	on 2024-01-07 seq 59
 #	by zellview media
 #	www.zellview.net
 
-	version="3.2.13"
+	version="3.2.15"
 	
 	echo "start DimiCreateStick "$version
 
@@ -16,7 +16,7 @@
 	name="zellview abba"
 	labelventoy="zv-abba"
 	labelfresh="zv-dimi"
-	release="New Year 2024 rc4"
+	release="holy kings"
 
 	mountPt="mountPoint"
 	persistPt="persistence"
@@ -41,7 +41,7 @@
 
 	echo
 	echo "************************************************************ "
-	echo "$name  -  $label - $release"
+	echo "$name  -  $labelventoy - $release"
 	echo
 	echo "source		   $source"
 	echo "feedback     zellview@posteo.de"
@@ -109,8 +109,8 @@
 	rm $mountPt -rf
 	echo "Done DimiCreateStick"
 
-echo "$labelventoy-$version-fresh.iso installed on device $destDevice."
-echo "Shutdown your computer and boot from this device"
+echo "$labelfresh-$version-fresh.iso persistent installed on device $destDevice."
+echo "feel free to boot from the device"
 echo
 echo "enjoy and happy coding"
 echo
