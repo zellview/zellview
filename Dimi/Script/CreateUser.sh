@@ -9,8 +9,13 @@ version=3.2.16
 
 	user=$1
 
+    if [ -z "$user" ]; then
+        user=mint
+    fi
+
 	mkdir /home/$user
 	cp /root/zellview /home/$user -r
+	
 #	chown $user:$user /home/$user/zellview -R
 
 # END CreateUser.

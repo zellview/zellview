@@ -1,7 +1,7 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	on 2024-01-09 seq 67
+#	on 2024-01-09 seq 69
 #	by zellview media
 #	www.zellview.net
 
@@ -26,7 +26,8 @@
     
 #	persistVol="zv-persist-mini.dat"
 #	persistVol="zv-persist-4G.dat"
-	persistVol="zv-persist-6G-empty.dat"
+#	persistVol="zv-persist-6G-empty.dat"
+	persistVol="zv-persist-8G-empty.dat"
 #	persistVol="zv-persist-12G.dat"
 
 	echo "zellview-dimi is platform and operating-system"

@@ -1,6 +1,6 @@
 # SCRIPT DimiConfig 
 # 
-# on 2024-01-09 seq 68
+# on 2024-01-09 seq 70
 # by zellview media
 # www.zellview.net
 
@@ -17,7 +17,7 @@
 	ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 
 	echo "set background to zellview3_cloudy.png"
-	ln -sf /root/zellview/Dimi/Rsrc/zv-impressions/zellview3_cloudy.png /usr/share/backgrounds/linuxmint/default_background.jpg
+	ln -sf /home/mint/zellview/Dimi/Rsrc/zv-impressions/zellview3_cloudy.png /usr/share/backgrounds/linuxmint/default_background.jpg
 
 	echo "Done DimiConfig"
 
