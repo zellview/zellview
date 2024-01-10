@@ -1,8 +1,7 @@
 # SCRIPT DimiReadIso
 # 
 
-# on 2024-01-09 seq 45
-# by zellview media
+# on 2024-01-10 seq 47 by zellview media
 # www.zellview.net
 
 	version="3.2.16"
@@ -23,13 +22,14 @@
 	# - to evaluate parameter count use fdisk to read the last sector of the last partition
 	# - add 1 and divide by blocksize in kB, round up to next integer
 	# - eg last sector: 11263999 +1 = 11264000/2048 =< 5500	
-	# - eg last sector: 21860351 +1 = ( 21860352 / 4096 ) +1 =< 6001 ??????
+	# - eg last sector: 37887999 +1 = ( 21860352 / 4096 ) +1 =< 6001 ??????
+	# - eg last sector: 37887999 +1 = ( 37888000 / 4096 ) +1 =< 6001 ??????
 
 	cd ../..  # -> zellview
 	
 #	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4M count=10175 status=progress
 #	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4096 count=3150001 status=progress
-	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4096 count=2750000 status=progress
+	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4096 count=4736000 status=progress
      
 	echo "Done DimiReadIso"
 

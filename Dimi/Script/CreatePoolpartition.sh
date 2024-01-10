@@ -27,8 +27,8 @@
     # create datapartition at the end of disk
     
     #TODO
-    echo "create primary partition ext4 $destDevice 11.2GB to 100%"
-    parted $destDevice mkpart primary ext4 11.2GB 100% 
+    echo "create primary partition ext4 $destDevice 19.4GB to 100%"
+    parted $destDevice mkpart primary ext4 19.4GB 100% 
     
 #    echo "delete partition ${destDevice}3"
 #    parted rm ${destDevice}3

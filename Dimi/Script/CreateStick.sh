@@ -21,14 +21,14 @@
 	mountPt="mountPoint"
 	persistPt="persistence"
 	
-	reservedSpace=48000    # use for 64GB sticks with 8GB persist-iamge
+	reservedSpace=41500    # use for 64GB sticks with 12GB persist-image
 #	reservedSpace=21500     # use for 32GB sticks
     
 #	persistVol="zv-persist-mini.dat"
 #	persistVol="zv-persist-4G.dat"
 #	persistVol="zv-persist-6G-empty.dat"
-	persistVol="zv-persist-8G-empty.dat"
-#	persistVol="zv-persist-12G.dat"
+#	persistVol="zv-persist-8G-empty.dat"
+	persistVol="zv-persist-12G.dat"
 
 	echo "zellview-dimi is platform and operating-system"
 	echo "based on Linuxmint and Ubuntu."
