@@ -15,6 +15,7 @@ version=3.2.16
 
 	mkdir /home/$user
 	cp /root/zellview /home/$user -r
+	cp /root/zellview/Dimi/Rsrc/conf/.bashrc /home/$user
 	
 #	chown $user:$user /home/$user/zellview -R
 
