@@ -1,11 +1,11 @@
 # SCRIPT DimiSetup
 # 
  
-# on 2024-01-09 seq 75
+# on 2024-01-12 seq 76
 # by zellview media
 # www.zellview.net
 
-	version="3.2.16"
+	version="3.2.17"
 
 	echo "start DimiSetup "$version
 	echo "by zellview media www.zellview.net"

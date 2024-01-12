@@ -1,11 +1,11 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	on 2024-01-09 seq 69
+#	on 2024-01-12 seq 80
 #	by zellview media
 #	www.zellview.net
 
-	version="3.2.16"
+	version="3.2.17"
 	
 	echo "start DimiCreateStick "$version
 
@@ -16,7 +16,7 @@
 	name="zellview abba"
 	labelventoy="zv-abba"
 	labelfresh="zv-dimi"
-	release="Alisa"
+	release="Heike"
 
 	mountPt="mountPoint"
 	persistPt="persistence"
@@ -28,7 +28,7 @@
 #	persistVol="zv-persist-4G.dat"
 #	persistVol="zv-persist-6G-empty.dat"
 #	persistVol="zv-persist-8G-empty.dat"
-	persistVol="zv-persist-12G.dat"
+	persistVol="zv-persist-12G-empty.dat"
 
 	echo "zellview-dimi is platform and operating-system"
 	echo "based on Linuxmint and Ubuntu."

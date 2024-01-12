@@ -1,10 +1,11 @@
 # SCRIPT DimiReadIso
 # 
 
-# on 2024-01-10 seq 47 by zellview media
+# on 2024-01-12 seq 49
+# by zellview media
 # www.zellview.net
 
-	version="3.2.16"
+	version="3.2.17"
 
 	echo "start DimiReadIso "$version
 
