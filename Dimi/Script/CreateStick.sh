@@ -1,7 +1,7 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	on 2024-01-12 seq 80
+#	on 2024-01-12 seq 83
 #	by zellview media
 #	www.zellview.net
 
@@ -20,15 +20,16 @@
 
 	mountPt="mountPoint"
 	persistPt="persistence"
-	
-	reservedSpace=41500    # use for 64GB sticks with 12GB persist-image
+
+	reservedSpace=47300    # use for 64GB sticks with 8GB persist-image	
+#	reservedSpace=41500    # use for 64GB sticks with 12GB persist-image
 #	reservedSpace=21500     # use for 32GB sticks
     
 #	persistVol="zv-persist-mini.dat"
 #	persistVol="zv-persist-4G.dat"
 #	persistVol="zv-persist-6G-empty.dat"
-#	persistVol="zv-persist-8G-empty.dat"
-	persistVol="zv-persist-12G-empty.dat"
+	persistVol="zv-persist-8G-empty.dat"
+#	persistVol="zv-persist-12G-empty.dat"
 
 	echo "zellview-dimi is platform and operating-system"
 	echo "based on Linuxmint and Ubuntu."

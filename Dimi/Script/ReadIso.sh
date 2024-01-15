@@ -25,12 +25,13 @@
 	# - eg last sector: 11263999 +1 = 11264000/2048 =< 5500	
 	# - eg last sector: 37887999 +1 = ( 21860352 / 4096 ) +1 =< 6001 ??????
 	# - eg last sector: 37887999 +1 = ( 37888000 / 4096 ) +1 =< 6001 ??????
+	# - eg last sector: 26009599 +1 = ( 26009600 / 4096 ) +1 =< 6001 ??????
 
 	cd ../..  # -> zellview
 	
 #	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4M count=10175 status=progress
 #	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4096 count=3150001 status=progress
-	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4096 count=4736000 status=progress
+	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4096 count=3251200 status=progress
      
 	echo "Done DimiReadIso"
 
