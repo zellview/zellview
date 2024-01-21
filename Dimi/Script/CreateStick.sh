@@ -1,28 +1,26 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	on 2024-01-12 seq 83
-#	by zellview media
+#	on 2024-01-20 seq 86
+#	by  zellview  media
 #	www.zellview.net
 
-	version="3.2.17"
+	version="3.2.18"
 	
 	echo "start DimiCreateStick "$version
 
 	destDevice=$1	# destination device
 	
-	source="www.zellview.net"
-
 	name="zellview abba"
 	labelventoy="zv-abba"
 	labelfresh="zv-dimi"
-	release="Heike"
+	release="Bastian"
 
 	mountPt="mountPoint"
 	persistPt="persistence"
 
-	reservedSpace=47300    # use for 64GB sticks with 8GB persist-image	
-#	reservedSpace=41500    # use for 64GB sticks with 12GB persist-image
+	reservedSpace=47700    # use for 64GB sticks with 8GB persist-image
+#	reservedSpace=41500     # use for 64GB sticks with 12GB persist-image
 #	reservedSpace=21500     # use for 32GB sticks
     
 #	persistVol="zv-persist-mini.dat"
@@ -31,18 +29,19 @@
 	persistVol="zv-persist-8G-empty.dat"
 #	persistVol="zv-persist-12G-empty.dat"
 
-	echo "zellview-dimi is platform and operating-system"
+	echo "This script will install zellview-dimi on the given device"
+	echo "zellview-dimi is a platform and operating-system"
 	echo "based on Linuxmint and Ubuntu."
 	echo
 	echo "Evaluate the appropriate device to install."
 	echo
 	lsblk
 	echo
-	read -p "Install zellview-abba on which device? /dev/" destDevice
+	read -p "Install zellview-dimi on which device? /dev/" destDevice
 	destDevice=/dev/$destDevice
 
 	echo
-	echo "************************************************************ "
+	echo "*************************************************************** "
 	echo "$name  -  $labelventoy - $release"
 	echo
 	echo "source		   $source"
@@ -59,19 +58,17 @@
 #    echo "mointpoint        $mountPt"
 #    echo "persistPoint      $persistPt"
 
-	echo "This script will install zellview-abba on destination-device"
-	echo ">>> $destDevice <<<"
+	echo "This script will install zellview-abba on device >>> $destDevice <<<"
 	echo "Press RETURN to continue or CTRL+C to abort."
 	read tmp
 
 	# Dimi/Script -> zellview
 	cd ../..
 
-	echo "cleanup mountpoint"
 	echo "unmount $mountPt"
 	umount $mountPt
 	echo "remove $mountPt"
-	rm $mountPt -rf
+	rm $mountPt -rfv
 	echo
 
 	echo "Ventoy2Disc to $destDevice, label $label"
@@ -84,7 +81,7 @@
 	echo
 
 	echo -n "copy Rsrc/tmpl/ventoy to $mountPt ... "
-	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
+	cp Dimi/Rsrc/tmpl/ventoy $mountPt -rv
 	echo "done"
 
 	echo -n "copy iso-image to $mountPt ... "
@@ -104,7 +101,6 @@
 	echo "unzip $persistVol.zip to $persistPt"
 	unzip Dimi/Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
 
-	echo "cleanup mountpoint"
 	echo "unmount $mountPt"
 	umount $mountPt
 	echo "remove $mountPt"
@@ -112,11 +108,11 @@
 	echo "Done DimiCreateStick"
 
 echo "$labelfresh-$version-fresh.iso persistent installed on device $destDevice."
-echo "feel free to boot from the device"
+echo "you may now boot from this device ;-)"
 echo
 echo "enjoy and happy coding"
 echo
-echo "sponsoring via PayPal and feedback and hello"
+echo "sponsoring via PayPal and feedback or hello"
 echo "is appreciated here zellview@posteo.de"
 echo "or here www.zellview.eu"
 echo

@@ -1,11 +1,11 @@
 # SCRIPT DimiSetup
 # 
  
-# on 2024-01-12 seq 76
+# on 2024-01-20seq 77
 # by zellview media
 # www.zellview.net
 
-	version="3.2.17"
+	version="3.2.18"
 
 	echo "start DimiSetup "$version
 	echo "by zellview media www.zellview.net"
@@ -70,8 +70,10 @@ echo "sponsoring via PayPal and"
 echo "feedback is appreciated"
 echo "here"
 echo "zellview@posteo.de"
+echo "or here"
+echo "www.zellview.eu"
 echo
-echo "join us at GitHub www.github.com/zellview"
+echo "you may join us at GitHub www.github.com/zellview"
 echo
 echo "keep the spirit of Pascal and the message of Niklaus Wirth"
 echo "cu"
