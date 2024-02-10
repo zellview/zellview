@@ -3,7 +3,7 @@
 {
     "control": [
         { "VTOY_MENU_TIMEOUT": "22" },
-        { "VTOY_DEFAULT_IMAGE": "/zv-dimi-3.2.18-fresh.iso" },
+        { "VTOY_DEFAULT_IMAGE": "/zv-dimi-3.2.19-fresh.iso" },
         { "VTOY_SECONDARY_BOOT_MENU": "0" }
     ],
 		
@@ -19,14 +19,14 @@
 
     "menu_alias": [
         {
-            "image": "/zv-dimi-3.2.18-fresh.iso",
-            "alias": "zellview - abba - 3.2"
+            "image": "/zv-dimi-3.2.19-fresh.iso",
+            "alias": "zellview - abba - 3.2 Doris"
         }
     ],
 
     "persistence": [
         {
-            "image":  "/zv-dimi-3.2.18-fresh.iso",
+            "image":  "/zv-dimi-3.2.19-fresh.iso",
             "backend": "/persistence/persistence.dat",
             "autosel": 1
         }

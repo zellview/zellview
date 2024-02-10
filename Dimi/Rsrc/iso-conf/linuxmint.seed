@@ -12,3 +12,5 @@ d-i     oem-config-udeb/frontend        string kde
 # application packages pulled in by language packs. Given that we clearly
 # have the space to include them on the DVD, they're useful and we might as
 # well keep them installed.
+
+#

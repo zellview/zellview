@@ -1,11 +1,11 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	on 2024-01-20 seq 86
+#	on Friday 2024-01-27 seq 89
 #	by  zellview  media
 #	www.zellview.net
 
-	version="3.2.18"
+	version="3.2.19"
 	
 	echo "start DimiCreateStick "$version
 
@@ -14,12 +14,12 @@
 	name="zellview abba"
 	labelventoy="zv-abba"
 	labelfresh="zv-dimi"
-	release="Bastian"
+	release="Angela"
 
 	mountPt="mountPoint"
 	persistPt="persistence"
 
-	reservedSpace=47700    # use for 64GB sticks with 8GB persist-image
+	reservedSpace=39000    # use for 64GB sticks with 8GB persist-image
 #	reservedSpace=41500     # use for 64GB sticks with 12GB persist-image
 #	reservedSpace=21500     # use for 32GB sticks
     

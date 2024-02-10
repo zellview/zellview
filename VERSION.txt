@@ -1,1 +1,1 @@
-zellview version 3.2.18 build 001 on 2024-01-20 abba dimi linuxmint 21.3 virginia
+zellview version 3.2.19 build 002 on 2024-02-06 abba dimi linuxmint 21.2 victory
