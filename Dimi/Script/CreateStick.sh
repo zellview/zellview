@@ -1,20 +1,21 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	on Friday 2024-01-27 seq 89
-#	by  zellview  media
-#	www.zellview.net
+#	by zellview media
+#	on Su 2024-02-11 seq 94
+#	www.github.com/zellview
 
-	version="3.2.19"
+	Version=0
+	DimiVersion="3.2.20"
 	
-	echo "start DimiCreateStick "$version
+	echo "start DimiCreateStick "$Version
 
 	destDevice=$1	# destination device
-	
+
 	name="zellview abba"
 	labelventoy="zv-abba"
 	labelfresh="zv-dimi"
-	release="Angela"
+	release="Thea"
 
 	mountPt="mountPoint"
 	persistPt="persistence"
@@ -26,7 +27,7 @@
 #	persistVol="zv-persist-mini.dat"
 #	persistVol="zv-persist-4G.dat"
 #	persistVol="zv-persist-6G-empty.dat"
-	persistVol="zv-persist-8G-empty.dat"
+	persistVol="zv-persist-1G-empty.dat"
 #	persistVol="zv-persist-12G-empty.dat"
 
 	echo "This script will install zellview-dimi on the given device"
@@ -44,9 +45,9 @@
 	echo "*************************************************************** "
 	echo "$name  -  $labelventoy - $release"
 	echo
-	echo "source		   $source"
+	echo "source       $source"
 	echo "feedback     zellview@posteo.de"
-	echo "base         linuxmint 21.2 victoria"
+	echo "base         linuxmint 21.3 virginia"
 	echo "boot         ventoy 91"
 	echo
 
@@ -62,7 +63,6 @@
 	echo "Press RETURN to continue or CTRL+C to abort."
 	read tmp
 
-	# Dimi/Script -> zellview
 	cd ../..
 
 	echo "unmount $mountPt"
@@ -96,10 +96,12 @@
 #   Tools/ventoy/CreatePersistentImg.sh -s $persistSize -o $mountPoint/$persistPoint/$persistVol
 
 #   echo "copy $persistVolEmpty.zip to "
-#   cp Rsrc/$persistVolMini.zip $mountPt/$persistPt 
+#   cp Rsrc/$persistVolMini.zip $mountPt/$persistPt
 
 	echo "unzip $persistVol.zip to $persistPt"
 	unzip Dimi/Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
+	echo "increase $persistVol by 15360 MB"
+	sh Dimi/Rsrc/Tools/ventoy/ExtendPersistentImage.sh $persistVol.zip 15360
 
 	echo "unmount $mountPt"
 	umount $mountPt
@@ -107,20 +109,19 @@
 	rm $mountPt -rf
 	echo "Done DimiCreateStick"
 
-echo "$labelfresh-$version-fresh.iso persistent installed on device $destDevice."
-echo "you may now boot from this device ;-)"
-echo
-echo "enjoy and happy coding"
-echo
-echo "sponsoring via PayPal and feedback or hello"
-echo "is appreciated here zellview@posteo.de"
-echo "or here www.zellview.eu"
-echo
-echo "feel free to join us at github"
-echo "www.github.com/zellview"
-echo
-echo "keep the spirit of Pascal and the message of Niklaus Wirth"
-echo "cu"
-echo
-echo "the zellview-team"
-echo
+	echo "$labelfresh-$version-fresh.iso persistent installed on device $destDevice."
+	echo "you may now boot from this device ;-)"
+	echo
+	echo "enjoy and happy coding"
+	echo
+	echo "feel free to join us at github"
+	echo "www.github.com/zellview"
+	echo
+	echo "keep the spirit of Pascal and the message of Niklaus Wirth"
+	echo "cu"
+	echo
+	echo "the zellview-team"
+	echo
+	echo "done DimiCreateStick"
+	
+# END DimiCreateStick.

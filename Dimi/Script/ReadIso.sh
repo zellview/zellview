@@ -1,18 +1,21 @@
-# SCRIPT DimiReadIso
+# SCRIPT DimiReadIso;
 # 
 
-# on 2024-01-12 seq 49
 # by zellview media
-# www.zellview.net
+# on Su 2024-02-11 seq 58
+# www.github.com/zellview
 
-	version="3.2.17"
+	Version=0
+	DimiVersion="3.2.20"
 
-	echo "start DimiReadIso "$version
+	echo "start DimiReadIso "$Version
+
+	cd ../..
 
 	sourceDevice=$1
 
 	if [ -z "$sourceDevice" ]; then
-		echo "This script will create an iso-file from the first ~12G of the device."
+		echo "This script will create an iso-image from the first 2 partitions of $sourceDevice."
 		echo
 		lsblk
 		echo
@@ -27,11 +30,16 @@
 	# - eg last sector: 37887999 +1 = ( 37888000 / 4096 ) +1 =< 6001 ??????
 	# - eg last sector: 26009599 +1 = ( 26009600 / 4096 ) +1 =< 6001 ??????
 
-	cd ../..  # -> zellview
-	
+
 #	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4M count=10175 status=progress
 #	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4096 count=3150001 status=progress
-	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4096 count=3251200 status=progress
+#	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4096 count=3251200 status=progress
+
+	dd if=/dev/${sourceDevice}1 of=${sourceDevice}1.iso bs=4M status=progress
+	dd if=/dev/${sourceDevice}2 of=${sourceDevice}2.iso bs=4M status=progress
+	
+	echo "concat ${sourceDevice}1 and ${sourceDevice}2 to ../dimi-image/zv-abba-$version-ventoy.iso"
+	cat ${sourceDevice}1 ${sourceDevice}2 > ../dimi-image/zv-abba-$version-ventoy.iso"
      
 	echo "Done DimiReadIso"
 

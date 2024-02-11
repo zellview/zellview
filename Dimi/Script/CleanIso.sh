@@ -1,13 +1,14 @@
-# SCRIPT DimiCleanIso
+# SCRIPT DimiCleanIso;
 # 
 
-# on 2024-01-09 seq 41
 # by zellview media
-# www.zellview.net
+# on Su 2024-02-11 seq 43
+# www.github.com/zellview
 
-	version="3.2.16"
+	Version=0
+	DimiVersion="3.2.20"
 
-	echo "starting DimiCleanIso "$version
+	echo "starting DimiCleanIso "$Version
 
 	echo "remove custom dirs in Resource"
 	rm ~/zDev/dimi-image/custom-* -rf
@@ -16,3 +17,5 @@
 	rm ~/zDev/dimi-image/source-disk -rf
 	
 	echo "Done DimiCleanIso"
+	
+# END DimiCleanIso.

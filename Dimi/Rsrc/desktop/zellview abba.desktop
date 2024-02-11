@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=zellview abba
+Exec=wine /home/mint/zellview/zellview.exe
+Comment=abba mint dimi
+Terminal=false
+PrefersNonDefaultGPU=false
+Icon=cinnamon-panel-launcher
+Type=Application

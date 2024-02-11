@@ -1,13 +1,14 @@
 # SCRIPT DimiInstallWine
 # 
 
-# on 2024-01-09 seq 19
 # by zellview media
-# www.zellview.net
+# on 2024-2-11 seq 21
+# www.github.com/zellview
 
-	version="3.2.16"
+	Version=0
+	DimiVersion="3.2.20"
 		
-	echo "starting DimiInstallWine "$version
+	echo "starting DimiInstallWine "$Version
 	
 	dpkg --add-architecture i386
 
@@ -24,3 +25,4 @@
 
 	echo "Done DimiInstallWine"
 	
+# END DimiInastallWine.

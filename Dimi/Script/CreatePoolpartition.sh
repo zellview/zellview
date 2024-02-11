@@ -1,8 +1,8 @@
 # SCRIPT DimiCreatePoolpartition;
 # 
 
-# on 2024-01-20 seq 37
 # by zellview media
+# on Su 2024-02-11 seq 38
 # www.zellview.net
 
 	version="3.2.18"
@@ -33,7 +33,7 @@
 #    echo "delete partition ${destDevice}3"
 #    parted rm ${destDevice}3
 
-    echo "make filesystem ext4 on ${destDevice}3"
+    echo "make filesystem exFAT on ${destDevice}3"
 #    mkfs.ext4 ${destDevice}3 
     mkfs.exfat ${destDevice}3  	
 

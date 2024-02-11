@@ -1,13 +1,16 @@
 # SCRIPT DimiWriteIso
 # 
 
-# on 2024-01-12 seq 31
 # by zellview media
-# www.zellview.net
+# on Su 2024-02-11 seq 34
+# www.github.com/zellview
 
-	version="3.2.17"
+	Version=0
+	DimiVersion="3.2.20"
 
-    echo "start DimiWriteIso "$version
+	cd ../.. 
+
+    echo "start DimiWriteIso "$Version
     destDevice=$1
     
     if [ -z "$destDevice" ]; then
@@ -19,8 +22,7 @@
         read -p "Write through which device? /dev/" destDevice
         destDevice=/dev/$destDevice
     fi
-
-	cd ../.. # ->zellview
+	
     dd if=../dimi-image/zv-abba-$version-ventoy.iso of=$destDevice bs=4M status=progress
     
     echo "Done DimiWriteIso"

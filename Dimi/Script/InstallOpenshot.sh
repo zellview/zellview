@@ -1,15 +1,19 @@
 # SCRIPT DimiInstallOpenshot
 # 
 
-#	on 2023-12-26 seq 18
-#	by zellview media, www.zellview.net
+# by zellview media
+# on Su 2023-12-26 seq 19
+# www.github.com/zellview
 
-version=3.2.16
+	Version=0
+	DimiVersion=3.2.20
 
-echo "start DimiInstallOpenshot "$version
+	echo "start DimiInstallOpenshot "$Version
 
-add-apt-repository ppa:openshot.developers/ppa -y
-apt-get update -y
-apt-get install openshot-qt python3-openshot -y
+	add-apt-repository ppa:openshot.developers/ppa -y
+	apt-get update -y
+	apt-get install openshot-qt python3-openshot -y
 
-echo "Done DimiInstallOpenshot"
+	echo "Done DimiInstallOpenshot"
+
+# END DimiInstallOpenshot.

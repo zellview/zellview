@@ -2,7 +2,7 @@
 # 
 
 # by zellview media
-# on Su 2024-02-11 seq 20
+# on Su 2024-02-11 seq 24
 # www.github.com/zellview
 
 	Version=0
@@ -24,8 +24,9 @@
 	echo "copy /root/zellview/Dimi/Rsrc/conf/.bashrc to /home/"$user
 	cp /root/zellview/Dimi/Rsrc/conf/.bashrc /home/$user -v
 	
-#	chown $user:$user /home/$user/zellview -R
-
+	echo "copy starter to /home/"$user
+	cp "/root/zellview/Dimi/Rsrc/desktop/zellview abba.desktop" /home/"$user -v
+	
 	echo "Done CreateUser"
 
 # END CreateUser.

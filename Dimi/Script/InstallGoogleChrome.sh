@@ -1,13 +1,14 @@
-# SCRIPT InstallGoogleChrome
+# SCRIPT DimiInstallGoogleChrome
 # 
 
-# on 2024-01-09 seq 23
 # by zellview media
-# www.zellview.net
+# on Su 2024-02-11 seq 27
+# www.github.com/zellview
 
-	version="3.2.16"
+	Version=0
+	DimiVersion="3.2.20"
 
-	echo "start DimiInstallGoogleChrome "$version
+	echo "start DimiInstallGoogleChrome "$Version
 
 #	cd ../Rsrc/deb
 #	echo -n "get debian install package ... "
@@ -18,8 +19,7 @@
 
 	echo -n "install package ... "
 	apt-get install google-chrome-stable_current_amd64.deb -y
-	
-#	cd ../../Script
 
 	echo "Done DimiInstallGoogleChrome"
-	
+
+# END DimiInstallGoogleChrome.
