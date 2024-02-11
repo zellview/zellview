@@ -1,23 +1,17 @@
 # SCRIPT DimiSetup
 # 
  
-# on 2024-01-20seq 77
 # by zellview media
-# www.zellview.net
+# on Su 2024-02-11 seq 87
+# www.github.com/zellview
 
-	version="3.2.18"
+	Version=0
+	DimiVersion="3.2.20"
 
-	echo "start DimiSetup "$version
-	echo "by zellview media www.zellview.net"
+	echo "start DimiSetup "$Version
 	echo
 	echo "This script will install software-set for zellview-dimi."
 	echo "eg blackbox2 git kazam kate krusader retext wine xfburn etc"
-	echo
-	echo "feedback and sponsoring via"
-	echo "PayPal is appreciated here"
-	echo "zellview@posteo.de"
-	echo
-	echo "join us at GitHub www.github.com/zellview"
 	echo
 	echo "Press RETURN to continue or CTRL+C to abort."
 	read tmp
@@ -63,19 +57,6 @@
 	apt update -y
 	echo
 
-echo "Done DimiSetup"
-echo "enjoy and happy coding"
-echo
-echo "sponsoring via PayPal and"
-echo "feedback is appreciated"
-echo "here"
-echo "zellview@posteo.de"
-echo "or here"
-echo "www.zellview.eu"
-echo
-echo "you may join us at GitHub www.github.com/zellview"
-echo
-echo "keep the spirit of Pascal and the message of Niklaus Wirth"
-echo "cu"
-echo "the zellview-team"
-echo
+	echo "Done DimiSetup"
+
+# END DimiSetup.

@@ -1,22 +1,31 @@
 # SCRIPT CreateUser
 # 
 
-# by zellview new media
-# on 2024-01-20 seq 12
-# www.zellview.net
+# by zellview media
+# on Su 2024-02-11 seq 20
+# www.github.com/zellview
 
-version=3.2.18
+	Version=0
+	DimiVersion=3.2.20
 
+	echo "start CreateUser version "$Version
 	user=$1
 
     if [ -z "$user" ]; then
         user=mint
     fi
 
+	echo "makedir /home/"$user
 	mkdir /home/$user
-	cp /root/zellview /home/$user -rv
+	
+	echo "copy /root/zellview to /home/"$user
+	cp /root/zellview /home/$user -r
+	
+	echo "copy /root/zellview/Dimi/Rsrc/conf/.bashrc to /home/"$user
 	cp /root/zellview/Dimi/Rsrc/conf/.bashrc /home/$user -v
 	
 #	chown $user:$user /home/$user/zellview -R
+
+	echo "Done CreateUser"
 
 # END CreateUser.

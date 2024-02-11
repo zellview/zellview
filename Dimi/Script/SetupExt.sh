@@ -1,24 +1,16 @@
 # SCRIPT DimiSetupExt
 # 
 
-# on 2024-01.09 seq 64
+# on Su 2024-02.11 seq 69
 # by zellview media
-# www.zellview.net
+# www.github.com/zellview
 
-	version="3.2.16"
+	Version=0
+	DimiVersion="3.2.20"
 
-    echo "start DimiSetupExt version v "$version
-    echo "by zellview media"
-    echo "www.zellview.net"
-    echo
+    echo "start DimiSetupExt version "$Version
     echo "This script will install extended software-set for zellview-dimi."
-    echo 
     echo "eg Openshot Google-Earth-Pro Audcity etc"
-    echo
-    echo "feedback is welcome   zellview@posteo.de"
-    echo "visit us at GitHub https://github.com/zellview"
-    echo
-    echo "consider to sponsor zellview ? https://zellview.eu"
     echo
     echo "Press RETURN to continue or CTRL+C to abort."
     read tmp
@@ -50,16 +42,5 @@
 	sudo apt update -y
 	echo
 
-echo "Done DimiSetupExt"
-echo "enjoy and happy coding"
-echo
-echo "feedback is welcome zellview@posteo.de"
-echo
-echo "visit us at GitHub https://github.com/zellview"
-echo
-echo "consider to sponsor zellview ? https://zellview.eu"
-echo
-echo "keep the spirit of Pascal and the message of Niklaus Wirth"
-echo "cu"
-echo "the zellview-team"
-echo
+	echo "Done DimiSetupExt"
+# END DimiSetupExt.
