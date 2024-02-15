@@ -1,19 +1,19 @@
 # SCRIPT DimiCreateImage
 # 
 
-# on Su 2024-02-11 seq 23
+# on Thu 2024-02-15 seq 30
 # by zellview media
 # www.github.com/zellview
 
-	Version=0
-	DimiVersion=3.2.20
+	Version=1
+	DimiVersion=3.2.21
 
-	echo "start DimiCreateImage "$Version
+	echo "start DimiCreateImage version "$Version
 
 		cd ../..
 		cd ../dimi-image
 		
-		cp ../iso/linuxmint-21.3-cinnamon-64bit.iso . -v
+		cp ../iso/linuxmint-21.3-cinnamon-64bit.iso . --verbose --update
 
 		wget --no-clobber https://ftp.rz.uni-frankfurt.de/pub/mirrors/linux-mint/iso/stable/21.3/linuxmint-21.3-cinnamon-64bit.iso
 

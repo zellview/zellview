@@ -8,7 +8,7 @@
 	Version=0
 	DimiVersion="3.2.20"
 
-	echo "start DimiConfig "$Version
+	echo "start DimiConfig version "$Version
 	echo "This script will configure some settings for zellview-dimi"
 	echo "keyboard, timezone, background, languages etc"
 

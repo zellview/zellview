@@ -25,7 +25,7 @@
 	cp /root/zellview/Dimi/Rsrc/conf/.bashrc /home/$user -v
 	
 	echo "copy starter to /home/"$user
-	cp "/root/zellview/Dimi/Rsrc/desktop/zellview abba.desktop" /home/"$user -v
+	cp "/root/zellview/Dimi/Rsrc/desktop/zellview abba.desktop" /home/$user -v
 	
 	echo "Done CreateUser"
 

@@ -1,1 +1,1 @@
-zellview version 3.2.20 build 01 on 2024-02-11 abba dimi linuxmint 21.3 Virginia release Thea
+zellview version 3.2.21 build 01 on Thu 2024-02-15 abba dimi linuxmint 21.3 Virginia release Anna
