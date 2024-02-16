@@ -2,11 +2,11 @@
 # 
 
 # by zellview media
-# on Su 2024-02-11 seq 24
+# on Th 2024-02-15 seq 39
 # www.github.com/zellview
 
-	Version=0
-	DimiVersion=3.2.20
+	Version=2
+	DimiVersion=3.2.21
 
 	echo "start CreateUser version "$Version
 	user=$1
@@ -15,17 +15,13 @@
         user=mint
     fi
 
-	echo "makedir /home/"$user
+	cd ../..
+
+	# copy zellview to userdir
 	mkdir /home/$user
-	
-	echo "copy /root/zellview to /home/"$user
-	cp /root/zellview /home/$user -r
-	
-	echo "copy /root/zellview/Dimi/Rsrc/conf/.bashrc to /home/"$user
-	cp /root/zellview/Dimi/Rsrc/conf/.bashrc /home/$user -v
-	
-	echo "copy starter to /home/"$user
-	cp "/root/zellview/Dimi/Rsrc/desktop/zellview abba.desktop" /home/$user -v
+	cp  * /home/$user --recursive --verbose
+	cp Dimi/Rsrc/conf/.bashrc /home/$user -v
+	cp Dimi/Rsrc/desktop/* /home/$user/Desktop -v
 	
 	echo "Done CreateUser"
 

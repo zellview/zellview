@@ -1,36 +1,28 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	by zellview media
-#	on Su 2024-02-11 seq 94
-#	www.github.com/zellview
+#	on Fr 2024-02-16 seq 123
+#	by zellview new media
+#	github.com/zellview
 
-	Version=0
-	DimiVersion="3.2.20"
-	
-	echo "start DimiCreateStick "$Version
+	Version=2
+	DimiVersion="3.2.23"
 
+	echo "start DimiCreateStick v "$Version
 	destDevice=$1	# destination device
 
-	name="zellview abba"
-	labelventoy="zv-abba"
-	labelfresh="zv-dimi"
-	release="Thea"
+	label-ventoy="zv-abba"
+ 	name="zellview abba"
+	label-fresh="zv-dimi"
+	release="Pamela"
 
 	mountPt="mountPoint"
 	persistPt="persistence"
 
-	reservedSpace=39000    # use for 64GB sticks with 8GB persist-image
-#	reservedSpace=41500     # use for 64GB sticks with 12GB persist-image
-#	reservedSpace=21500     # use for 32GB sticks
-    
-#	persistVol="zv-persist-mini.dat"
-#	persistVol="zv-persist-4G.dat"
-#	persistVol="zv-persist-6G-empty.dat"
+	reservedSpace=39000    # use for 64GB sticks with 8GB persist-image    
 	persistVol="zv-persist-1G-empty.dat"
-#	persistVol="zv-persist-12G-empty.dat"
-
-	echo "This script will install zellview-dimi on the given device"
+	echo "install zellview on device ?"
+	
 	echo "zellview-dimi is a platform and operating-system"
 	echo "based on Linuxmint and Ubuntu."
 	echo
@@ -43,11 +35,11 @@
 
 	echo
 	echo "*************************************************************** "
-	echo "$name  -  $labelventoy - $release"
+	echo "$labelventoy - $release"
 	echo
 	echo "source       $source"
 	echo "feedback     zellview@posteo.de"
-	echo "base         linuxmint 21.3 virginia"
+	echo "base         linuxmint 21.2 victoria"
 	echo "boot         ventoy 91"
 	echo
 
@@ -59,7 +51,7 @@
 #    echo "mointpoint        $mountPt"
 #    echo "persistPoint      $persistPt"
 
-	echo "This script will install zellview-abba on device >>> $destDevice <<<"
+	echo "Would you like to install zellview on device >>> $destDevice <<<"
 	echo "Press RETURN to continue or CTRL+C to abort."
 	read tmp
 
@@ -107,8 +99,7 @@
 	umount $mountPt
 	echo "remove $mountPt"
 	rm $mountPt -rf
-	echo "Done DimiCreateStick"
-
+	
 	echo "$labelfresh-$version-fresh.iso persistent installed on device $destDevice."
 	echo "you may now boot from this device ;-)"
 	echo
@@ -117,7 +108,9 @@
 	echo "feel free to join us at github"
 	echo "www.github.com/zellview"
 	echo
-	echo "keep the spirit of Pascal and the message of Niklaus Wirth"
+	echo "keep the spirit of Pascal "
+	echo "and the message of"
+	echo "Niklaus Wirth"
 	echo "cu"
 	echo
 	echo "the zellview-team"

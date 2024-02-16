@@ -1,11 +1,11 @@
 # SCRIPT DimiResetImage
 # 
 
-# on Tu 2024-02-15 seq 26
+# on Tu 2024-02-15 seq 29
 # by zellview media
 # www.github.com/zellview
 
-Version=1
+Version=2
 DimiVersion=3.2.21
 
 echo "start DimiResetImage version "$Version
@@ -13,9 +13,8 @@ echo "start DimiResetImage version "$Version
 cd ../..
 
 mkdir ../dimi-image
-cd ../dimi-image
 
-cp ../zellview/Dimi/Rsrc/iso-conf/cubic.conf . -v
+cp Dimi/Rsrc/iso-conf/cubic.conf ../dimi-image --verbose
 
 echo "Done DimiResetImage"
 

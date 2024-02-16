@@ -2,11 +2,11 @@
 # 
  
 # by zellview media
-# on Su 2024-02-11 seq 89
+# on Th 2024-02-15 seq 91
 # www.github.com/zellview
 
-	Version=0
-	DimiVersion="3.2.20"
+	Version=1
+	DimiVersion="3.2.21"
 
 	echo "start DimiSetup version "$Version
 	echo

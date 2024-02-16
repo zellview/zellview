@@ -1,12 +1,12 @@
 # SCRIPT DimiSetupExt
 # 
 
-# on Su 2024-02.11 seq 69
+# on Th 2024-02.15 seq 71
 # by zellview media
 # www.github.com/zellview
 
-	Version=0
-	DimiVersion="3.2.20"
+	Version=1
+	DimiVersion="3.2.21"
 
     echo "start DimiSetupExt version "$Version
     echo "This script will install extended software-set for zellview-dimi."
@@ -43,4 +43,5 @@
 	echo
 
 	echo "Done DimiSetupExt"
+	
 # END DimiSetupExt.

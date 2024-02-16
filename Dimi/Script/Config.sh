@@ -2,11 +2,11 @@
 # 
 
 # by zellview media
-# on Su 2024-02-11 seq 79
+# on Th 2024-02-15 seq 85
 # www.github.com/zellview
 
-	Version=0
-	DimiVersion="3.2.20"
+	Version=1
+	DimiVersion="3.2.21"
 
 	echo "start DimiConfig version "$Version
 	echo "This script will configure some settings for zellview-dimi"
@@ -19,7 +19,7 @@
 	ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 
 	echo "set background to zellview3_cloudy.png"
-	ln -sf /home/mint/zellview/Dimi/Rsrc/zv-impressions/zellview3_cloudy.png /usr/share/backgrounds/linuxmint/default_background.jpg
+	ln -sf /root/zellview-rel/Dimi/Rsrc/zv-impressions/zellview3_cloudy.png /usr/share/backgrounds/linuxmint/default_background.jpg
 
 	echo "install de_De.utf8"
 	locale-gen de_DE.utf8
