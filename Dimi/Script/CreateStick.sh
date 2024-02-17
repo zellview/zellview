@@ -1,7 +1,7 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	on Fr 2024-02-16 seq 123
+#	on Fr 2024-02-16 seq 127
 #	by zellview new media
 #	github.com/zellview
 
@@ -16,21 +16,21 @@
 	label-fresh="zv-dimi"
 	release="Pamela"
 
-	mountPt="mountPoint"
 	persistPt="persistence"
+	mountPt="mountPoint"
 
-	reservedSpace=39000    # use for 64GB sticks with 8GB persist-image    
+	reservedSpace=39000    # use for 64GB sticks with 8GB persist-image
 	persistVol="zv-persist-1G-empty.dat"
 	echo "install zellview on device ?"
 	
-	echo "zellview-dimi is a platform and operating-system"
+	echo "zellview is a platform and operating-system"
 	echo "based on Linuxmint and Ubuntu."
 	echo
-	echo "Evaluate the appropriate device to install."
+	echo "Evaluate device for zellview"
 	echo
 	lsblk
 	echo
-	read -p "Install zellview-dimi on which device? /dev/" destDevice
+	read -p "zellviewto device? /dev/" destDevice
 	destDevice=/dev/$destDevice
 
 	echo
