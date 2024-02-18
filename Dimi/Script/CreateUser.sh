@@ -2,13 +2,13 @@
 # 
 
 # by zellview media
-# on Th 2024-02-15 seq 39
+# on Sun 2024-02-18 seq 44
 # www.github.com/zellview
 
 	Version=2
-	DimiVersion=3.2.21
+	DimiVersion=3.2.22
 
-	echo "start CreateUser version "$Version
+	echo "start CreateUser version "$DimiVersion" file "$Version
 	user=$1
 
     if [ -z "$user" ]; then
@@ -19,9 +19,10 @@
 
 	# copy zellview to userdir
 	mkdir /home/$user
-	cp  * /home/$user --recursive --verbose
+	cp ../zellview /home/$user -r
 	cp Dimi/Rsrc/conf/.bashrc /home/$user -v
-	cp Dimi/Rsrc/desktop/* /home/$user/Desktop -v
+	mkdir /home/$user/Desktop
+	cp Dimi/Rsrc/desktop/* /home/$user/Desktop/ -v
 	
 	echo "Done CreateUser"
 

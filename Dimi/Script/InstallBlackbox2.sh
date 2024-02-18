@@ -2,13 +2,13 @@
 # 
 
 # by zellview media
-# on 2024-02-11 seq 17
+# on Sun 2024-02-18 seq 18
 # www.github.com/zellview
 
-	Version=0
-	DimiVersion="3.2.20
+	Version=1
+	DimiVersion="3.2.22"
 
-	echo "start DimiInstallBlackbox2 "$Version
+	echo "start DimiInstallBlackbox2 version"$Version
 	wget http://deb.oberon.org/deb.oberon.org.gpg.key 
 
 	apt-key add deb.oberon.org.gpg.key
