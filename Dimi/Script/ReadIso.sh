@@ -2,32 +2,32 @@
 # 
 
 # by zellview media
-# on Sun 2024-02-18 seq 63
-# www.github.com/zellview
+# www.github.com/zellviews
+# on Mon 2024-02-19 seq 70
 
-	Version=1
+	Version=3
 	DimiVersion="3.2.22"
 
-	echo "start DimiReadIso "$DimiVersion" file"$Version
+	echo "start DimiReadIso "$DimiVersion" file "$Version
 
 	cd ../..
 
-	sourceDevice=$1
+	srcDevice=$1	# source device
 
-	if [ -z "$sourceDevice" ]; then
-		echo "This script will create an iso-image from the first 2 partitions of source device."
+	if [ -z "$srcDevice" ]; then
+		echo "The script will read an image from the first two partitions of source device."
 		echo
 		lsblk
 		echo
-		read -p "Create from which device? /dev/" sourceDevice
+		read -p "from which device? /dev/" srcDevice
 	fi
 
-	dd if=/dev/${sourceDevice}1 of=${sourceDevice}1.iso bs=4M status=progress
-	dd if=/dev/${sourceDevice}2 of=${sourceDevice}2.iso bs=4M status=progress
+	dd if=/dev/${srcDevice}1 of=${srcDevice}1.iso bs=4M status=progress
+	dd if=/dev/${srcDevice}2 of=${srcDevice}2.iso bs=4M status=progress
 	
-	echo "concat ${sourceDevice}1 and ${sourceDevice}2 to ../dimi-image/zv-abba-$version-ventoy.iso"
-	cat ${sourceDevice}1 ${sourceDevice}2 > ../dimi-image/zv-abba-$DimiVersion-ventoy.iso"
+	echo "cat ${srcDevice}1 and ${srcDevice}2 to ../dimi-image/zv-abba-$version-ventoy.iso"
+	cat ${srcDevice}1 ${srcDevice}2 > ../dimi-image/zv-abba-$DimiVersion-ventoy.iso"
      
-	echo "Done DimiReadIso"
+	echo "done DimiReadIso"
 
 # END DimiReadso.

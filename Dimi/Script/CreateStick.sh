@@ -1,20 +1,20 @@
 # SCRIPT DimiCreateStick;
 # 
 
-#	on Fr 2024-02-16 seq 127
-#	by zellview new media
-#	github.com/zellview
+#	by zellview media
+#	on Mon 2024-02-19 seq 145
+#	www.github.com/zellview
 
-	Version=2
-	DimiVersion="3.2.23"
+	Version=3
+	DimiVersion="3.2.22"
 
-	echo "start DimiCreateStick v "$Version
+	echo "start DimiCreateStick version "$DimiVersion" file "$Version
 	destDevice=$1	# destination device
 
-	label-ventoy="zv-abba"
- 	name="zellview abba"
-	label-fresh="zv-dimi"
-	release="Pamela"
+	labelventoy="zv-abba"
+ 	name="zellview abba mint dimi"
+	labelfresh="zv-dimi"
+	release="Alice"
 
 	persistPt="persistence"
 	mountPt="mountPoint"
@@ -30,7 +30,7 @@
 	echo
 	lsblk
 	echo
-	read -p "zellviewto device? /dev/" destDevice
+	read -p "zellview to device? /dev/" destDevice
 	destDevice=/dev/$destDevice
 
 	echo
@@ -73,11 +73,11 @@
 	echo
 
 	echo -n "copy Rsrc/tmpl/ventoy to $mountPt ... "
-	cp Dimi/Rsrc/tmpl/ventoy $mountPt -rv
+	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
 	echo "done"
 
 	echo -n "copy iso-image to $mountPt ... "
-	cp ../dimi-image/$labelfresh-$version-fresh.iso $mountPt
+	cp ../dimi-image/$labelfresh-$DimiVersion-fresh.iso $mountPt
 	echo "done"
 
 	echo "make dir $mountPt/$persistPt"
@@ -92,15 +92,15 @@
 
 	echo "unzip $persistVol.zip to $persistPt"
 	unzip Dimi/Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
-	echo "increase $persistVol by 15360 MB"
-	sh Dimi/Rsrc/Tools/ventoy/ExtendPersistentImage.sh $persistVol.zip 15360
+	echo "increase persistence.dat by 15360 MB"
+	sh Dimi/Rsrc/Tools/ventoy/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat 15360
 
 	echo "unmount $mountPt"
 	umount $mountPt
 	echo "remove $mountPt"
 	rm $mountPt -rf
 	
-	echo "$labelfresh-$version-fresh.iso persistent installed on device $destDevice."
+	echo "$labelfresh-$DimiVersion-fresh.iso persistent installed on device $destDevice."
 	echo "you may now boot from this device ;-)"
 	echo
 	echo "enjoy and happy coding"

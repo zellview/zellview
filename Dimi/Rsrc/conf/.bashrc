@@ -93,8 +93,8 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # some zellview aliases
-alias zv='wine ~/zDev/zellview/zellview.exe &'
-alias dimi='cd ~/zDev/zellview/Dimi/'
+alias zv='wine ~/zellview/zellview.exe &'
+alias dimi='cd ~/zellview/Dimi/'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
