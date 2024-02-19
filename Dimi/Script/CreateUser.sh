@@ -1,14 +1,14 @@
-# SCRIPT CreateUser
+# SCRIPT DimiCreateUser
 # 
 
 # by zellview media
-# on Sun 2024-02-18 seq 44
+# on Mon 2024-02-19 seq 47
 # www.github.com/zellview
 
-	Version=2
+	Version=3
 	DimiVersion=3.2.22
 
-	echo "start CreateUser version "$DimiVersion" file "$Version
+	echo "start DimiCreateUser version "$DimiVersion" file "$Version
 	user=$1
 
     if [ -z "$user" ]; then
@@ -17,13 +17,12 @@
 
 	cd ../..
 
-	# copy zellview to userdir
 	mkdir /home/$user
 	cp ../zellview /home/$user -r
 	cp Dimi/Rsrc/conf/.bashrc /home/$user -v
 	mkdir /home/$user/Desktop
 	cp Dimi/Rsrc/desktop/* /home/$user/Desktop/ -v
 	
-	echo "Done CreateUser"
+	echo "done DimiCreateUser"
 
-# END CreateUser.
+# END DimiCreateUser.
