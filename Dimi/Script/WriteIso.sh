@@ -2,7 +2,7 @@
 # 
 
 # by zellview media
-# Tue 2024-02-20 seq 40
+# Tue 2024-02-20 seq 45
 # www.github.com/zellview
 
 	Version=1
@@ -25,6 +25,6 @@
 
     dd if=../dimi-image/zv-abba-$DimiVersion-ventoy.iso of=$destDevice bs=4M status=progress
     
-    echo "Done DimiWriteIso"
+    echo "done DimiWriteIso"
 
 # END DimiWriteIso.
