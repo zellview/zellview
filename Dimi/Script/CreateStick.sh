@@ -3,9 +3,9 @@
 
 #	by zellview media
 #	www.github.com/zellview
-#	on Tue 2024-02-20 seq 162
+#	on Wed 2024-02-21 seq 167
 
-	Version=3
+	Version=4
 	DimiVersion="3.2.22"
 	AbbaVersion="3.2.23"
 
@@ -68,7 +68,8 @@
 	echo
 
 	echo "Ventoy2Disc to $destDevice, label $label"
-	sh Dimi/Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $labelventoy $destDevice
+#	sh Dimi/Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $labelventoy $destDevice
+	sh Dimi/Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S  -L $labelventoy $destDevice
 
 	echo "make dir $mountPt"
 	mkdir $mountPt
