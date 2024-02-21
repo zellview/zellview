@@ -2,27 +2,31 @@
 # 
 
 #	by zellview media
-#	on Mon 2024-02-19 seq 145
 #	www.github.com/zellview
+#	on Tue 2024-02-20 seq 162
 
 	Version=3
 	DimiVersion="3.2.22"
+	AbbaVersion="3.2.23"
 
-	echo "start DimiCreateStick version "$DimiVersion" file "$Version
+	echo "start DimiCreateStick version "$AbbaVersion" file "$Version
 	destDevice=$1	# destination device
 
 	labelventoy="zv-abba"
  	name="zellview abba mint dimi"
 	labelfresh="zv-dimi"
-	release="Alice"
+	release="Leonie"
 
 	persistPt="persistence"
 	mountPt="mountPoint"
 
-	reservedSpace=39000    # use for 64GB sticks with 8GB persist-image
 	persistVol="zv-persist-1G-empty.dat"
-	echo "install zellview on device ?"
-	
+#	increaseDat=15360
+#	increaseDat=12288			# 12 * 1024
+	increaseDat=9216			# 9 * 1024
+#	reservedSpace=48000   # use for 64GB sticks with 8GB persist-image
+	reservedSpace=46000   # use for 64GB sticks with 8GB persist-image	
+	echo "install zellview on device ?"	
 	echo "zellview is a platform and operating-system"
 	echo "based on Linuxmint and Ubuntu."
 	echo
@@ -92,15 +96,15 @@
 
 	echo "unzip $persistVol.zip to $persistPt"
 	unzip Dimi/Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
-	echo "increase persistence.dat by 15360 MB"
-	sh Dimi/Rsrc/Tools/ventoy/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat 15360
+	echo "increase persistence.dat by $increaseDat MB"
+	sh Dimi/Rsrc/Tools/ventoy/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
 
 	echo "unmount $mountPt"
 	umount $mountPt
 	echo "remove $mountPt"
 	rm $mountPt -rf
 	
-	echo "$labelfresh-$DimiVersion-fresh.iso persistent installed on device $destDevice."
+	echo "$labelfresh-$AbbaVersion-fresh.iso persistent installed on device $destDevice."
 	echo "you may now boot from this device ;-)"
 	echo
 	echo "enjoy and happy coding"
