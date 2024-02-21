@@ -2,13 +2,13 @@
 # 
 
 # by zellview media
-# on Su 2024-02-11 seq 37
+# Wed 2024-02-21 seq 38
 # www.github.com/zellview
 
-	Version=0
-	DimiVersion="3.2.20"
+	Version=1
+	DimiVersion="3.2.24"
 
-	echo "starting DimiInstallCubic "$Version
+	echo "starting DimiInstallCubic "$DimiVersion" file "$Version
 
 	sudo apt-add-repository universe -y
 	sudo apt-add-repository ppa:cubic-wizard/release -y
@@ -18,6 +18,6 @@
 # apt-add-repository ppa:cubic-wizard/release -y
 # apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6494C6D6997C215E -y
 
-	echo "Done DimiInstallCubic"
+	echo "done DimiInstallCubic"
 
 # END DimiInstallCubic.

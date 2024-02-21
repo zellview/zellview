@@ -2,12 +2,12 @@
 # 
 
 #	by zellview media
+#	Wed 2024-02-21 seq 172
 #	www.github.com/zellview
-#	on Wed 2024-02-21 seq 167
 
-	Version=4
-	DimiVersion="3.2.22"
-	AbbaVersion="3.2.23"
+	Version=6
+	DimiVersion="3.2.24"
+	AbbaVersion="3.2.24"
 
 	echo "start DimiCreateStick version "$AbbaVersion" file "$Version
 	destDevice=$1	# destination device
@@ -15,17 +15,17 @@
 	labelventoy="zv-abba"
  	name="zellview abba mint dimi"
 	labelfresh="zv-dimi"
-	release="Leonie"
+	release="Gerda"
 
 	persistPt="persistence"
 	mountPt="mountPoint"
 
 	persistVol="zv-persist-1G-empty.dat"
-#	increaseDat=15360
-#	increaseDat=12288			# 12 * 1024
-	increaseDat=9216			# 9 * 1024
+#	increaseDat=12288		# 12 * 1024
+	increaseDat=9216		# 9 * 1024
+	
 #	reservedSpace=48000   # use for 64GB sticks with 8GB persist-image
-	reservedSpace=46000   # use for 64GB sticks with 8GB persist-image	
+#	reservedSpace=46000   # use for 64GB sticks with 8GB persist-image	
 	echo "install zellview on device ?"	
 	echo "zellview is a platform and operating-system"
 	echo "based on Linuxmint and Ubuntu."
@@ -41,7 +41,6 @@
 	echo "*************************************************************** "
 	echo "$labelventoy - $release"
 	echo
-	echo "source       $source"
 	echo "feedback     zellview@posteo.de"
 	echo "base         linuxmint 21.2 victoria"
 	echo "boot         ventoy 91"
@@ -110,7 +109,7 @@
 	echo
 	echo "enjoy and happy coding"
 	echo
-	echo "feel free to join us at github"
+	echo "feel free and join us at github"
 	echo "www.github.com/zellview"
 	echo
 	echo "keep the spirit of Pascal "

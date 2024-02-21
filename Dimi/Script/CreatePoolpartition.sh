@@ -2,13 +2,14 @@
 # 
 
 # by zellview media
-# on Su 2024-02-11 seq 38
-# www.zellview.net
+# Wed 2024-02-21 seq 42
+# www.github.com/zellview
 
-	version="3.2.18"
+	Version=0
+	DimiVersion="3.2.18"
 	partionname="zv-pool"
 
-    echo "starting DimiCreatePoolpartition"
+    echo "start DimiCreatePoolpartition version"$DimiVersion" file"$Version
     echo "This script will create a data partition"
     echo "at the end of the destination-device."
     echo
@@ -27,8 +28,8 @@
     # create datapartition at the end of disk
     
     #TODO
-    echo "create primary partition ext4 $destDevice 13.3GB to 100%"
-    parted $destDevice mkpart primary ext4 13.3GB 100% 
+    echo "create primary partition ext4 $destDevice 20GB to 100%"
+    parted $destDevice mkpart primary ext4 20GB 100% 
     
 #    echo "delete partition ${destDevice}3"
 #    parted rm ${destDevice}3

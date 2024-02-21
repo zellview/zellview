@@ -1,16 +1,21 @@
 # SCRIPT DimiSaveCubicConv
 # 
 
-# on 2024-01-09 seq 42
 # by zellview media
-# www.zellview.net
+# Wed 2024-01-09 seq 48
+# www.github.com/zellview
 
-	version="3.2.16"
+	Version=0
+	DimiVersion="3.2.24"
 
-	echo "starting DimiSaveCubicConv "$version
+	echo "start DimiSaveCubicConv version "$DimiVersion" file "$Version
+
+	cd ../..
 
 	echo "save cubic-config"
-	cp ~/zDev/dimi-image/cubic.conf ../Rsrc/iso-conf
+	cp ../dimi-image/cubic.conf Dimi/Rsrc/iso-conf
 #	cp ~/zDev/dimi-iso/partition-* ../Rsrc/iso
 
 	echo "Done DimiSaveCubicConv"
+
+# END DimiSaveCubicConv.

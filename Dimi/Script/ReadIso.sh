@@ -2,35 +2,41 @@
 # 
 
 # by zellview media
-# Tur 2024-02-20 seq 76
-# www.github.com/zellviews
+# Tue 2024-02-20 seq 86
+# www.github.com/zellview
 
 	Version=3
-	DimiVersion="3.2.23"
+	DimiVersion="3.2.24"
 
 	echo "start DimiReadIso "$DimiVersion" file "$Version
 
 	cd ../..
 
-	srcDevice=$1	# source device
+	sourceDevice=$1
 
-	if [ -z "$srcDevice" ]; then
-		echo "The script will read an image from the first two partitions of source device."
+	if [ -z "$sourceDevice" ]; then
+		echo "This script will create an iso-image from the first 2 partitions of the source-device."
 		echo
 		lsblk
 		echo
-		read -p "from which device? /dev/" srcDevice
+		read -p "Create from which device? /dev/" sourceDevice
 	fi
 
-	dd if=/dev/${srcDevice} of=MBR.iso bs=512 count=1 status=progress
+	# create iso-file from the two ventoy-partitions of the USB-stick	
+	# - to evaluate parameter count use fdisk to read the last sector of the last partition
+	# - add 1 and divide by blocksize in kB, round up to next integer
+	# - eg last sector: 11263999 +1 = 11264000/2048 =< 5500	
+	# - eg last sector: 37887999 +1 = ( 21860352 / 4096 ) +1 =< 6001 ??????
+	# - eg last sector: 37887999 +1 = ( 37888000 / 4096 ) +1 =< 6001 ??????
+	# - eg last sector: 26009599 +1 = ( 26009600 / 4096 ) +1 =< 6001 ??????
 
-	dd if=/dev/${srcDevice}1 of=${srcDevice}1.iso bs=4M status=progress
-	
-	dd if=/dev/${srcDevice}2 of=${srcDevice}2.iso bs=4M status=progress
-	
-	echo "concat iso-files to ../dimi-image/zv-abba-$DimiVersion-ventoy.iso"
-	cat MBR.iso ${srcDevice}1.iso ${srcDevice}2.iso > ../dimi-image/zv-abba-$DimiVersion-ventoy.iso
-     
+
+#	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4M count=10175 status=progress
+#	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$version-ventoy.iso bs=4096 count=3150001 status=progress
+#	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$DimiVersion-ventoy.iso bs=4096 count=3251200 status=progress
+
+	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$DimiVersion-ventoy.iso bs=4M status=progress
+
 	echo "done DimiReadIso"
 
-# END DimiReadso.
+# END DimiReadIso.

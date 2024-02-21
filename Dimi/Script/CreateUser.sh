@@ -2,17 +2,17 @@
 # 
 
 # by zellview media
-# on Mon 2024-02-19 seq 53
+# Wed 2024-02-21 seq 54
 # www.github.com/zellview
 
-	Version=3
-	DimiVersion=3.2.22
+	Version=4
+	DimiVersion=3.2.24
 
 	echo "start DimiCreateUser version "$DimiVersion" file "$Version
 	user=$1
 
     if [ -z "$user" ]; then
-        user=mint
+        user=mint		# default user
     fi
 
 	cd ../..

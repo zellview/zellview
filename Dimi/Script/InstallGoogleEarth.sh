@@ -1,18 +1,18 @@
 # SCRIPT DimiInstallGoogleEarth
 # 
 
-# on Su 2024-02-11 seq 36
 # by zellview media
+# Wed 2024-02-21 seq 39
 # www.github.com/zellview
 
-	Version=0
-	DimiVersion="3.2.20"
+	Version=1
+	DimiVersion="3.2.24"
 
-	echo "start DimiInstallGoogleEarth "$Version
+	echo "start DimiInstallGoogleEarth "$DimiVersion" file "$Version
 
 	sudo apt update -y
 	sudo apt install google-earth-pro-stable
 
-	echo "Done DimiInstallGoogleEarth"
+	echo "done DimiInstallGoogleEarth"
 
 # END DimiInstallGoogleEarth.

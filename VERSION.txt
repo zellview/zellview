@@ -1,1 +1,1 @@
-zellview version 3.2.22 build 01 on Sun 2024-02-18 abba dimi linuxmint 21.2 Victoria release Alice
+zellview version 3.2.24 build 01 on Wed 2024-02-21 abba dimi linuxmint 21.2 Victoria release Gerda

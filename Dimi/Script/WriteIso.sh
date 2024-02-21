@@ -2,11 +2,11 @@
 # 
 
 # by zellview media
-# Tue 2024-02-20 seq 45
+# Tue 2024-02-20 seq 46
 # www.github.com/zellview
 
-	Version=1
-	DimiVersion="3.2.23"
+	Version=2
+	DimiVersion="3.2.24"
 
 	cd ../.. 
 

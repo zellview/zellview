@@ -2,11 +2,11 @@
 # 
 
 # by zellview media
-# on 2024-01-09 seq 15
+# Wed 2024-01-21 seq 18
 # www.zellview.net
 
-	Version=0
-	DimiVersion="3.2.20"
+	Version=1
+	DimiVersion="3.2.24"
 
 	echo "start DimiInstallAnydesk "$Version
 
@@ -17,6 +17,6 @@
 	apt update -y
 	apt install anydesk -y
 
-	echo "Done DimiInstallAnydesk"
+	echo "done DimiInstallAnydesk"
 
 # END DimiInstallAnydesk.

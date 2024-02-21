@@ -1,20 +1,20 @@
 # SCRIPT DimiCreateImage
 # 
 
-# on Th 2024-02-15 seq 34
 # by zellview media
+# Tue 2024-02-21 seq 38
 # www.github.com/zellview
 
-	Version=2
-	DimiVersion=3.2.21
+	Version=3
+	DimiVersion=3.2.24
 
-	echo "start DimiCreateImage version "$Version
+	echo "start DimiCreateImage version "$DimiVersion" file "$Version
 
 		cd ../..
 		cd ../dimi-image
 
 		src=https://ftp.rz.uni-frankfurt.de/
-		dir=pub/mirrors/linux-mint/iso/stable/21.3/
+		dir=pub/mirrors/linux-mint/iso/stable/21.2/
 		file=linuxmint-21.2-cinnamon-64bit.iso		
 		
 		cp ../iso/$file . --verbose --update

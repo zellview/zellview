@@ -1,14 +1,14 @@
 # SCRIPT DimiSetupExt
 # 
 
-# on Th 2024-02.15 seq 71
 # by zellview media
+# Wed 2024-02-21 seq 72
 # www.github.com/zellview
 
-	Version=1
-	DimiVersion="3.2.21"
+	Version=2
+	DimiVersion="3.2.24"
 
-    echo "start DimiSetupExt version "$Version
+    echo "start DimiSetupExt version "$DimiVersion" file "$Version
     echo "This script will install extended software-set for zellview-dimi."
     echo "eg Openshot Google-Earth-Pro Audcity etc"
     echo

@@ -2,11 +2,11 @@
 # 
 
 # by zellview media
-# on Mon 2024-02-19 seq 96
+# Wed 2024-02-21 seq 97
 # www.github.com/zellview
 
-	Version=1
-	DimiVersion="3.2.22"
+	Version=2
+	DimiVersion="3.2.24"
 
 	echo "start DimiConfig version "$DimiVersion" file "$Version
 	echo "This script will configure some settings for zellview-dimi"

@@ -2,13 +2,13 @@
 # 
 
 # by zellview media
-# on Su 2024-02-11 seq 43
+# Wed 2024-02-21 seq 48
 # www.github.com/zellview
 
-	Version=0
-	DimiVersion="3.2.20"
+	Version=1
+	DimiVersion="3.2.24"
 
-	echo "starting DimiCleanIso "$Version
+	echo "start DimiCleanIso version "$DimiVersion" file "$Version
 
 	echo "remove custom dirs in Resource"
 	rm ~/zDev/dimi-image/custom-* -rf
