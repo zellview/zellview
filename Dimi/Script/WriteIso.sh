@@ -1,35 +1,30 @@
-#! bin/bash      
+# SCRIPT DimiWriteIso
+# 
 
-# MODULE DimiWriteIso;
-
-# 26. August 2023
-# version 3.2.06
 # by zellview media
+# Tue 2024-02-20 seq 46
 # www.github.com/zellview
 
-# CONST
-    Modulename="DimiWriteIso"
-    Version="3.2.06"
+	Version=2
+	DimiVersion="3.2.24"
 
-# VAR
+	cd ../.. 
+
+    echo "start DimiWriteIso "$DimiVersion" file "$Version
     destDevice=$1
-
-# BEGIN
-    echo "start $Modulename"
     
     if [ -z "$destDevice" ]; then
-        echo "This script will write zv-dimi-$Version iso-image to USB-stick."
+        echo "This script will write zv-abba-$DimiVersion-ventoy.iso to device"
         echo
         lsblk
         echo
-        echo "ATTENTION: All data on stick will be erased"
+        echo "ATTENTION: All data on the device will be erased"
         read -p "Write through which device? /dev/" destDevice
         destDevice=/dev/$destDevice
     fi
 
-    dd if=../../../zDev/dimi-iso/zv-dimi-$Version-ventoy.iso of=$destDevice bs=4M status=progress
+    dd if=../dimi-image/zv-abba-$DimiVersion-ventoy.iso of=$destDevice bs=4M status=progress
     
-    echo "$Modulename done"
-    echo
-    
+    echo "done DimiWriteIso"
+
 # END DimiWriteIso.

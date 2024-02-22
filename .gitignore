@@ -2,5 +2,8 @@
 *.sh
 *.res
 *~
+odc*
 Code
 Sym
+
+Priv

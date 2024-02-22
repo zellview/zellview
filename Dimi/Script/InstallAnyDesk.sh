@@ -1,18 +1,22 @@
-# SCRIPT DimiInstallAnydesk;
+# SCRIPT DimiInstallAnydesk
+# 
 
+# by zellview media
+# Wed 2024-01-21 seq 18
+# www.zellview.net
 
-#	by zellview new media
-#	www.zellview.network
-#	version 3.2.06
-#	24. August 2023
+	Version=1
+	DimiVersion="3.2.24"
 
-	echo "start DimiInstallAnydesk"
+	echo "start DimiInstallAnydesk "$Version
 
-	curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/anydesk.gpg
+	curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/anydesk.gpg
 
-	echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
+	echo "deb http://deb.anydesk.com/ all main" | tee /etc/apt/sources.list.d/anydesk-stable.list
 
-	sudo apt update
-	sudo apt install anydesk -y
+	apt update -y
+	apt install anydesk -y
 
-	echo "DimiInstallAnydesk done"
+	echo "done DimiInstallAnydesk"
+
+# END DimiInstallAnydesk.
