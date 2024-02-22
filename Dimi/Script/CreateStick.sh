@@ -2,10 +2,10 @@
 #	SCRIPT DimiCreateStick
 
 #	by zellview media
-#	Thu 2024-02-22 seq 192
+#	Thu 2024-02-22 seq 197
 #	www.github.com/zellview
 
-	Version=11
+	Version=12
 	DimiVersion="3.2.25"
 	AbbaVersion="3.2.25"
 
@@ -25,7 +25,7 @@
 	increaseDat=9216		# 9 * 1024
 
 #	reservedSpace=48000   # use for 64GB sticks with 8GB persist-image
-	reservedSpace=46000   # use for 64GB sticks with 8GB persist-image
+	reservedSpace=45000   # use for 64GB sticks with 8GB persist-image
 
 	echo "install zellview on device ?"	
 	echo "zellview is a platform and operating-system"
@@ -78,7 +78,7 @@
 	echo
 
 	echo "copy ventoy-template to $mountPt"
-	cp Dimi/Rsrc/tmpl/ventoy $mountPt
+	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
 
 	isoname=$labelfresh-$DimiVersion-fresh.iso
 
