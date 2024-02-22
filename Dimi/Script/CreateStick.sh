@@ -1,11 +1,11 @@
-# SCRIPT DimiCreateStick;
-# 
+
+#	SCRIPT DimiCreateStick
 
 #	by zellview media
-#	Wed 2024-02-21 seq 172
+#	Thu 2024-02-22 seq 189
 #	www.github.com/zellview
 
-	Version=6
+	Version=9
 	DimiVersion="3.2.24"
 	AbbaVersion="3.2.24"
 
@@ -13,7 +13,7 @@
 	destDevice=$1	# destination device
 
 	labelventoy="zv-abba"
- 	name="zellview abba mint dimi"
+	name="zellview abba mint dimi"
 	labelfresh="zv-dimi"
 	release="Gerda"
 
@@ -23,9 +23,10 @@
 	persistVol="zv-persist-1G-empty.dat"
 #	increaseDat=12288		# 12 * 1024
 	increaseDat=9216		# 9 * 1024
-	
+
 #	reservedSpace=48000   # use for 64GB sticks with 8GB persist-image
-#	reservedSpace=46000   # use for 64GB sticks with 8GB persist-image	
+	reservedSpace=46000   # use for 64GB sticks with 8GB persist-image
+
 	echo "install zellview on device ?"	
 	echo "zellview is a platform and operating-system"
 	echo "based on Linuxmint and Ubuntu."
@@ -67,8 +68,8 @@
 	echo
 
 	echo "Ventoy2Disc to $destDevice, label $label"
-#	sh Dimi/Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $labelventoy $destDevice
-	sh Dimi/Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S  -L $labelventoy $destDevice
+	sh Dimi/Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $labelventoy $destDevice
+#	sh Dimi/Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S  -L $labelventoy $destDevice
 
 	echo "make dir $mountPt"
 	mkdir $mountPt
@@ -76,17 +77,16 @@
 	sudo mount ${destDevice}1 ${mountPt}
 	echo
 
-	echo -n "copy Rsrc/tmpl/ventoy to $mountPt ... "
-	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
-	echo "done"
+	echo "copy ventoy-template to $mountPt"
+	cp Dimi/Rsrc/tmpl/ventoy $mountPt
 
-	echo -n "copy iso-image to $mountPt ... "
-	cp ../dimi-image/$labelfresh-$DimiVersion-fresh.iso $mountPt
-	echo "done"
+	isoname=$labelfresh-$DimiVersion-fresh.iso
+
+#	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M # read image from DVD
+	cp ../dimi-image/$isoname $mountPt -v
 
 	echo "make dir $mountPt/$persistPt"
 	mkdir $mountPt/$persistPt
-	echo
 
 #   echo "create $persistVol ($persistSize MB) volume in $persistPoint"
 #   Tools/ventoy/CreatePersistentImg.sh -s $persistSize -o $mountPoint/$persistPoint/$persistVol
