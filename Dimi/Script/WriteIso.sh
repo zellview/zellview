@@ -1,12 +1,12 @@
+
 # SCRIPT DimiWriteIso
-# 
 
 # by zellview media
-# Tue 2024-02-20 seq 46
+# Thu 2024-02-22 seq 48
 # www.github.com/zellview
 
-	Version=2
-	DimiVersion="3.2.24"
+	Version=4
+	DimiVersion="3.2.25"
 
 	cd ../.. 
 

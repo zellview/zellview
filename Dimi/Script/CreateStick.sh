@@ -2,12 +2,12 @@
 #	SCRIPT DimiCreateStick
 
 #	by zellview media
-#	Thu 2024-02-22 seq 189
+#	Thu 2024-02-22 seq 192
 #	www.github.com/zellview
 
-	Version=9
-	DimiVersion="3.2.24"
-	AbbaVersion="3.2.24"
+	Version=11
+	DimiVersion="3.2.25"
+	AbbaVersion="3.2.25"
 
 	echo "start DimiCreateStick version "$AbbaVersion" file "$Version
 	destDevice=$1	# destination device
@@ -15,7 +15,7 @@
 	labelventoy="zv-abba"
 	name="zellview abba mint dimi"
 	labelfresh="zv-dimi"
-	release="Gerda"
+	release="Annabell"
 
 	persistPt="persistence"
 	mountPt="mountPoint"

@@ -2,11 +2,11 @@
 # 
 
 # by zellview media
-# Wed 2024-02-21 seq 72
+# Thu 2024-02-22 seq 73
 # www.github.com/zellview
 
-	Version=2
-	DimiVersion="3.2.24"
+	Version=3
+	DimiVersion="3.2.25"
 
     echo "start DimiSetupExt version "$DimiVersion" file "$Version
     echo "This script will install extended software-set for zellview-dimi."
@@ -42,6 +42,6 @@
 	sudo apt update -y
 	echo
 
-	echo "Done DimiSetupExt"
+	echo "done DimiSetupExt"
 	
 # END DimiSetupExt.
