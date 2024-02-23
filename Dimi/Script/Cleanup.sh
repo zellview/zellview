@@ -2,31 +2,26 @@
 # 
 
 # by zellview media
-# Fri 2024-02-23 seq 57
+# Fri 2024-02-23 seq 61
 # www.github.com/zellview
 
-	Version=5
+	Version=6
 	DimiVersion=3.2.26
 
-	cd ../..
+	echo
+	echo "DimiCleanup version "$DimiVersion" file "$Version" started ..."
 
-#	echo "starting DimiCleanup version "$DimiVersion" file "$Version
-#	echo "ATTENTION: This script will clean up zellview INCLUDE .git !!!!"
+	cd ../..
+	
 #	echo "press RETURN to continue or CTRL-C to cancel"
 #	read tmp
-
 #	echo "remove .git*"
 #	rm .git* --recursive --force
 	
-	echo "remove *log"	
-	rm *log
-	
-	echo "remove odc*"
-	rm odc*
-	
-	echo "remove Dimi/Mod/odc*"
+	rm *log	
+	rm odc*	
 	rm Dimi/Mod/odc*
 
-	echo "done DimiCleanup"
+	echo "DimiCleanup done"
 
 # END DimiCleanup.

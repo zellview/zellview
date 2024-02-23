@@ -1,38 +1,43 @@
-
+#	
 #	SCRIPT DimiCreateStick
 
 #	by zellview media
-#	Thu 2024-02-22 seq 197
+#	Fri 2024-02-23 seq 208
 #	www.github.com/zellview
 
-	Version=12
-	DimiVersion="3.2.25"
-	AbbaVersion="3.2.25"
+	Version=14
+	DimiVersion="3.2.26"
+	AbbaVersion="3.2.26"
 
-	echo "start DimiCreateStick version "$AbbaVersion" file "$Version
+	echo "DimiCreateStick version "$AbbaVersion" file "$Version" start"
 	destDevice=$1	# destination device
 
 	labelventoy="zv-abba"
-	name="zellview abba mint dimi"
+	name="zellview abba dimi mint "
 	labelfresh="zv-dimi"
-	release="Annabell"
+	release="Romina"
 
 	persistPt="persistence"
 	mountPt="mountPoint"
 
 	persistVol="zv-persist-1G-empty.dat"
-#	increaseDat=12288		# 12 * 1024
 	increaseDat=9216		# 9 * 1024
 
-#	reservedSpace=48000   # use for 64GB sticks with 8GB persist-image
-	reservedSpace=45000   # use for 64GB sticks with 8GB persist-image
+	reservedSpace=45000   # use for 64GB sticks with 10 GiB persist-image
 
-	echo "install zellview on device ?"	
-	echo "zellview is a platform and operating-system"
-	echo "based on Linuxmint and Ubuntu."
-	echo
-	echo "Evaluate device for zellview"
-	echo
+	echo "
+		zellview is a platform and operating-system
+		based on BlackBox and Linuxmint 
+		see www.github.com/zellview
+		for more details
+		
+		Would you like to install zellview ??
+		It takes about 15 GB on a fresh device
+		
+		NOTE: All data on the device will be erased !
+
+		Choose a device or CTRL-C to cancel
+		"
 	lsblk
 	echo
 	read -p "zellview to device? /dev/" destDevice
@@ -82,7 +87,10 @@
 
 	isoname=$labelfresh-$DimiVersion-fresh.iso
 
+#	copy iso-image direct from DVD
 #	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M # read image from DVD
+
+#	copy iso-image
 	cp ../dimi-image/$isoname $mountPt -v
 
 	echo "make dir $mountPt/$persistPt"

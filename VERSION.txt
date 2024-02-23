@@ -1,1 +1,1 @@
-zellview version 3.2.25 build 01 on Thu 2024-02-22 abba dimi linuxmint 21.2 Victoria release Annabell
+zellview version 3.2.26 build 01 on Fri 2024-02-23 abba dimi linuxmint 21.2 Victoria release Romina
