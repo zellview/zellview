@@ -1,12 +1,12 @@
-
+#	
 #	SCRIPT DimiCreateImage
 
 #	by zellview media
-#	Fri 2024-02-23 seq 49
+#	Sat 2024-02-24 seq 63
 #	www.github.com/zellview
 
-	Version=7
-	DimiVersion=3.2.26
+	Version=9
+	DimiVersion=3.2.27
 
 	echo "DimiCreateImage version "$DimiVersion" file "$Version" started ..."
 
@@ -16,16 +16,14 @@
 #	dir=pub/mirrors/linux-mint/iso/stable/21.2/
 #	file=linuxmint-21.2-cinnamon-64bit.iso
 
-	file=zv-dimi-3.2.25-fresh.iso
+	base-iso=zv-dimi-3.2.25-fresh.iso
 	
-	cp ../iso/$file ../dimi-image --verbose --update
+	cp ../iso/$base-iso ../dimi-image --verbose --update
 
-#	wget --no-clobber $src$dir$file
+#	wget --no-clobber $src$dir$base-iso
 
-	cd ..
+	cubic ../dimi-image &
 
-	cubic dimi-image &
-
-	echo "DimiCreateImage done "
+	echo "DimiCreateImage done"
 
 # END DimiCreateImage.

@@ -2,34 +2,38 @@
 #	SCRIPT DimiCreateStick
 
 #	by zellview media
-#	Fri 2024-02-23 seq 249
 #	www.github.com/zellview
+#	on Sat 24-Feb-2024 seq 286
 
-	Version=20
+	Version=25
 
-	DimiVersion="dimi-3.2.26"
+	DimiVersion="3.2.26"
 	Diminame="Romina"
+	Dimi="dimi"
 
-	AbbaVersion="abba-3.2.26"
+	AbbaVersion="3.2.26"
 	Abbaname="Silly"
+	Abba="abba"
 
-	name="zellview romina silly"
+	name="zellview $Diminame $Abbaname"
 
-	echo "DimiCreateStick version "$DimiVersion" file "$Version" alias "$Diminame-$Abbaname" started ..."
+	echo "	DimiCreateStick version "$DimiVersion" file "$Version" started ..."
+				
+	zvBase="zv-$Abba-3.2.25"
+	mintBase="linuxmint 21.2 victoria"
+	ventoyVersion="ventoy 91"
 
-	zv-base="zv-abba-3.2.25"
-
-	destDevice=$1	# destination device
+	labelventoy="zv-$Abba"
+	ventoy=Dimi/Rsrc/Tools/ventoy		#TODO
 	
-	ventoy=Dimi/Rsrc/Tools/ventoy/
-	labelventoy="zv-abba"
-
 	persistPt="persistence"
 	mountPt="mountPoint"
+	
+	destDevice=$1	# destination device
 
 	persistVol="zv-persist-1G-empty.dat"
-	increaseDat=9216	# 9 * 1024 for increasing 1 GiB empty.dat by 9 GiB"
-	reservedSpace=45000	# use for 64GiB sticks with 10 GiB persist-image
+	increaseDat=9216			# 9 * 1024 for increasing 1 GiB empty.dat by 9 GiB"
+	reservedSpace=45000			# use for 64GiB sticks with 10 GiB persist-image
 
 	echo "
 		zellview is a platform and operating-system
@@ -39,8 +43,8 @@
 
 		Would you like to install zellview abba ??
 		
-		It takes 15 GB on a fresh device
-		and about 10 minutes
+		It takes 15 GB on a fresh device and about 
+		10 minutes to have a short break and chill :-)
 
 		NOTE: All data on the device will be erased !
 
@@ -49,15 +53,14 @@
 	lsblk
 	echo
 	read -p "Setup zellview on which device ? /dev/" destDevice
+	destDevice=/dev/$destDevice
 
 	echo "
-		***************************************************************
-		release			$labelventoy - $release
-		feedback  			zellview@posteo.de
-
-		zv-base			zv-abba-3.2.25
-		base         linuxmint 21.2 victoria
-		boot         ventoy 91
+		release			$labelventoy-$AbbaVersion
+		feedback  		zellview@posteo.de
+		zellview-base		$zvBase
+		mint-base         	$mintBase
+		boot         		$ventoyVersion
 		"
 
 #    echo "persistVolume      $persistVol"
@@ -72,67 +75,61 @@
 	echo "Press RETURN to continue or CTRL+C to abort."
 #	read tmp
 
-	cd ../..	
+	cd ../..
 
-	mkdir temp && cd temp
+#	rm action -rf
+#	mkdir action && cd action
 
-	echo "unmount $mountPt"
-	umount $mountPt
-	echo "remove $mountPt"
+	umount $mountPt -v
 	rm $mountPt -rfv
 
-	echo "$ventoy/Ventoy2Disc to $destDevice, label $label"
 	sh $ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $labelventoy $destDevice
-#	sh Dimi/Rsrc/Tools/ventoy/Ventoy2Disk.sh -I -S  -L $labelventoy $destDevice
 
-	echo "make dir $mountPt"
 	mkdir $mountPt
-	echo "mount ${destDevice}1 on $mountPt"
-	sudo mount ${destDevice}1 ${mountPt}
-	echo
+	mount ${destDevice}1 ${mountPt}
 
 	echo "copy ventoy-template to $mountPt"
 	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
 
-	isoname=$labelfresh-$DimiVersion-fresh.iso
+	isoname=zv-$Dimi-$DimiVersion-fresh.iso
 
 #	copy iso-image direct from DVD
 #	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M # read image from DVD
 
-# copy iso-image
-	cp /$isoname $mountPt -v
+# (* copy iso-image *)
+	cp ../dimi-image/$isoname $mountPt -vu
 
-	echo "make dir $mountPt/$persistPt"
 	mkdir $mountPt/$persistPt
 
 #   echo "create $persistVol ($persistSize MB) volume in $persistPoint"
 #   Tools/ventoy/CreatePersistentImg.sh -s $persistSize -o $mountPoint/$persistPoint/$persistVol
 
-#   echo "copy $persistVolEmpty.zip to "
-#   cp Rsrc/$persistVolMini.zip $mountPt/$persistPt
-
 	echo "unzip $persistVol.zip to $persistPt"
 	unzip Dimi/Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
 	echo "increase persistence.dat by $increaseDat MB"
-	sh $Ventoy/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
+	sh $ventoy/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
 
-	echo "unmount $mountPt"
 	umount $mountPt
-	echo "remove $mountPt"
 	rm $mountPt -rf
 
 	echo "
+	
 		$labelfresh-$AbbaVersion-fresh.iso persistent installed on device $destDevice.
 		you may now boot from this device ;-)
+		
 		enjoy and happy coding
+		
 		feel free and join us at github
 		www.github.com/zellview
+		
 		keep the spirit of Pascal 
 		and the message of
 		Niklaus Wirth
 		cu
+		
 		the zellview-team
-		done DimiCreateStick
+		
+		DimiCreateStick done
 		"
 
 # END DimiCreateStick.
