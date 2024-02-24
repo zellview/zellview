@@ -3,35 +3,30 @@
 
 #	by zellview media
 #	www.github.com/zellview
-#	on Sat 24-Feb-2024 seq 286
+#	on Sat 24-Feb-2024 seq 350
 
-	Version=25
+	Version=27
 
 	DimiVersion="3.2.26"
 	Diminame="Romina"
-	Dimi="dimi"
 
 	AbbaVersion="3.2.26"
 	Abbaname="Silly"
-	Abba="abba"
 
-	name="zellview $Diminame $Abbaname"
-
-	echo "	DimiCreateStick version "$DimiVersion" file "$Version" started ..."
+	echo "	DimiCreateStick version "$AbbaVersion" file "$Version" started ..."
 				
-	zvBase="zv-$Abba-3.2.25"
+	zvBase="zellview abba 3.2.25 $Diminame $Abbaname"
 	mintBase="linuxmint 21.2 victoria"
-	ventoyVersion="ventoy 91"
+	boot="ventoy 91"
 
-	labelventoy="zv-$Abba"
-	ventoy=Dimi/Rsrc/Tools/ventoy		#TODO
+	labelventoy="zv-abba"
 	
 	persistPt="persistence"
 	mountPt="mountPoint"
 	
 	destDevice=$1	# destination device
 
-	persistVol="zv-persist-1G-empty.dat"
+	persistVol="zv-persist-1G-empty.dat"	# fresh 1 Gib persistent image
 	increaseDat=9216			# 9 * 1024 for increasing 1 GiB empty.dat by 9 GiB"
 	reservedSpace=45000			# use for 64GiB sticks with 10 GiB persist-image
 
@@ -50,17 +45,20 @@
 
 		Cancel with CTRL-C or choose a device
 		"
+
 	lsblk
 	echo
 	read -p "Setup zellview on which device ? /dev/" destDevice
 	destDevice=/dev/$destDevice
 
 	echo "
+		***************************************************************
 		release			$labelventoy-$AbbaVersion
 		feedback  		zellview@posteo.de
 		zellview-base		$zvBase
 		mint-base         	$mintBase
 		boot         		$ventoyVersion
+		***************************************************************
 		"
 
 #    echo "persistVolume      $persistVol"
@@ -71,50 +69,54 @@
 #    echo "mointpoint        $mountPt"
 #    echo "persistPoint      $persistPt"
 
-	echo "Would you like to install zellview on device >>> $destDevice <<<"
-	echo "Press RETURN to continue or CTRL+C to abort."
+#	echo "Would you like to install zellview on device >>> $destDevice <<<"
+#	echo "Press RETURN to continue or CTRL+C to abort."
 #	read tmp
 
 	cd ../..
 
 #	rm action -rf
-#	mkdir action && cd action
+#	mkdir action && cd action	# action in separately dir ???
 
+	# Cleanup before
 	umount $mountPt -v
 	rm $mountPt -rfv
 
-	sh $ventoy/Ventoy2Disk.sh -I -S -r $reservedSpace -L $labelventoy $destDevice
+	# install Ventoy to destination device
+	sh VTools/Ventoy2Disk.sh -I -S -r $reservedSpace -L $labelventoy $destDevice
 
 	mkdir $mountPt
-	mount ${destDevice}1 ${mountPt}
+	echo "destDevice "$destDevice
+#	read tmp
+	sudo mount ${destDevice}1 ${mountPt}
 
 	echo "copy ventoy-template to $mountPt"
 	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
 
-	isoname=zv-$Dimi-$DimiVersion-fresh.iso
+	isoname=zv-dimi-$DimiVersion-fresh.iso
 
-#	copy iso-image direct from DVD
-#	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M # read image from DVD
+	#	copy iso-image
+	cp ../dimi-image/$isoname $mountPt -v
 
-# (* copy iso-image *)
-	cp ../dimi-image/$isoname $mountPt -vu
+	#	copy iso-image direct from DVD
+	#	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M # read image from DVD
 
 	mkdir $mountPt/$persistPt
 
-#   echo "create $persistVol ($persistSize MB) volume in $persistPoint"
-#   Tools/ventoy/CreatePersistentImg.sh -s $persistSize -o $mountPoint/$persistPoint/$persistVol
+	#   echo "create $persistVol ($persistSize MB) volume in $persistPoint"
+	#   VTools/CreatePersistentImg.sh -s $persistSize -o $mountPoint/$persistPoint/$persistVol
 
 	echo "unzip $persistVol.zip to $persistPt"
 	unzip Dimi/Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
-	echo "increase persistence.dat by $increaseDat MB"
-	sh $ventoy/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
+#	echo "increase persistence.dat by $increaseDat MB"
+#	sh VTools/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
 
 	umount $mountPt
 	rm $mountPt -rf
 
 	echo "
 	
-		$labelfresh-$AbbaVersion-fresh.iso persistent installed on device $destDevice.
+		$labelventoy-$AbbaVersion-fresh.iso persistent installed on device $destDevice.
 		you may now boot from this device ;-)
 		
 		enjoy and happy coding

@@ -1,24 +1,28 @@
 
-# SCRIPT DimiConfigUser
+# SCRIPT DimiConfigDev
 
 # by zellview media
-# Thu 2024-02-22 seq 22
+# Sat 22-Feb-2024- seq 6
 # www.github.com/zellview
 
-	Version=4
+	Version=2
 	DimiVersion=3.2.26
 	
 	cd ../..	
 	cd ..
 	
-	echo "start DimiConfigUser version "$DimiVersion" file "$Version
+	echo "start DimiConfigDev version "$DimiVersion" file "$Version
 
 	echo "change owner of dir zellview to mint"
 	sudo chown mint:mint zellview -R
 
+	mkdir zDev
+	cp /root/zellview zDev -rv
+	cp zellview/Dimi/Rsrc/conf/.bashrc-dev .bashrc
+
 #	echo "change owner of desktop-starter"
 #	chown mint:mint "/home/mint/Desktop/zellview abba.desktop"
 
-	echo "done DimiConfigUser"
+	echo "done DimiConfigDev"
 
-# END DimiConfigUser.
+# END DimiConfigDev.
