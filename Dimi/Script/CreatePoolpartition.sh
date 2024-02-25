@@ -2,10 +2,10 @@
 # SCRIPT DimiCreatePoolpartition;
 
 # by zellview media
-# Sub 2024-02-25 seq 64
+# Sun 2024-02-25 seq 77
 # www.github.com/zellview
 
-	Version=3
+	Version=4
 	DimiVersion="3.2.26"
 	
 	partitionname="zv-pool"
@@ -37,6 +37,8 @@
 #    echo "delete partition ${destDevice}3"
 #    parted rm ${destDevice}3
 
+
+	#TODO 
     echo "make filesystem $filesystem on ${destDevice}3"
     mkfs.exfat ${destDevice}p3
 

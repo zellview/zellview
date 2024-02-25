@@ -1,11 +1,11 @@
-
+# 
 # SCRIPT DimiConfigUser
 
 # by zellview media
-# Thu 2024-02-22 seq 22
+# Thu 2024-02-22 seq 25
 # www.github.com/zellview
 
-	Version=4
+	Version=5
 	DimiVersion=3.2.26
 	
 	cd ../..	
