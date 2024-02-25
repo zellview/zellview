@@ -8,6 +8,14 @@ case $- in
       *) return;;
 esac
 
+# some zellview aliases
+alias zv='cd ~/zDev/zellview'
+alias zlv='wine ~/zDev/zellview/zellview.exe &'
+alias dimi='cd ~/zDev/zellview/Dimi/'
+alias di=dimi
+alias script='cd ~/zDev/zellview/Script'
+alias scr=script
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -91,14 +99,6 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
-# some zellview aliases
-alias zv='cd ~/zDev/zellview'
-alias zlv='wine ~/zDev/zellview/zDev/zellview.exe &'
-alias di='cd ~/zDev/zellview/Dimi/'
-alias dimi='cd ~/zDev/zellview/Dimi/'
-alias script='cd ~/zDev/zellview/Script'
-alias scr='cd ~/zDev/zellview/Script'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
