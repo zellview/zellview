@@ -1,12 +1,12 @@
-
+# 
 # SCRIPT DimiDuplicate;
 
 # by zellview media
-# Fri 2024-02-23 seq 147
+# Sun 25-Feb-2024 seq 148
 # www.github.com/zellview
 
-Version=10
-DimiVersion="3.2.26"			# precessor Annabell
+Version=11
+DimiVersion="3.2.27"			# precessor Annabell
 
 echo
 echo "start DimiDuplicate "$DimiVersion" file "$Version

@@ -2,12 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
-
 # some zellview aliases
 alias zv='cd ~/zDev/zellview'
 alias zlv='wine ~/zDev/zellview/zellview.exe &'
@@ -15,6 +9,12 @@ alias dimi='cd ~/zDev/zellview/Dimi/'
 alias di=dimi
 alias script='cd ~/zDev/zellview/Dimi/Script'
 alias scr=script
+
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options

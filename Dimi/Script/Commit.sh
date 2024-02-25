@@ -2,21 +2,22 @@
 # SCRIPT DimiCommit
 
 # by zellview media
-# Fri 2024-02-23 seq 21
+# Sun 23-Feb-2024 seq 24
 # www.github.com/zellview
 
-	Version=3
-	DimiVersion="3.2.26"
+	Version=5
+	DimiVersion="3.2.27"
 	
 	echo "DimiCommit version "$DimiVersion" file "$Version" started ..."
+
+	sh commit/zellview/Dimi/Script/Cleanup.sh
 
 	cd ../..
 	cd ..
 	rm commit -rf
 	mkdir commit
-	cp zellview commit -rfuv
+	cp zellview commit -rfv
 	
-	sh commit/zellview/Dimi/Script/Cleanup.sh
 	
 	echo "DimiCommit done"
 

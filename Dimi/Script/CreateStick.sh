@@ -3,20 +3,20 @@
 
 #	by zellview media
 #	www.github.com/zellview
-#	on Sat 24-Feb-2024 seq 350
+#	Sub 24-Feb-2024 seq 354
 
-	Version=27
+	Version=28
 
-	DimiVersion="3.2.26"
-	Diminame="Romina"
+	DimiVersion="3.2.27"
+	Diminame="Walburga"
 
 	AbbaVersion="3.2.26"
 	Abbaname="Silly"
 
 	echo "	DimiCreateStick version "$AbbaVersion" file "$Version" started ..."
 				
-	zvBase="zellview abba 3.2.25 $Diminame $Abbaname"
-	mintBase="linuxmint 21.2 victoria"
+	zvBase="zellview abba 3.2.25 $Diminame"
+	mintBase="linuxmint 21.3 Virginia"
 	boot="ventoy 91"
 
 	labelventoy="zv-abba"
@@ -78,7 +78,7 @@
 #	rm action -rf
 #	mkdir action && cd action	# action in separately dir ???
 
-	# Cleanup before
+	echo "cleanup mountpoint"
 	umount $mountPt -v
 	rm $mountPt -rfv
 
@@ -86,8 +86,6 @@
 	sh VTools/Ventoy2Disk.sh -I -S -r $reservedSpace -L $labelventoy $destDevice
 
 	mkdir $mountPt
-	echo "destDevice "$destDevice
-#	read tmp
 	sudo mount ${destDevice}1 ${mountPt}
 
 	echo "copy ventoy-template to $mountPt"
@@ -98,7 +96,7 @@
 	#	copy iso-image
 	cp ../dimi-image/$isoname $mountPt -v
 
-	#	copy iso-image direct from DVD
+	#	echo "dd $isoname direct from /dev/sr0
 	#	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M # read image from DVD
 
 	mkdir $mountPt/$persistPt
@@ -108,8 +106,8 @@
 
 	echo "unzip $persistVol.zip to $persistPt"
 	unzip Dimi/Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
-#	echo "increase persistence.dat by $increaseDat MB"
-#	sh VTools/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
+	echo "increase persistence.dat by $increaseDat MB"
+	sh VTools/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
 
 	umount $mountPt
 	rm $mountPt -rf
