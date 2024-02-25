@@ -2,6 +2,14 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# some zellview aliases
+alias zv='cd ~/zellview'
+alias zlv='wine ~/zellview/zellview.exe &'
+alias dimi='cd ~/zellview/Dimi/'
+alias di=dimi
+alias script='cd ~/zellview/Script'
+alias scr=script
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -91,14 +99,6 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
-# some zellview aliases
-alias zv='cd ~/zellview'
-alias zlv='wine ~/zellview/zellview.exe &'
-alias di='cd ~/zellview/Dimi/'
-alias dimi='cd ~/zellview/Dimi/'
-alias script='cd ~/zellview/Script'
-alias scr='cd ~/zellview/Script'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

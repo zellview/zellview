@@ -13,7 +13,7 @@ alias zv='cd ~/zDev/zellview'
 alias zlv='wine ~/zDev/zellview/zellview.exe &'
 alias dimi='cd ~/zDev/zellview/Dimi/'
 alias di=dimi
-alias script='cd ~/zDev/zellview/Script'
+alias script='cd ~/zDev/zellview/Dimi/Script'
 alias scr=script
 
 # don't put duplicate lines or lines starting with space in the history.
