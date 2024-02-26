@@ -2,15 +2,15 @@
 # SCRIPT DimiCreatePoolExFAT;
 
 # by zellview media
-# Sun 25-Feb-2024 seq 81
+# Mon 26-Feb-2024 seq 90
 # www.github.com/zellview
 
-	Version=5
-	DimiVersion="3.2.27"
+	Version=7
+	DimiVersion=3.2.28
 	
 	partitionname="zv-pool"
 
-    echo "start DimiCreatePoolExFAT version"$DimiVersion" file"$Version
+    echo "DimiCreatePoolExFAT version"$DimiVersion" file"$Version" started ..."
     echo "This script will create a data partition"
     echo "at the end of the destination-device."
     echo
@@ -38,14 +38,14 @@
 
 
 	#TODO 
-#	partno="3"
-	partno="p3"
-    echo "make filesystem $filesystem on ${destDevice}3"
+	partno="3"
+#	partno="p3"		# for nvme* volumes
+    echo "make filesystem $filesystem on ${destDevice}$partno"
     mkfs.exfat ${destDevice}$partno
 
     echo "label partition ${destDevice}$partno to ${partitionname}"
     e2label ${destDevice}$partno ${partitionname}
         
-	echo "done DimiCreatePoolExFAT"
+	echo "DimiCreatePoolExFAT done"
 	
 # END DimiCreatePoolExFAT.

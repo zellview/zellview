@@ -2,11 +2,11 @@
 # 
 
 # by zellview media
-# Wed 2024-02-21 seq 38
+# Mon 26-Feb-2024 seq 41
 # www.github.com/zellview
 
-	Version=1
-	DimiVersion="3.2.24"
+	Version=3
+	DimiVersion="3.2.28"
 
 	echo "starting DimiInstallCubic "$DimiVersion" file "$Version
 
@@ -18,6 +18,6 @@
 # apt-add-repository ppa:cubic-wizard/release -y
 # apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6494C6D6997C215E -y
 
-	echo "done DimiInstallCubic"
+	echo "DimiInstallCubic done"
 
 # END DimiInstallCubic.

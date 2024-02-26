@@ -2,11 +2,11 @@
 # SCRIPT DimiCleanup
 
 # by zellview media
-# Sun 25-Feb-2024 seq 64
+# Mon 26-Feb-2024 seq 71
 # www.github.com/zellview
 
-	Version=7
-	DimiVersion=3.2.27
+	Version=9
+	DimiVersion=3.2.28
 
 	echo
 	echo "DimiCleanup version "$DimiVersion" file "$Version" started ..."
@@ -17,9 +17,14 @@
 #	read tmp
 #	echo "remove .git*"
 #	rm .git* --recursive --force
+
+	echo "remove *log"	
+	rm *log
 	
-	rm *log	
+	echo "renove odc*"	
 	rm odc*	
+	
+	echo "remove /Dimi/Mod/odc*"
 	rm Dimi/Mod/odc*
 
 	echo "DimiCleanup done"

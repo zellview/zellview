@@ -2,11 +2,11 @@
 # 
 
 # by zellview media
-# Wed 2024-02-21 seq 22
+# Mon 26-Feb-2024 seq 24
 # www.github.com/zellview
 
-	Version=1
-	DimiVersion=3.2.24
+	Version=3
+	DimiVersion=3.2.28
 
 	echo "start DimiInstallOpenshot "$DimiVersion" file "$Version
 
@@ -14,6 +14,6 @@
 	apt-get update -y
 	apt-get install openshot-qt python3-openshot -y
 
-	echo "done DimiInstallOpenshot"
+	echo "DimiInstallOpenshot done"
 
 # END DimiInstallOpenshot.

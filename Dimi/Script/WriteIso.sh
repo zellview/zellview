@@ -1,16 +1,16 @@
-
+# 
 # SCRIPT DimiWriteIso
 
 # by zellview media
-# Sun 22-Feb-2024 seq 50
+# Mon 26-Feb-2024 seq 52
 # www.github.com/zellview
 
-	Version=5
-	DimiVersion="3.2.27"
+	Version=6
+	DimiVersion="3.2.28"
 
 	cd ../.. 
 
-    echo "start DimiWriteIso "$DimiVersion" file "$Version
+    echo "DimiWriteIso "$DimiVersion" file "$Version" started ..."
     destDevice=$1
     
     if [ -z "$destDevice" ]; then

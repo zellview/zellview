@@ -1,19 +1,16 @@
-#	
-#	SCRIPT DimiCreateStick
+# 
+# SCRIPT DimiCreateStick
 
-#	by zellview media
-#	www.github.com/zellview
-#	Sub 24-Feb-2024 seq 354
+# by zellview media
+# www.github.com/zellview
+# Mon 26-Feb-2024 seq 367
 
-	Version=28
+	Version=30
 
-	DimiVersion="3.2.27"
-	Diminame="Walburga"
+	DimiVersion="3.2.28"
+	Diminame="Denis"
 
-	AbbaVersion="3.2.26"
-	Abbaname="Silly"
-
-	echo "	DimiCreateStick version "$AbbaVersion" file "$Version" started ..."
+	echo "DimiCreateStick version "$DimiVersion" file "$Version" started ..."
 				
 	zvBase="zellview abba 3.2.25 $Diminame"
 	mintBase="linuxmint 21.3 Virginia"
@@ -53,9 +50,8 @@
 
 	echo "
 		***************************************************************
-		release			$labelventoy-$AbbaVersion
+		release			$labelventoy-$DimiVersion-Diminame
 		feedback  		zellview@posteo.de
-		zellview-base		$zvBase
 		mint-base         	$mintBase
 		boot         		$ventoyVersion
 		***************************************************************
@@ -82,7 +78,7 @@
 	umount $mountPt -v
 	rm $mountPt -rfv
 
-	# install Ventoy to destination device
+	echo "install Ventoy to destination device"
 	sh VTools/Ventoy2Disk.sh -I -S -r $reservedSpace -L $labelventoy $destDevice
 
 	mkdir $mountPt
@@ -92,11 +88,10 @@
 	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
 
 	isoname=zv-dimi-$DimiVersion-fresh.iso
-
-	#	copy iso-image
+	echo "copy iso-image to $mountPt"
 	cp ../dimi-image/$isoname $mountPt -v
 
-	#	echo "dd $isoname direct from /dev/sr0
+	#	echo "dd $isoname direct from /dev/sr0"
 	#	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M # read image from DVD
 
 	mkdir $mountPt/$persistPt
@@ -109,12 +104,13 @@
 	echo "increase persistence.dat by $increaseDat MB"
 	sh VTools/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
 
+	echo "Cleanup $mountPt"
 	umount $mountPt
 	rm $mountPt -rf
 
 	echo "
 	
-		$labelventoy-$AbbaVersion-fresh.iso persistent installed on device $destDevice.
+		$labelventoy-$DimiVersion-fresh.iso persistent installed on device $destDevice.
 		you may now boot from this device ;-)
 		
 		enjoy and happy coding

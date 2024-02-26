@@ -4,7 +4,7 @@
 
 # some zellview aliases
 alias zv='cd ~/zellview'
-alias zlv='wine ~/zellview/zellview.exe &'
+alias zlv='wine ~/zellview/zellview.exe Greeting.odc &'
 alias dimi='cd ~/zellview/Dimi/'
 alias di=dimi
 alias script='cd ~/zellview/Script'

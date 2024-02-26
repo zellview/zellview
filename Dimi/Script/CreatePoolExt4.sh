@@ -2,20 +2,20 @@
 # SCRIPT DimiCreatePoolExt4;
 
 # by zellview media
-# Sun 25-Feb-2024 seq 1
+# Mon 26-Feb-2024 seq 86
 # www.github.com/zellview
 
-	Version=1
-	DimiVersion="3.2.27"
+	Version=5
+	DimiVersion="3.2.28"
 	
 	partitionname="zv-pool"
 
-    echo "start DimiCreatePoolExt4 version"$DimiVersion" file"$Version
-    echo "This script will create a data partition"
-    echo "at the end of the destination-device."
-    echo
-    echo "Choose the appropriate device to create the partition."
-    echo
+    echo "DimiCreatePoolExt4 version"$DimiVersion" file"$Version" start ..."
+    	This script will create a data partition"
+    	at the end of the destination-device.
+
+    	Choose the appropriate device to create the partition.
+	"
     lsblk
     echo
     read -p "Create partition on which device? /dev/" destDevice
@@ -41,11 +41,11 @@
 #	partno="3"
 	partno="p3"
     echo "make filesystem $filesystem on ${destDevice}3"
-    mkfs.ext4 ${destDevice}$partno
+    mkfs.exfat ${destDevice}$partno
 
     echo "label partition ${destDevice}$partno to ${partitionname}"
     e2label ${destDevice}$partno ${partitionname}
         
-	echo "done DimiCreatePoolExt4"
+	echo "DimiCreatePoolExt4 done"
 	
 # END DimiCreatePoolExt4.
