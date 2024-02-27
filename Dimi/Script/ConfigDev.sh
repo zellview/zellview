@@ -2,16 +2,15 @@
 # SCRIPT DimiConfigDev
 
 # by zellview media
-# Sun 25-Feb-2024- seq 10
+# Tue 27-Feb-2024- seq 16
 # www.github.com/zellview
 
-	Version=2
-	DimiVersion=3.2.26
+	Version=4
 	
 	cd ../..	
 	cd ..
 	
-	echo "start DimiConfigDev version "$DimiVersion" file "$Version
+	echo "DimiConfigDev version "$Version"started ..."
 
 	# create Dev-Folder"
 	mkdir zDev
@@ -19,6 +18,6 @@
 	# aliases for Developers
 	cp zellview/Dimi/Rsrc/conf/.bashrc-dev .bashrc
 
-	echo "done DimiConfigDev"
+	echo "DimiConfigDev done"
 
 # END DimiConfigDev.

@@ -2,14 +2,13 @@
 # SCRIPT DimiCleanup
 
 # by zellview media
-# Mon 26-Feb-2024 seq 71
+# Tue 27-Feb-2024 seq 72
 # www.github.com/zellview
 
-	Version=9
-	DimiVersion=3.2.28
+	Version=10
 
 	echo
-	echo "DimiCleanup version "$DimiVersion" file "$Version" started ..."
+	echo "DimiCleanup version "$Version" started ..."
 
 	cd ../..
 	

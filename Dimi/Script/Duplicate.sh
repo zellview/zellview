@@ -2,14 +2,13 @@
 # SCRIPT DimiDuplicate;
 
 # by zellview media
-# Mon 26-Feb-2024 seq 153
+# Tue 27-Feb-2024 seq 157
 # www.github.com/zellview
 
-Version=12
-DimiVersion="3.2.28"			# Denis
+Version=13
 
 echo
-echo "DimiDuplicate "$DimiVersion" file "$Version" started"
+echo "DimiDuplicate version "$Version" started ..."
 
 srcDevice=$2			# source device
 
@@ -40,6 +39,6 @@ fi
 
 dd if=/dev/$srcDevice of=/dev/$destDevice bs=4M count=3750 status=progress
 
-echo "done DimiDuplicate"
+echo "DimiDuplicate done"
 
 # END DimiDuplicate.

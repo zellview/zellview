@@ -2,13 +2,12 @@
 # SCRIPT DimiReadIso;
 
 # by zellview media
-# Mon 26-Feb-2024 seq 101
+# Tue 27-Feb-2024 seq 104
 # www.github.com/zellview
 
-	Version=8
-	DimiVersion="3.2.28"
+	Version=9
 
-	echo "DimiReadIso "$DimiVersion" file "$Version" started ..."
+	echo "DimiReadIso version "$Version" started ..."
 
 	cd ../..
 
@@ -28,6 +27,7 @@
 	# - eg last sector: 11263999 +1 = 11264000/2048 =< 5500	
 
 	# 30654464 / 8192 = 3724
+	
 	dd if=/dev/$sourceDevice of=../dimi-image/zv-abba-$DimiVersion-ventoy.iso bs=4M count=3750 status=progress
 
 	echo "DimiReadIso done"

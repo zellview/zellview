@@ -2,13 +2,12 @@
 #	SCRIPT DimiCreateImage
 
 #	by zellview media
-#	Mon 26-Feb-2024 seq 73
+#	Tue 27-Feb-2024 seq 75
 #	www.github.com/zellview
 
-	Version=11
-	DimiVersion=3.2.28
+	Version=12
 
-	echo "DimiCreateImage version "$DimiVersion" file "$Version" started ..."
+	echo "DimiCreateImage version "$Version" started ..."
 
 	cd ../..
 

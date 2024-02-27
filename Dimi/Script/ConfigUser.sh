@@ -2,16 +2,15 @@
 # SCRIPT DimiConfigUser
 
 # by zellview media
-# Mon 26-Feb-2024 seq 29
+# Tue 27-Feb-2024 seq 31
 # www.github.com/zellview
 
-	Version=7
-	DimiVersion=3.2.28
+	Version=8
 	
 	cd ../..	
 	cd ..
 	
-	echo "DimiConfigUser version "$DimiVersion" file "$Version" started ..."
+	echo "DimiConfigUser version "$Version" started ..."
 	
 	echo "change owner of dir zellview to mint"
 	sudo chown mint:mint zellview -R

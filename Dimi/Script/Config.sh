@@ -2,14 +2,13 @@
 # SCRIPT DimiConfig
 
 # by zellview media
-# Mon 26-Feb-2024 seq 110
+# Tue 27-Feb-2024 seq 112
 # www.github.com/zellview
 
-	Version=7
-	DimiVersion="3.2.28"
+	Version=8
 
 	echo "
-		start DimiConfig version "$DimiVersion" file "$Version
+		start DimiConfig version "$Version
 		This script will configure some settings for zellview-dimi
 		keyboard, timezone, background, languages etc
 		"

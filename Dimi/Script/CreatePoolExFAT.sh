@@ -2,20 +2,20 @@
 # SCRIPT DimiCreatePoolExFAT;
 
 # by zellview media
-# Mon 26-Feb-2024 seq 90
+# Tue 27-Feb-2024 seq 92
 # www.github.com/zellview
 
-	Version=7
-	DimiVersion=3.2.28
+	Version=8
 	
 	partitionname="zv-pool"
 
-    echo "DimiCreatePoolExFAT version"$DimiVersion" file"$Version" started ..."
-    echo "This script will create a data partition"
-    echo "at the end of the destination-device."
-    echo
-    echo "Choose the appropriate device to create the partition."
-    echo
+    echo "DimiCreatePoolExFAT version "$Version" started ...
+    	This script will create a data partition
+    	at the end of the destination-device.
+
+    	Choose the appropriate device to create the partition.
+
+		"
     lsblk
     echo
     read -p "Create partition on which device? /dev/" destDevice
@@ -32,9 +32,6 @@
 	startpoint="15.7GB"
     echo "create primary partition $filesystem $destDevice $startpoint to 100%"
     parted ${destDevice} mkpart primary ext4 $startpoint 100%
-    
-#    echo "delete partition ${destDevice}3"
-#    parted rm ${destDevice}3
 
 
 	#TODO 

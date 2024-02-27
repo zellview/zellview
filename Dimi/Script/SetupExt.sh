@@ -2,14 +2,13 @@
 # 
 
 # by zellview media
-# Mon 26-Feb-2024 seq 80
+# Tue 27-Feb-2024 seq 82
 # www.github.com/zellview
 
-	Version=5
-	DimiVersion="3.2.28"
+	Version=6
 
     echo "
-		start DimiSetupExt version "$DimiVersion" file "$Version
+		start DimiSetupExt version "$Version
     	This script will install extended software-set for zellview-dimi.
     	eg Openshot Google-Earth-Pro Audcity etc
 

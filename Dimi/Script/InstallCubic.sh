@@ -2,14 +2,13 @@
 # 
 
 # by zellview media
-# Mon 26-Feb-2024 seq 41
+# Tue 27-Feb-2024 seq 45
 # www.github.com/zellview
 
-	Version=3
-	DimiVersion="3.2.28"
+	Version=4
 
-	echo "starting DimiInstallCubic "$DimiVersion" file "$Version
-
+	echo "DimiInstallCubic "$Version" started ..."
+	
 	sudo apt-add-repository universe -y
 	sudo apt-add-repository ppa:cubic-wizard/release -y
 	sudo apt update -y

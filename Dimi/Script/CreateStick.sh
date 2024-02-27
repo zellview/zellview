@@ -3,16 +3,15 @@
 
 # by zellview media
 # www.github.com/zellview
-# Mon 26-Feb-2024 seq 367
+# Tue 27-Feb-2024 seq 371
 
-	Version=30
+	Version=31
 
 	DimiVersion="3.2.28"
-	Diminame="Denis"
+	Diminame="Yella"
 
-	echo "DimiCreateStick version "$DimiVersion" file "$Version" started ..."
+	echo "DimiCreateStick version "$Version" Dimiversion "$DimiVersion" started ..."
 				
-	zvBase="zellview abba 3.2.25 $Diminame"
 	mintBase="linuxmint 21.3 Virginia"
 	boot="ventoy 91"
 

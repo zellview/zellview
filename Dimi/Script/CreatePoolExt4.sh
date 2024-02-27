@@ -2,15 +2,15 @@
 # SCRIPT DimiCreatePoolExt4;
 
 # by zellview media
-# Mon 26-Feb-2024 seq 86
+# Tue 27-Feb-2024 seq 90
 # www.github.com/zellview
 
 	Version=5
-	DimiVersion="3.2.28"
 	
 	partitionname="zv-pool"
 
-    echo "DimiCreatePoolExt4 version"$DimiVersion" file"$Version" start ..."
+    echo "DimiCreatePoolExt4 version"$Version" started ..."
+
     	This script will create a data partition"
     	at the end of the destination-device.
 
@@ -32,10 +32,6 @@
 	startpoint="15.7GB"
     echo "create primary partition $filesystem $destDevice $startpoint to 100%"
     parted ${destDevice} mkpart primary ext4 $startpoint 100%
-    
-#    echo "delete partition ${destDevice}3"
-#    parted rm ${destDevice}3
-
 
 	#TODO 
 #	partno="3"

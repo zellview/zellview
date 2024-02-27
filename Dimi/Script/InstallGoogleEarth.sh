@@ -2,13 +2,12 @@
 # 
 
 # by zellview media
-# Mon 26-Feb-2024 seq 41
+# Tue 27-Feb-2024 seq 43
 # www.github.com/zellview
 
-	Version=2
-	DimiVersion="3.2.28"
+	Version=3
 
-	echo "start DimiInstallGoogleEarth version "$DimiVersion" file "$Version
+	echo "DimiInstallGoogleEarth version "$Version" started ..."
 
 	sudo apt update -y
 	sudo apt install google-earth-pro-stable

@@ -2,13 +2,12 @@
 # 
 
 # by zellview media
-# Mon 26-Feb-2024 seq 24
+# Tue 27-Feb-2024 seq 26
 # www.github.com/zellview
 
-	Version=3
-	DimiVersion=3.2.28
+	Version=4
 
-	echo "start DimiInstallOpenshot "$DimiVersion" file "$Version
+	echo "DimiInstallOpenshot "$Version" started ..."
 
 	add-apt-repository ppa:openshot.developers/ppa -y
 	apt-get update -y

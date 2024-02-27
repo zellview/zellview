@@ -2,13 +2,12 @@
 # 
 
 # by zellview media
-# Mon 26-Feb-2024 seq 27
+# Tue 27-Feb-2024 seq 29
 # www.github.com/zellview
 
-	Version=3
-	DimiVersion="3.2.28"
+	Version=4
 		
-	echo "start DimiInstallWine "$DimiVersion" file "$Version
+	echo "start DimiInstallWine "$Version
 	
 	dpkg --add-architecture i386
 

@@ -2,13 +2,12 @@
 # SCRIPT DimiCreateUser
 
 # by zellview media
-# Mon 26 seq 68
+# Tue 27-Feb-2024 seq 72
 # www.github.com/zellview
 
-	Version=10
-	DimiVersion=3.2.28
+	Version=11
 
-	echo "start DimiCreateUser version "$DimiVersion" file "$Version
+	echo "start DimiCreateUser version "$Version
 	user=$1
 
     if [ -z "$user" ]; then

@@ -2,13 +2,12 @@
 # SCRIPT DimiResetImage 
 
 	# by zellview media
-	# Mon 26-Feb-2024 seq 42
+	# Tue 27-Feb-2024 seq 42
 	# www.github.com/zellview
 
-	Version=8
-	DimiVersion=3.2.28
+	Version=9
 
-	echo "DimiResetImage version "$DimiVersion" file "$Version" started ..."
+	echo "DimiResetImage version "$Version" started ..."
 
 	cd ../..
 
