@@ -3,11 +3,11 @@
 
 # by zellview media
 # www.github.com/zellview
-# Tue 27-Feb-2024 seq 371
+# Tue 27-Feb-2024 seq 372
 
-	Version=31
+	Version=32
 
-	DimiVersion="3.2.28"
+	DimiVersion="3.2.29"
 	Diminame="Yella"
 
 	echo "DimiCreateStick version "$Version" Dimiversion "$DimiVersion" started ..."
@@ -91,7 +91,7 @@
 	cp ../dimi-image/$isoname $mountPt -v
 
 	#	echo "dd $isoname direct from /dev/sr0"
-	#	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M # read image from DVD
+	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M status=progress
 
 	mkdir $mountPt/$persistPt
 
