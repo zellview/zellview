@@ -2,13 +2,12 @@
 # 
 
 # by zellview media
-# Wed 2024-01-21 seq 18
-# www.zellview.net
+# Tue 27-Feb-2024 seq 22
+# www.github.com/zellview
 
-	Version=1
-	DimiVersion="3.2.24"
+	Version=4
 
-	echo "start DimiInstallAnydesk "$Version
+	echo "DimiInstallAnydesk version "$Version" started ..."
 
 	curl -fsSL https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/anydesk.gpg
 
@@ -17,6 +16,6 @@
 	apt update -y
 	apt install anydesk -y
 
-	echo "done DimiInstallAnydesk"
+	echo "DimiInstallAnydesk done"
 
 # END DimiInstallAnydesk.

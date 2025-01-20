@@ -1,30 +1,25 @@
-# SCRIPT DimiCreateImage
-# 
+#	
+#	SCRIPT DimiCreateImage
 
-# by zellview media
-# Tue 2024-02-21 seq 38
-# www.github.com/zellview
+#	by zellview media
+#	Tue 27-Feb-2024 seq 75
+#	www.github.com/zellview
 
-	Version=3
-	DimiVersion=3.2.24
+	Version=12
 
-	echo "start DimiCreateImage version "$DimiVersion" file "$Version
+	echo "DimiCreateImage version "$Version" started ..."
 
-		cd ../..
-		cd ../dimi-image
+	cd ../..
 
-		src=https://ftp.rz.uni-frankfurt.de/
-		dir=pub/mirrors/linux-mint/iso/stable/21.2/
-		file=linuxmint-21.2-cinnamon-64bit.iso		
-		
-		cp ../iso/$file . --verbose --update
+	baseiso=linuxmint-21.3-cinnamon-64bit.iso
+	echo "copy $baseiso to ../dimi-image"
+	cp ../../zRsrc/iso/$baseiso ../dimi-image --verbose --update
+	
+#	dd if=/dev/sr0 of=../dimi-image
+#	wget --no-clobber $src$dir$baseiso
 
-		wget --no-clobber $src$dir$file
+	cubic ../dimi-image &
 
-		cd ..
-
-		cubic dimi-image &
-
-		echo "Done DimiCreateImage"
+	echo "DimiCreateImage done"
 
 # END DimiCreateImage.

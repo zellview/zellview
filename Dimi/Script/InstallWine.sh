@@ -2,13 +2,12 @@
 # 
 
 # by zellview media
-# Wed 2024-2-11 seq 24
+# Tue 27-Feb-2024 seq 29
 # www.github.com/zellview
 
-	Version=1
-	DimiVersion="3.2.24"
+	Version=4
 		
-	echo "start DimiInstallWine "$DimiVersion" file "$Version
+	echo "start DimiInstallWine "$Version
 	
 	dpkg --add-architecture i386
 
@@ -23,6 +22,6 @@
 	apt install --install-recommends winehq-stable -y
 	apt install playonlinux -y
 
-	echo "Done DimiInstallWine"
+	echo "DimiInstallWine done"
 	
-# END DimiInastallWine.
+# END DimiInstallWine.

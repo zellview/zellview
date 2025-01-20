@@ -2,19 +2,19 @@
 # 
  
 # by zellview media
-# Wed 2024-02-21 seq 94
+# Tue 27-Feb-2024 seq 105
 # www.github.com/zellview
 
-	Version=3
-	DimiVersion="3.2.24"
+	Version=8
 
-	echo "start DimiSetup version "$DimiVersion" file "$Version
-	echo
-	echo "This script will install software-set for zellview-dimi."
-	echo "eg blackbox2 git kazam kate krusader retext wine xfburn etc"
-	echo
-	echo "Press RETURN to continue or CTRL+C to cancel."
-	read tmp
+	echo "
+		DimiSetup version "$Version" started ...
+
+		This script will install software-set for zellview-dimi.
+		eg blackbox2 git kazam kate krusader retext wine xfburn etc
+		"
+#	echo "Press RETURN to continue or CTRL+C to cancel."
+#	read tmp
 
 	echo "apt-get update"
 	apt-get update -y
@@ -57,6 +57,6 @@
 	apt update -y
 	echo
 
-	echo "done DimiSetup"
+	echo "DimiSetup done"
 
 # END DimiSetup.
