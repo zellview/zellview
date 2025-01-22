@@ -1,9 +1,10 @@
-#	
+
+
 #	SCRIPT DimiCreateImage
 
-#	by zellview media
-#	Tue 27-Feb-2024 seq 75
 #	www.github.com/zellview
+# c
+#	by zellview media
 
 	Version=12
 
