@@ -1,9 +1,9 @@
-# 
+
+
 # SCRIPT DimiCreateUser
 
-# by zellview media
-# Tue 27-Feb-2024 seq 72
 # www.github.com/zellview
+# by zellview media
 
 	Version=11
 

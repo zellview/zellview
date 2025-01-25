@@ -1,9 +1,9 @@
-# 
+
+
 # SCRIPT DimiConfig
 
-# by zellview media
-# Tue 27-Feb-2024 seq 112
 # www.github.com/zellview
+# by zellview media
 
 	Version=8
 

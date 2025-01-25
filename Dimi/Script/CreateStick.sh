@@ -1,21 +1,20 @@
-# 
+
+
 # SCRIPT DimiCreateStick
 
-# by zellview media
 # www.github.com/zellview
-# Tue 27-Feb-2024 seq 372
+# by zellview media
 
-	Version=32
+	Version=33
 
-	DimiVersion="3.2.29"
-	Diminame="Yella"
+	DimiVersion="3.3.03"
 
-	echo "DimiCreateStick version "$Version" Dimiversion "$DimiVersion" started ..."
+	echo "DimiCreateStick version "$Version" started ..."
 				
-	mintBase="linuxmint 21.3 Virginia"
+	mintBase="linuxmint 22.1 Xia"
 	boot="ventoy 91"
 
-	labelventoy="zv-abba"
+	labelventoy="zv-dimi"
 	
 	persistPt="persistence"
 	mountPt="mountPoint"
@@ -87,11 +86,11 @@
 	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
 
 	isoname=zv-dimi-$DimiVersion-fresh.iso
-	echo "copy iso-image to $mountPt"
+	echo "copy iso-image $isoname to $mountPt"
 	cp ../dimi-image/$isoname $mountPt -v
 
 	#	echo "dd $isoname direct from /dev/sr0"
-	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M status=progress
+	#	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M status=progress
 
 	mkdir $mountPt/$persistPt
 
@@ -109,22 +108,22 @@
 
 	echo "
 	
-		$labelventoy-$DimiVersion-fresh.iso persistent installed on device $destDevice.
-		you may now boot from this device ;-)
-		
-		enjoy and happy coding
-		
-		feel free and join us at github
-		www.github.com/zellview
-		
-		keep the spirit of Pascal 
-		and the message of
-		Niklaus Wirth
-		cu
-		
-		the zellview-team
-		
-		DimiCreateStick done
-		"
+	$labelventoy-$DimiVersion-fresh.iso persistent installed on device $destDevice.
+	you may now boot from this device ;-)
+	
+	enjoy and happy coding
+	
+	feel free and join us at github
+	www.github.com/zellview
+	
+	keep the spirit of Pascal 
+	and the message of
+	Niklaus Wirth
+	cu
+	
+	the zellview-team
+	
+	DimiCreateStick done
+	"
 
 # END DimiCreateStick.

@@ -1,11 +1,12 @@
+
+
 # SCRIPT DimiInstallWine
-# 
 
-# by zellview media
-# Tue 27-Feb-2024 seq 29
 # www.github.com/zellview
+# by zellview media
+# contrib kai47x
 
-	Version=4
+	Version=5
 		
 	echo "start DimiInstallWine "$Version
 	
