@@ -104,7 +104,7 @@
 
 	echo "Cleanup $mountPt"
 	umount $mountPt
-	rm $mountPt -rf
+#	rm $mountPt -rf
 
 	echo "
 	
