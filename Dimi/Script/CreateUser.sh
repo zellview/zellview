@@ -5,7 +5,7 @@
 # www.github.com/zellview
 # by zellview media
 
-	Version=11
+	Version=12
 
 	echo "start DimiCreateUser version "$Version
 	user=$1
@@ -25,12 +25,13 @@
 	
 	echo "copy dir zellview to /home/"$user
 	cp ../zellview /home/$user -r
+	chown -R $user:$user /home/$user/zellview
 
-	echo "copy .bashrc-user to ~/.bashrc"		
-	cp Dimi/Rsrc/conf/.bashrc-user /home/$user/.bashrc -v
+#	echo "copy .bashrc-user to ~/.bashrc"		
+#	cp Dimi/Rsrc/conf/.bashrc-user /home/$user/.bashrc -v
 	
-#	mkdir /home/$user/Desktop
-#	cp Dimi/Rsrc/desktop/* /home/$user/Desktop/ -v
+	mkdir /home/$user/Desktop
+	cp Dimi/Rsrc/desktop/* /home/$user/Desktop/ -v
 	
 	echo "DimiCreateUser done"
 

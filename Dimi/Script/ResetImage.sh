@@ -1,11 +1,11 @@
-# 
+
+
 # SCRIPT DimiResetImage 
 
-	# by zellview media
-	# Tue 27-Feb-2024 seq 45
-	# www.github.com/zellview
+# www.github.com/zellview
+# by zellview media
 
-	Version=10
+	Version=11
 
 	echo "DimiResetImage version "$Version" started ..."
 
