@@ -20,7 +20,7 @@
 	ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 
 	echo "set background"
-	cp /home/mint/zellview/Rsrc/zv-impressions /usr/share/backgrounds -r
+	cp /home/mint/zellview/Dimi/Rsrc/zv-impressions /usr/share/backgrounds -r
 #	srcLink=/home/mint/zellview/Dimi/Rsrc/zv-impressions/zellview3_cloudy.png
 	srcLink=/usr/share/backgrounds/zv-impressions/zellview3_cloudy.png
 	destLink=/usr/share/backgrounds/linuxmint/default_background.jpg

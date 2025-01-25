@@ -24,8 +24,8 @@
 	mkdir /home/$user
 	
 	echo "copy dir zellview to /home/"$user
-	cp ../zellview /home/$user -r
-	chown -R $user:$user /home/$user/zellview
+	cp /root/zellview /home/$user -r
+#	chown -Rv $user:$user /home/$user/zellview
 
 #	echo "copy .bashrc-user to ~/.bashrc"		
 #	cp Dimi/Rsrc/conf/.bashrc-user /home/$user/.bashrc -v
