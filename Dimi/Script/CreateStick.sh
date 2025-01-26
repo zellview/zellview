@@ -99,8 +99,8 @@
 
 	echo "unzip $persistVol.zip to $persistPt"
 	unzip Dimi/Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
-	echo "increase persistence.dat by $increaseDat MB"
-	sh VTools/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
+#	echo "increase persistence.dat by $increaseDat MB"
+#	sh VTools/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
 
 	echo "Cleanup $mountPt"
 	umount $mountPt
