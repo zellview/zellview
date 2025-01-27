@@ -7,7 +7,7 @@
 # contrib kai47x
 
 	Version=10
-	DimiVersIon="3.3.03"
+	DimiVersion="3.3.04"
 
 	echo "DimiReadIso version "$Version" started ..."
 
@@ -30,7 +30,7 @@
 
 	# 30654464 / 8192 = 3724
 	
-	dd if=/dev/$sourceDevice of=../dimi-image/zv-dimi-$DimiVersion-ventoy.iso bs=4M count=60000 status=progress
+	dd if=/dev/$sourceDevice of=../dimi-image/zv-dimi-$DimiVersion-ventoy.iso bs=4M count=3750 status=progress
 
 	echo "DimiReadIso done"
 

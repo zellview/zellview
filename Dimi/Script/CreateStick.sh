@@ -5,9 +5,10 @@
 # www.github.com/zellview
 # by zellview media
 
-	Version=33
+	Version=34
 
-	DimiVersion="3.3.03"
+	DimiVersion="3.3.04"
+	DIminame="Jenny"
 
 	echo "DimiCreateStick version "$Version" started ..."
 				
@@ -26,12 +27,12 @@
 	reservedSpace=45000			# use for 64GiB sticks with 10 GiB persist-image
 
 	echo "
-		zellview is a platform and operating-system
+		zellview-dimi is a platform and operating-system
 		based on BlackBox and Linuxmint
 		see www.github.com/zellview
 		for details and enjoy
 
-		Would you like to install zellview abba ??
+		Would you like to install zellview dimi ??
 		
 		It takes 15 GB on a fresh device and about 
 		10 minutes to have a short break and chill :-)
@@ -43,12 +44,12 @@
 
 	lsblk
 	echo
-	read -p "Setup zellview on which device ? /dev/" destDevice
+	read -p "Setup zellview-dimi on which device ? /dev/" destDevice
 	destDevice=/dev/$destDevice
 
 	echo "
 		***************************************************************
-		release			$labelventoy-$DimiVersion-Diminame
+		release			$labelventoy-$DimiVersion-$Diminame
 		feedback  		zellview@posteo.de
 		mint-base         	$mintBase
 		boot         		$ventoyVersion
@@ -72,6 +73,7 @@
 #	rm action -rf
 #	mkdir action && cd action	# action in separately dir ???
 
+#	zur Sicherheit vor aufräumen
 	echo "cleanup mountpoint"
 	umount $mountPt -v
 	rm $mountPt -rfv
@@ -94,13 +96,13 @@
 
 	mkdir $mountPt/$persistPt
 
-	#   echo "create $persistVol ($persistSize MB) volume in $persistPoint"
-	#   VTools/CreatePersistentImg.sh -s $persistSize -o $mountPoint/$persistPoint/$persistVol
+	#  echo "create $persistVol ($persistSize MB) volume in $persistPoint"
+	#	VTools/CreatePersistentImg.sh -s $persistSize -o $mountPoint/$persistPoint/$persistVol
 
 	echo "unzip $persistVol.zip to $persistPt"
 	unzip Dimi/Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
-#	echo "increase persistence.dat by $increaseDat MB"
-#	sh VTools/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
+	echo "increase persistence.dat by $increaseDat MB"
+	sh VTools/ExtendPersistentImg.sh $mountPt/$persistPt/persistence.dat $increaseDat
 
 	echo "Cleanup $mountPt"
 	umount $mountPt
