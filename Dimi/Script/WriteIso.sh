@@ -1,12 +1,13 @@
-# 
+
+
 # SCRIPT DimiWriteIso
 
-# by zellview media
-# Tue 27-Feb-2024 seq 55
 # www.github.com/zellview
+# by zellview media
+# contrib kai47x
 
-	Version=7
-	DimiVersion="3.2.29"
+	Version=8
+	DimiVersion="3.3.03"
 
 	cd ../.. 
 
@@ -14,7 +15,7 @@
     destDevice=$1
     
     if [ -z "$destDevice" ]; then
-        echo "This script will write zv-abba-$DimiVersion-ventoy.iso to device"
+        echo "This script will write zv-dimi-$DimiVersion-ventoy.iso to device"
         echo
         lsblk
         echo
@@ -23,7 +24,7 @@
         destDevice=/dev/$destDevice
     fi
 
-    dd if=../dimi-image/zv-abba-$DimiVersion-ventoy.iso of=$destDevice bs=4M status=progress
+    dd if=../dimi-image/zv-dimi-$DimiVersion-fresh.iso of=$destDevice bs=4M status=progress
     
     echo "done DimiWriteIso"
 

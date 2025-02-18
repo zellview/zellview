@@ -1,11 +1,11 @@
-# SCRIPT DimiSetup
-# 
- 
-# by zellview media
-# Tue 27-Feb-2024 seq 105
-# www.github.com/zellview
 
-	Version=8
+
+# SCRIPT DimiSetup
+ 
+# www.github.com/zellview
+# by zellview media
+
+	Version=9
 
 	echo "
 		DimiSetup version "$Version" started ...
@@ -52,6 +52,12 @@
     
 	echo "install xfburn"
 	apt-get install xfburn -y
+	
+	echo "install kdeconnect"
+	apt-get install kdeconnect -y
+	
+	echo "install rustdesk"
+	sh InstallRustdesk
     
 	echo "apt update"
 	apt update -y

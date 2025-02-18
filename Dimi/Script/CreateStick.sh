@@ -1,21 +1,21 @@
-# 
+
+
 # SCRIPT DimiCreateStick
 
-# by zellview media
 # www.github.com/zellview
-# Tue 27-Feb-2024 seq 372
+# by zellview media
 
-	Version=32
+	Version=34
 
-	DimiVersion="3.2.29"
-	Diminame="Yella"
+	DimiVersion="3.3.04"
+	DIminame="Jenny"
 
-	echo "DimiCreateStick version "$Version" Dimiversion "$DimiVersion" started ..."
+	echo "DimiCreateStick version "$Version" started ..."
 				
-	mintBase="linuxmint 21.3 Virginia"
+	mintBase="linuxmint 22.1 Xia"
 	boot="ventoy 91"
 
-	labelventoy="zv-abba"
+	labelventoy="zv-dimi"
 	
 	persistPt="persistence"
 	mountPt="mountPoint"
@@ -27,12 +27,12 @@
 	reservedSpace=45000			# use for 64GiB sticks with 10 GiB persist-image
 
 	echo "
-		zellview is a platform and operating-system
+		zellview-dimi is a platform and operating-system
 		based on BlackBox and Linuxmint
 		see www.github.com/zellview
 		for details and enjoy
 
-		Would you like to install zellview abba ??
+		Would you like to install zellview dimi ??
 		
 		It takes 15 GB on a fresh device and about 
 		10 minutes to have a short break and chill :-)
@@ -44,12 +44,12 @@
 
 	lsblk
 	echo
-	read -p "Setup zellview on which device ? /dev/" destDevice
+	read -p "Setup zellview-dimi on which device ? /dev/" destDevice
 	destDevice=/dev/$destDevice
 
 	echo "
 		***************************************************************
-		release			$labelventoy-$DimiVersion-Diminame
+		release			$labelventoy-$DimiVersion-$Diminame
 		feedback  		zellview@posteo.de
 		mint-base         	$mintBase
 		boot         		$ventoyVersion
@@ -73,6 +73,7 @@
 #	rm action -rf
 #	mkdir action && cd action	# action in separately dir ???
 
+#	zur Sicherheit vor aufräumen
 	echo "cleanup mountpoint"
 	umount $mountPt -v
 	rm $mountPt -rfv
@@ -87,16 +88,16 @@
 	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
 
 	isoname=zv-dimi-$DimiVersion-fresh.iso
-	echo "copy iso-image to $mountPt"
+	echo "copy iso-image $isoname to $mountPt"
 	cp ../dimi-image/$isoname $mountPt -v
 
 	#	echo "dd $isoname direct from /dev/sr0"
-	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M status=progress
+	#	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M status=progress
 
 	mkdir $mountPt/$persistPt
 
-	#   echo "create $persistVol ($persistSize MB) volume in $persistPoint"
-	#   VTools/CreatePersistentImg.sh -s $persistSize -o $mountPoint/$persistPoint/$persistVol
+	#  echo "create $persistVol ($persistSize MB) volume in $persistPoint"
+	#	VTools/CreatePersistentImg.sh -s $persistSize -o $mountPoint/$persistPoint/$persistVol
 
 	echo "unzip $persistVol.zip to $persistPt"
 	unzip Dimi/Rsrc/dat/$persistVol.zip -d $mountPt/$persistPt
@@ -105,26 +106,26 @@
 
 	echo "Cleanup $mountPt"
 	umount $mountPt
-	rm $mountPt -rf
+#	rm $mountPt -rf
 
 	echo "
 	
-		$labelventoy-$DimiVersion-fresh.iso persistent installed on device $destDevice.
-		you may now boot from this device ;-)
-		
-		enjoy and happy coding
-		
-		feel free and join us at github
-		www.github.com/zellview
-		
-		keep the spirit of Pascal 
-		and the message of
-		Niklaus Wirth
-		cu
-		
-		the zellview-team
-		
-		DimiCreateStick done
-		"
+	$labelventoy-$DimiVersion-fresh.iso persistent installed on device $destDevice.
+	you may now boot from this device ;-)
+	
+	enjoy and happy coding
+	
+	feel free and join us at github
+	www.github.com/zellview
+	
+	keep the spirit of Pascal 
+	and the message of
+	Niklaus Wirth
+	cu
+	
+	the zellview-team
+	
+	DimiCreateStick done
+	"
 
 # END DimiCreateStick.

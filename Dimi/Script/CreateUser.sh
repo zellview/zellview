@@ -1,11 +1,11 @@
-# 
+
+
 # SCRIPT DimiCreateUser
 
-# by zellview media
-# Tue 27-Feb-2024 seq 72
 # www.github.com/zellview
+# by zellview media
 
-	Version=11
+	Version=12
 
 	echo "start DimiCreateUser version "$Version
 	user=$1
@@ -24,13 +24,14 @@
 	mkdir /home/$user
 	
 	echo "copy dir zellview to /home/"$user
-	cp ../zellview /home/$user -r
+	cp /root/zellview /home/$user -r
+#	chown -Rv $user:$user /home/$user/zellview
 
-	echo "copy .bashrc-user to ~/.bashrc"		
-	cp Dimi/Rsrc/conf/.bashrc-user /home/$user/.bashrc -v
+#	echo "copy .bashrc-user to ~/.bashrc"		
+#	cp Dimi/Rsrc/conf/.bashrc-user /home/$user/.bashrc -v
 	
-#	mkdir /home/$user/Desktop
-#	cp Dimi/Rsrc/desktop/* /home/$user/Desktop/ -v
+	mkdir /home/$user/Desktop
+	cp Dimi/Rsrc/desktop/* /home/$user/Desktop/ -v
 	
 	echo "DimiCreateUser done"
 

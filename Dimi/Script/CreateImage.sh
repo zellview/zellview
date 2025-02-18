@@ -1,17 +1,17 @@
-#	
+
+
 #	SCRIPT DimiCreateImage
 
-#	by zellview media
-#	Tue 27-Feb-2024 seq 75
 #	www.github.com/zellview
+#	by zellview media
 
-	Version=12
+	Version=13
 
 	echo "DimiCreateImage version "$Version" started ..."
 
 	cd ../..
 
-	baseiso=linuxmint-21.3-cinnamon-64bit.iso
+	baseiso=linuxmint-22.1-cinnamon-64bit.iso
 	echo "copy $baseiso to ../dimi-image"
 	cp ../../zRsrc/iso/$baseiso ../dimi-image --verbose --update
 	

@@ -1,12 +1,12 @@
-# 
+
+
 # SCRIPT DimiCleanup
 
-# by zellview media
-# Tue 27-Feb-2024 seq 72
 # www.github.com/zellview
+# by zellview media
 
-	Version=10
-
+	Version=11
+	
 	echo
 	echo "DimiCleanup version "$Version" started ..."
 
@@ -20,7 +20,7 @@
 	echo "remove *log"	
 	rm *log
 	
-	echo "renove odc*"	
+	echo "remove odc*"	
 	rm odc*	
 	
 	echo "remove /Dimi/Mod/odc*"

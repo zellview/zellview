@@ -1,11 +1,12 @@
-# 
+
+
 # SCRIPT DimiCommit
 
-# by zellview media
-# Mon 26-Feb-2024 seq 31
 # www.github.com/zellview
+# by zellview media
+# contrib kai47x
 
-	Version=6
+	Version=7
 	
 	echo "DimiCommit version "$Version" started ..."
 
