@@ -5,7 +5,7 @@
 # www.github.com/zellview
 # by zellview media
 
-	Version=9
+	Version=10
 
 	echo "
 		DimiSetup version "$Version" started ...
@@ -38,8 +38,8 @@
 #	echo "install XRDP-Client Remmina"
 #	apt-get install remmina -y
 	
-	echo "install anydesk"
-	sh InstallAnydesk.sh
+#	echo "install anydesk"
+#	sh InstallAnydesk.sh
 
 	echo "install kazam"
 	apt-get install kazam -y
