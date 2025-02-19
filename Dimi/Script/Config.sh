@@ -21,7 +21,7 @@
 
 	echo "set background"
 #	(* so so ??? *)
-	cp /home/mint/zellview/Dimi/Rsrc/zv-impressions /usr/share/backgrounds -r
+	cp /root/zellview-main/Dimi/Rsrc/zv-impressions /usr/share/backgrounds -r
 #	srcLink=/home/mint/zellview/Dimi/Rsrc/zv-impressions/zellview3_cloudy.png
 	srcLink=/usr/share/backgrounds/zv-impressions/zellview3_cloudy.png
 	destLink=/usr/share/backgrounds/linuxmint/default_background.jpg
