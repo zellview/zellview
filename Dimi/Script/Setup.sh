@@ -5,7 +5,7 @@
 # www.github.com/zellview
 # by zellview media
 
-	Version=10
+	Version=11
 
 	echo "
 		DimiSetup version "$Version" started ...
@@ -57,7 +57,7 @@
 	apt-get install kdeconnect -y
 	
 	echo "install rustdesk"
-	sh InstallRustdesk
+	sh InstallRustdesk.sh
     
 	echo "apt update"
 	apt update -y

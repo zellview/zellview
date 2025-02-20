@@ -1,8 +1,8 @@
+
+
 # SCRIPT DimiInstallGoogleChrome
-# 
 
 # by zellview media
-# Mon 25-Feb-2024 seq 34
 # www.github.com/zellview
 
 	Version=5
