@@ -5,10 +5,10 @@
 # www.github.com/zellview
 # by zellview media
 
-	Version=34
+	Version=36
 
-	DimiVersion="3.3.04"
-	DIminame="Jenny"
+	DimiVersion="3.3.09"
+	Diminame="Imke"
 
 	echo "DimiCreateStick version "$Version" started ..."
 				
@@ -87,12 +87,12 @@
 	echo "copy ventoy-template to $mountPt"
 	cp Dimi/Rsrc/tmpl/ventoy $mountPt -r
 
-	isoname=zv-dimi-$DimiVersion-fresh.iso
+	isoname=zv-dimi-$DimiVersion-pure.iso
 	echo "copy iso-image $isoname to $mountPt"
 	cp ../dimi-image/$isoname $mountPt -v
 
 	#	echo "dd $isoname direct from /dev/sr0"
-	#	dd if=/dev/sr0 of=$mountPt/$isoname bs=4M status=progress
+	#	dd if=/dev/sr0 of=$mountPt/$isoname bs=16M status=progress
 
 	mkdir $mountPt/$persistPt
 
@@ -125,7 +125,6 @@
 	
 	the zellview-team
 	
-	DimiCreateStick done
-	"
+	echo "DimiCreateStick done"
 
 # END DimiCreateStick.

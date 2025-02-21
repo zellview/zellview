@@ -5,13 +5,13 @@
 # www.github.com/zellview
 # by zellview media
 
-	Version=12
+	Version=13
 
 	echo "start DimiCreateUser version "$Version
 	user=$1
 
     if [ -z "$user" ]; then
-        user=mint		# default user
+        user=dimi		# default user
     fi
 
 	cd ../..

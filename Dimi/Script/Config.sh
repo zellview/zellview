@@ -5,7 +5,7 @@
 # www.github.com/zellview
 # by zellview media
 
-	Version=8
+	Version=9
 
 	echo "DimiConfig version "$Version" started ...
 		
@@ -20,7 +20,8 @@
 	ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 
 	echo "set background"
-	cp /home/mint/zellview/Dimi/Rsrc/zv-impressions /usr/share/backgrounds -r
+#	(* so so ??? *)
+	cp /root/zellview-main/Dimi/Rsrc/zv-impressions /usr/share/backgrounds -r
 #	srcLink=/home/mint/zellview/Dimi/Rsrc/zv-impressions/zellview3_cloudy.png
 	srcLink=/usr/share/backgrounds/zv-impressions/zellview3_cloudy.png
 	destLink=/usr/share/backgrounds/linuxmint/default_background.jpg
