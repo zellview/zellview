@@ -4,11 +4,13 @@
 
 # www.github.com/zellview
 # by zellview media
-# contrib kai47x
 
-	Version=10
-	DimiVersion="3.3.04"
-
+	Version=12
+	DimiVersion=3.3.09
+	
+	OutDir=../dimi-image/
+	Out=zv-dimi-$DimiVersion-ventoy.iso
+	
 	echo "DimiReadIso version "$Version" started ..."
 
 	cd ../..
@@ -30,8 +32,6 @@
 
 	# 30654464 / 8192 = 3724
 	
-	dd if=/dev/$sourceDevice of=../dimi-image/zv-dimi-$DimiVersion-ventoy.iso bs=4M count=3750 status=progress
+	dd if=/dev/$sourceDevice of=$OutDir$Out bs=16M count=938 status=progress
 
 	echo "DimiReadIso done"
-
-# END DimiReadIso.
